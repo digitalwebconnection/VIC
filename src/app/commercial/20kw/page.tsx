@@ -1,5 +1,5 @@
 import BackMapCs from "../BackMapCs";
-import CompnyRuninBeltCs from "../CompanyRUningbeltCs";
+// import CompnyRuninBeltCs from "../CompanyRUningbeltCs";
 import FaqCs from "../FaqCs";
 import HeroCs from "../HeroCs";
 import ReviewCs from "../ReviewCs";
@@ -16,7 +16,7 @@ export default function Commercial20kwPage() {
           <FaqCs />
           <System20Kw />
           <BackMapCs />
-          <CompnyRuninBeltCs />
+          {/* <CompnyRuninBeltCs /> */}
           <ReviewCs />
           </>
   )

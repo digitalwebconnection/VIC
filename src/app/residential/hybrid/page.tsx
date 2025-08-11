@@ -1,5 +1,5 @@
 import BackMap from "../../MineHomepage/BackMap";
-import CompnyRuninBelt from "../CompnyRuninBelt";
+// import CompnyRuninBelt from "../CompnyRuninBelt";
 import CusomerSays from "../CustomerSays";
 import FaqRs from "../FaqRs";
 import HeroRs from "../HeroRs";
@@ -17,7 +17,7 @@ export default function ResidentialHybridPage() {
             <FaqRs />
             <Hyberidsolarcades />
             <BackMap/>
-            <CompnyRuninBelt/>
+            {/* <CompnyRuninBelt/> */}
             <CusomerSays />
         </>
   )
