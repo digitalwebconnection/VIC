@@ -1,6 +1,5 @@
 import FaqRs from "./FaqRs";
 import HeroRs from "./HeroRs";
-import Solar5kg from "./Solar5/Solar5kg";
 import SystemSolarCades from "./SysytemSolarCades";
 import WhyVicSolar from "./WhyVicSolar";
 import CusomerSays from "./CustomerSays";
@@ -13,7 +12,7 @@ export default function Residancalsolar() {
         <>
 
             <HeroRs />
-            <Solar5kg />
+            {/* <Solar5kg /> */}
             <WhyVicSolar />
             <FaqRs/>
             <SystemSolarCades/>

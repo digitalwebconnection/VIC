@@ -1,9 +1,12 @@
-export default function ReviewCs(){
-   const testimonials = [
+/* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
+
+export default function ReviewCs() {
+    const testimonials = [
         {
             name: "Grace Hall",
             title: "Founder",
-            image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXJ8ZW58MHx8MHx8fDA%3D", // Place your image in public/users/
+            image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXJ8ZW58MHx8MHx8fDA%3D",
             text: "I was hesitant to switch to solar, but this company made it easy and affordable.",
         },
         {
@@ -20,17 +23,17 @@ export default function ReviewCs(){
         },
     ];
 
- 
-
     return (
         <div className="bg-white">
-  
-
             {/* Testimonials Section */}
             <div className="bg-blue-50 py-14 px-6">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h5 className="text-sm font-semibold text-blue-900 uppercase mb-2">Our Testimonials</h5>
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-10">What Our Customers Says</h2>
+                    <h5 className="text-sm font-semibold text-blue-900 uppercase mb-2">
+                        Our Testimonials
+                    </h5>
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-10">
+                        What Our Customers Says
+                    </h2>
 
                     <div className="grid md:grid-cols-3 gap-6">
                         {testimonials.map((testimonial, index) => (
@@ -45,14 +48,24 @@ export default function ReviewCs(){
 
                                 {/* User Info */}
                                 <div className="flex items-center gap-3">
-                                    <img
-                                        src={testimonial.image}
-                                        alt={testimonial.name}
-                                        className="w-10 h-10 rounded-full object-cover"
-                                    />
+                                    <div className="relative w-10 h-10">
+                                        <Image
+                                            src={testimonial.image}
+                                            alt={testimonial.name}
+                                            fill
+                                            sizes="40px"
+                                            placeholder="blur"
+                                            blurDataURL={testimonial.image}
+                                            className="rounded-full object-cover"
+                                        />
+                                    </div>
                                     <div>
-                                        <p className="font-bold text-sm text-blue-900">{testimonial.name}</p>
-                                        <p className="text-xs text-gray-500">{testimonial.title}</p>
+                                        <p className="font-bold text-sm text-blue-900">
+                                            {testimonial.name}
+                                        </p>
+                                        <p className="text-xs text-gray-500">
+                                            {testimonial.title}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -64,13 +77,14 @@ export default function ReviewCs(){
                         {[0, 1, 2, 3, 4].map((i) => (
                             <span
                                 key={i}
-                                className={`w-2 h-2 rounded-full ${i === 0 ? "bg-blue-900" : "bg-gray-300"
-                                    }`}
+                                className={`w-2 h-2 rounded-full ${
+                                    i === 0 ? "bg-blue-900" : "bg-gray-300"
+                                }`}
                             />
                         ))}
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }

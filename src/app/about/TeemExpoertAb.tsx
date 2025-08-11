@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { Mail, Facebook, ArrowLeft, ArrowRight } from "lucide-react";
+import { Mail, Facebook } from "lucide-react";
 
 
 const TeemExpoertAb = () => {

@@ -1,5 +1,5 @@
 import BackMap from "./MineHomepage/BackMap";
-import BrandRauningBelt from "./MineHomepage/BrandRauningBelt";
+// import BrandRunningBelt from "./MineHomepage/BrandRauningBelt";
 import CallSection from "./MineHomepage/CallSection";
 import FaqsHm from "./MineHomepage/FaqsHm";
 import HeroHm from "./MineHomepage/HeroHm";
@@ -21,7 +21,7 @@ export default function TestPage() {
         <WhyVic/>
         <PaymentPlan/>
         <BackMap/>
-        <BrandRauningBelt/>
+{/* <BrandRunningBelt/> */}
         <FaqsHm/>
     </>
   )
