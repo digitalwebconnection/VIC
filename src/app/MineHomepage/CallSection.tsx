@@ -13,7 +13,13 @@ export default function CallSection() {
     return (
         <>
             <p className="max-w-7xl mx-auto text-sm pt-5">
-                *Estimated battery pricing is for Neovolt 10.1kWh AC Coupled Battery Package and for Metropolitan areas only, regional freight cost extra will be applicable and the battery prices includes the proposed federal battery rebate expected from 1st July 2025. Rebates are not guranteed and subject to change depending upon government rebate policy, eligibility and other program changes. Battery pricing will be changed or adjusted according to the government rebates. *This Solar System Promotion is available for standard Metropolitan area installations only. Regional areas may attracts additional cost. Price is after Small Scale Technology Certificates (STCs) have been assigned to SMART HOUSE SOLAR PTY LTD or its agents. Any additional extras including but not limited to double story, roof type, meter box upgrades or three phase power, may attract additional charges. *Additional state government rebates are subject to approval from state government and the it&apos;s policy, eligibility criteria.
+                *Pricing displayed is for a standard 10.1kWh Solar Battery Package with installation in metropolitan areas of Victoria. 
+                Additional costs may apply for regional or complex installations, including but not limited to double-storey homes, 
+                non-standard roof types, meter box upgrades, or three-phase power. Pricing is calculated after applying 
+                eligible federal and state government solar rebates and Small-scale Technology Certificates (STCs), 
+                which are subject to government policy, eligibility criteria, and change without notice. West VIC Energy 
+                reserves the right to adjust prices if rebate amounts or eligibility requirements change. 
+                Additional freight charges may apply for regional deliveries.
             </p>
 
             <div className="flex items-center justify-center my-5 py-5 bg-black">

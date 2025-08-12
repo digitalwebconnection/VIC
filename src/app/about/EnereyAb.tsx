@@ -50,7 +50,7 @@ const EnereyAb = () => {
           <div className="bg-gray-400 w-34 h-38  md:w-48 md:h-58 rounded-lg absolute -bottom-3 left-0 md:left-12"> <img src="https://t4.ftcdn.net/jpg/04/91/17/03/360_F_491170369_elLGyJJ3oHIVPMXRQKk8vJSa0bA2RPDO.jpg" alt="" className="h-full rounded-lg"/> </div>
 
           {/* Green Experience Badge */}
-          <div className="absolute -bottom-14 right-0 bg-green-600 text-white flex items-center gap-2 px-5 py-3 rounded-xl shadow-lg">
+          <div className="absolute -bottom-14 right-0 bg-yellow-400 text-blue flex items-center gap-2 px-5 py-3 rounded-xl shadow-lg">
             <BadgeCheck size={22} />
             <div>
               <p className="text-2xl font-bold">18+</p>

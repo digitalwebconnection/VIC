@@ -22,7 +22,7 @@ const TeemExpoertAb = () => {
                         <div className="flex flex-col items-center">
                             {/* Circle with image placeholder */}
                             <div className="relative">
-                                <div className="absolute w-42 h-41 border-[10px] border-green-400 rounded-full -ms-1  z-10 "
+                                <div className="absolute w-42 h-41 border-[10px] border-blue-400 rounded-full -ms-1  z-10 "
                                     style={{
                                         clipPath: "polygon(0 0%, 100% 0, 100% 70%, 0 40%)",
                                         transform: "rotate(190deg)",
@@ -49,7 +49,7 @@ const TeemExpoertAb = () => {
                         {/* Expert Card 2 */}
                         <div className="flex flex-col items-center">
                             <div className="relative">
-                                <div className="absolute w-42 h-41 border-[10px] border-green-400 rounded-full -ms-1  z-10 "
+                                <div className="absolute w-42 h-41 border-[10px] border-blue-400 rounded-full -ms-1  z-10 "
                                     style={{
                                         clipPath: "polygon(0 0%, 100% 0, 100% 70%, 0 40%)",
                                         transform: "rotate(190deg)",
@@ -98,8 +98,8 @@ const TeemExpoertAb = () => {
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-8">
                         {/* Year 2001 */}
                         <div>
-                            <h3 className="text-green-600 text-3xl font-bold">2001</h3>
-                            <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                            <h3 className="text-blue-900 text-3xl font-bold">2001</h3>
+                            <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
                             <h4 className="mt-4 text-lg font-bold">First Office Set Up By Stephen Barrett</h4>
                             <p className="text-gray-600 mt-2 text-sm">
                                 leading renewable energy solutions provider that is revolutionising and redefining the way sustainable
@@ -108,8 +108,8 @@ const TeemExpoertAb = () => {
 
                         {/* Year 2008 */}
                         <div>
-                            <h3 className="text-green-600 text-3xl font-bold">2008</h3>
-                            <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                            <h3 className="text-blue-900 text-3xl font-bold">2008</h3>
+                            <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
                             <h4 className="mt-4 text-lg font-bold">Larger Premises Secured In Long Ashton</h4>
                             <p className="text-gray-600 mt-2 text-sm">
                                 leading renewable energy solutions provider that is revolutionising and redefining the way sustainable
@@ -118,8 +118,8 @@ const TeemExpoertAb = () => {
 
                         {/* Year 2014 */}
                         <div>
-                            <h3 className="text-green-600 text-3xl font-bold">2014</h3>
-                            <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                            <h3 className="text-blue-900 text-3xl font-bold">2014</h3>
+                            <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
                             <h4 className="mt-4 text-lg font-bold">Government Renewable Energy Incentive</h4>
                             <p className="text-gray-600 mt-2 text-sm">
                                 leading renewable energy solutions provider that is revolutionising and redefining the way sustainable
@@ -128,8 +128,8 @@ const TeemExpoertAb = () => {
 
                         {/* Year 2018 */}
                         <div>
-                            <h3 className="text-green-600 text-3xl font-bold">2018</h3>
-                            <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                            <h3 className="text-blue-900 text-3xl font-bold">2018</h3>
+                            <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
                             <h4 className="mt-4 text-lg font-bold">‘Company Of The Year’ At The British</h4>
                             <p className="text-gray-600 mt-2 text-sm">
                                 leading renewable energy solutions provider that is revolutionising and redefining the way sustainable

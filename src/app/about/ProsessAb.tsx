@@ -8,21 +8,21 @@ const steps = [
         title: "Book a Free Consultation",
         description:
             "Our mission is to provide clear, high quality and affordable ecological advice and services to public.",
-        icon: <Calendar size={32} className="text-green-600" />,
+        icon: <Calendar size={32} className="text-blue-400" />,
     },
     {
         id: 2,
         title: "Estimate the Calculation",
         description:
             "Our mission is to provide clear, high quality and affordable ecological advice and services to public.",
-        icon: <Calculator size={32} className="text-green-600" />,
+        icon: <Calculator size={32} className="text-blue-400" />,
     },
     {
         id: 3,
         title: "Hire us for Your Projects",
         description:
             "Our mission is to provide clear, high quality and affordable ecological advice and services to public.",
-        icon: <BadgeCheck size={32} className="text-green-600" />,
+        icon: <BadgeCheck size={32} className="text-blue-400" />,
     },
 ];
 const ProsessAb = () => {
@@ -48,7 +48,7 @@ const ProsessAb = () => {
                                 className="relative bg-white border rounded-2xl shadow-md px-6 py-8 text-left hover:shadow-lg transition duration-300"
                             >
                                 {/* Number badge */}
-                                <div className="absolute top-4 right-4 bg-green-600 text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">
+                                <div className="absolute top-4 right-4 bg-yellow-400 text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">
                                     {step.id}
                                 </div>
 

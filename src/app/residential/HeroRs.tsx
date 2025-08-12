@@ -9,8 +9,8 @@ export default function HeroRs() {
     ];
 
     return (
-        <div className="relative justify-center">
-            <div className="bg-[#1E215C] pt-20 pb-40 px-5 md:px-0 z-0">
+        <div className="relative justify-center -mt-16">
+            <div className="bg-[#1E215C] pt-22 pb-40 px-5 md:px-0 z-0">
                 <div className="max-w-7xl mx-auto">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">Residental Solar</h1>
                     <p className="text-gray-300 mt-3 max-w-xl">
