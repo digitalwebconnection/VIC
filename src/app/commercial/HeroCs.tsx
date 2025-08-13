@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function HeroCs() {
     const images = [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1VtnRYWApFL04K3E3oSU8SZrWKSQfEurHjw&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1VtnRYWApFL04K3E3oSU8SZrWKSQfEurHjw&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1VtnRYWApFL04K3E3oSU8SZrWKSQfEurHjw&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1VtnRYWApFL04K3E3oSU8SZrWKSQfEurHjw&s",
+        "/CommercialSolar1.jpg",
+        "/CommercialSolar2.jpg",
+        "/CommercialSolar3.jpg",
+        "/CommercialSolar4.jpg",
     ];
 
     return (
-        <div className="relative justify-center -mt-16">
+        <div className="relative justify-center -mt-13.5">
             {/* Hero Section */}
-            <div className="bg-[#1E215C] pt-25 pb-40 px-5 md:px-0 z-0">
+            <div className="bg-[#1E215C] pt-25 py-45 px-5 md:px-0 z-0">
                 <div className="max-w-7xl mx-auto">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">
                         Commercial Solar

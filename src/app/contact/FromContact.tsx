@@ -5,8 +5,6 @@ import { FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 export default function FromContact() {
 
     return (
-
-
         <>
 
             <div className="max-w-7xl mx-auto bg-white px-4 py-10 md:px-0">
@@ -74,7 +72,7 @@ export default function FromContact() {
                             className="border rounded-2xl px-4 py-2 text-sm w-full"
                         ></textarea>
 
-                        <button className="bg-yellow-400 text-white text-sm font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition">
+                        <button className="bg-yellow-400 text-black text-sm font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition">
                             Send Message
                         </button>
                     </div>
@@ -118,14 +116,21 @@ export default function FromContact() {
 
                 <div className=" bg-white flex items-center justify-center py-10">
                     <div className="max-w-7xl w-full overflow-hidden rounded-2xl shadow-lg">
-                        <iframe
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.231791613044!2d144.72228867569692!3d-37.85804617196448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6891c1db39475%3A0x15f7271545973c73!2s9%20Ferriman%20Way%2C%20Truganina%20VIC%203029%2C%20Australia!5e1!3m2!1sen!2sin!4v1754998034062!5m2!1sen!2sin"
+                            width="100%"
+                            height="350"
+                            // style={{ border: 0 }}    
+                            allowFullScreen={false}
+                            loading="lazy"
+                        ></iframe>
+                        {/* <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999441126556!2d2.292292615674133!3d48.85837317928757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fddf86cdbf3%3A0x5b3fdded3ca38e78!2sEiffel%20Tower!5e0!3m2!1sen!2sin!4v1629191866112!5m2!1sen!2sin"
                             width="100%"
                             height="300"
                             // style={{ border: 0 }}    
                             allowFullScreen={false}
                             loading="lazy"
-                        ></iframe>
+                        ></iframe> */}
                     </div>
                 </div>
             </div>

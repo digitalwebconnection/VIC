@@ -8,14 +8,47 @@ export default function FaqRs() {
 
     const faqs = [
         {
-            question: 'WHY?',
+            question: "Why should I install solar panels at home?",
             answer:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+                "Residential solar panels can lower your electricity bills, increase your home’s value, and reduce your carbon footprint. They also provide long-term energy independence."
         },
-        { question: 'What?', answer: 'Answer to What?' },
-        { question: 'What?', answer: 'Answer to What?' },
-        { question: 'What?', answer: 'Answer to What?' },
+        {
+            question: "How much can I save with residential solar?",
+            answer:
+                "Savings depend on your energy usage, system size, and local electricity rates. Most homeowners save 40–60% on their energy bills."
+        },
+        {
+            question: "Do solar panels work during cloudy days or at night?",
+            answer:
+                "Yes, solar panels work on cloudy days but with reduced output. They don’t generate power at night, but you can use stored energy from batteries or the grid."
+        },
+        {
+            question: "How long do residential solar panels last?",
+            answer:
+                "Most panels last 25–30 years with minimal performance loss over time."
+        },
+        {
+            question: "What maintenance do solar panels need?",
+            answer:
+                "Residential solar systems need little maintenance—just occasional cleaning and periodic inspections to ensure peak performance."
+        },
+        {
+            question: "Are there government incentives for home solar?",
+            answer:
+                "Yes, many areas offer tax credits, rebates, and subsidies for homeowners installing solar panels. Check your local regulations."
+        },
+        {
+            question: "How long does it take to install solar panels?",
+            answer:
+                "For most homes, installation takes 1–3 days after permits and approvals are complete."
+        },
+        {
+            question: "Will solar panels damage my roof?",
+            answer:
+                "No, when installed by professionals, solar panels do not damage your roof. They can even help protect the areas they cover."
+        }
     ];
+
 
     const toggleFAQ = (index: number) => {
         setOpenIndex(index === openIndex ? null : index);
@@ -41,7 +74,7 @@ export default function FaqRs() {
                                 >
                                     <h3 className="font-semibold">
                                         {openIndex === index && index === 0 ? (
-                                            <span className="text-orange-400">WHY?</span>
+                                            <span className="text-orange-400">Why should I install solar panels at home?</span>
                                         ) : (
                                             faq.question
                                         )}

@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function HeroRs() {
     const images = [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1VtnRYWApFL04K3E3oSU8SZrWKSQfEurHjw&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1VtnRYWApFL04K3E3oSU8SZrWKSQfEurHjw&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1VtnRYWApFL04K3E3oSU8SZrWKSQfEurHjw&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1VtnRYWApFL04K3E3oSU8SZrWKSQfEurHjw&s",
+        "/ResidentalSolar1.jpg",
+        "/ResidentalSolar2.jpg",
+        "/ResidentalSolar3.jpg",
+        "/ResidentalSolar4.jpg",
     ];
 
     return (
-        <div className="relative justify-center -mt-16">
-            <div className="bg-[#1E215C] pt-22 pb-40 px-5 md:px-0 z-0">
+        <div className="relative justify-center -mt-13.5">
+            <div className="bg-[#1E215C] pt-22 py-45 px-5 md:px-0 z-0">
                 <div className="max-w-7xl mx-auto">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">Residental Solar</h1>
                     <p className="text-gray-300 mt-3 max-w-xl">

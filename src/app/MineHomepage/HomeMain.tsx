@@ -17,7 +17,7 @@ export default function HomeMain(){
         <WhyVic/>
         <PaymentPlan/>
         <BackMap/>
-        <BrandRauningBelt/>
+        {/* <BrandRauningBelt/> */}
         <FaqsHm/>
         
         </>

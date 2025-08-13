@@ -8,13 +8,45 @@ export default function FaqCs() {
 
     const faqs = [
         {
-            question: 'WHY?',
+            question: "Why choose solar for my business?",
             answer:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+                "Solar power can lower your electricity bills, protect against energy price increases, and support sustainability goals."
         },
-        { question: 'What?', answer: 'Answer to What?' },
-        { question: 'What?', answer: 'Answer to What?' },
-        { question: 'What?', answer: 'Answer to What?' },
+        {
+            question: "How much can I save with commercial solar panels?",
+            answer:
+                "Savings vary by location, energy usage, and system size, but most businesses reduce their energy costs by 40–70%."
+        },
+        {
+            question: "How long do commercial solar panels last?",
+            answer:
+                "Quality panels last 25–30 years with minimal performance loss. Inverters may need replacement after 10–15 years."
+        },
+        {
+            question: "Will solar work during cloudy days or at night?",
+            answer:
+                "Panels still generate some electricity on cloudy days, but not at night. Batteries can store energy for nighttime use."
+        },
+        {
+            question: "What maintenance is needed for a solar system?",
+            answer:
+                "Solar systems require minimal maintenance—mainly occasional cleaning and annual performance checks."
+        },
+        {
+            question: "Are there incentives for commercial solar?",
+            answer:
+                "Many regions offer tax credits, rebates, or grants to lower installation costs for businesses."
+        },
+        {
+            question: "How long does installation take?",
+            answer:
+                "Commercial installations usually take 1–3 months, depending on project size and permitting."
+        },
+        {
+            question: "Do I need to replace my roof before installing panels?",
+            answer:
+                "If your roof is old or damaged, it’s best to address that before installation to avoid extra costs later."
+        }
     ];
 
     const toggleFAQ = (index: number) => {
@@ -41,7 +73,7 @@ export default function FaqCs() {
                                 >
                                     <h3 className="font-semibold">
                                         {openIndex === index && index === 0 ? (
-                                            <span className="text-orange-400">WHY?</span>
+                                            <span className="text-orange-400">Why choose solar for my business?</span>
                                         ) : (
                                             faq.question
                                         )}

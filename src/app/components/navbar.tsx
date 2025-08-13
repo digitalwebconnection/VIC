@@ -2,11 +2,11 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Mail, MapPin, User, X } from "lucide-react" // Lucide icons
+import { Mail, MapPin, User, X, Phone } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
+
 const LINKS = [
-  // { href: "/", label: "Home" },
   { href: "/solar-blog", label: "Solar Blog" },
   { href: "/about", label: "About" },
 ]
@@ -14,7 +14,7 @@ const LINKS = [
 // Dropdown items
 const RESIDENTIAL_ITEMS = [
   { href: "/residential/5kw", label: "5kW Solar" },
-  { href: "/residential/6kw", label: "6kW Solar" },
+  { href: "/residential/6kw", label: "6.6kW Solar" },
   { href: "/residential/7kw", label: "10kW Solar" },
   { href: "/residential/hybrid", label: "Hybrid Solar System" },
 ]
@@ -37,7 +37,7 @@ export default function Navbar() {
   const [resMobOpen, setResMobOpen] = useState(false)
   const [comMobOpen, setComMobOpen] = useState(false)
 
-  // Desktop dropdowns (new click behavior)
+  // Desktop dropdowns
   const [resOpen, setResOpen] = useState(false)
   const [comOpen, setComOpen] = useState(false)
 
@@ -50,18 +50,19 @@ export default function Navbar() {
   const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href))
   const startsWithAny = (bases: string[]) => bases.some((b) => pathname.startsWith(b))
 
-  // ===== Global key handlers =====
+  // ===== Global key handlers (Esc to close) =====
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setQuoteOpen(false)
         setResOpen(false)
         setComOpen(false)
+        setMobileOpen(false)
       }
     }
-    if (quoteOpen || resOpen || comOpen) document.addEventListener("keydown", onKey)
+    document.addEventListener("keydown", onKey)
     return () => document.removeEventListener("keydown", onKey)
-  }, [quoteOpen, resOpen, comOpen])
+  }, [])
 
   // Focus first input when quote modal opens
   useEffect(() => {
@@ -70,11 +71,11 @@ export default function Navbar() {
 
   // Prevent body scroll when modal open
   useEffect(() => {
-    if (quoteOpen) {
-      document.body.style.overflow = "hidden"
-      return () => {
-        document.body.style.overflow = ""
-      }
+    if (!quoteOpen) return
+    const prev = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    return () => {
+      document.body.style.overflow = prev
     }
   }, [quoteOpen])
 
@@ -85,11 +86,11 @@ export default function Navbar() {
       if (resOpen && resRef.current && !resRef.current.contains(target)) setResOpen(false)
       if (comOpen && comRef.current && !comRef.current.contains(target)) setComOpen(false)
     }
-    if (resOpen || comOpen) document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside)
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [resOpen, comOpen])
 
-  // Close dropdowns when route changes
+  // Close menus when route changes
   useEffect(() => {
     setResOpen(false)
     setComOpen(false)
@@ -101,7 +102,6 @@ export default function Navbar() {
   async function handleQuoteSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const form = new FormData(e.currentTarget)
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const payload = Object.fromEntries(form.entries())
     try {
       setSubmitting(true)
@@ -135,7 +135,7 @@ export default function Navbar() {
             </a>
             <a href="#" className="flex items-center gap-2 hover:opacity-80">
               <InstagramSvg className="h-4 w-4" />
-              <span className="hidden sm:inline">Linked In</span>
+              <span className="hidden sm:inline">Instagram</span>
             </a>
           </div>
 
@@ -145,19 +145,27 @@ export default function Navbar() {
               <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full bg-yellow-400">
                 <Mail className="h-4 w-4 text-[#1f5495]" />
               </span>
-              <a href="mailto:bilgi@enginerji.com" className="hover:underline">
-                bilgi@enginerji.com
+              <a href="mailto:info@westvicenergy.com.au" className="hover:underline">
+                admin@westvicenergy.com.au
               </a>
             </div>
             <div className="flex items-center gap-2">
               <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full bg-yellow-400">
                 <MapPin className="h-4 w-4 text-[#1f5495]" />
               </span>
-              <span>12/7 new town, 245x Street, United State</span>
+              <span>19 ferriman way, truganina vic 3029</span>
             </div>
           </div>
 
-          {/* Right: mobile menu button */}
+          {/* Desktop Call Now */}
+          <a
+            href="tel:+61 497 358 063"
+            className="hidden md:inline-flex items-center gap-2 bg-white text-orange-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition animate-call-glow shadow"
+          >
+            <Phone size={16} /> Call +61 497 358 063
+          </a>
+
+          {/* Mobile menu button */}
           <div className="flex items-center gap-3 md:hidden">
             <button
               className="inline-flex items-center rounded-md bg-white/10 px-3 py-1 text-white hover:bg-white/20"
@@ -178,10 +186,11 @@ export default function Navbar() {
               {/* Logo only */}
               <Link href="/" className="flex items-center shrink-0" aria-label="Home">
                 <div className="relative w-10 h-10 rounded-full bg-[#1f5495]/10 grid place-items-center">
-                  <svg viewBox="0 0 64 64" className="w-7 h-7">
+                <img src="/logo.png" alt="" />
+                  {/* <svg viewBox="0 0 64 64" className="w-7 h-7" aria-hidden="true">
                     <circle cx="32" cy="32" r="16" fill="none" stroke="#20D67B" strokeWidth="3" />
                     <circle cx="32" cy="32" r="8" fill="#FF6A00" />
-                  </svg>
+                  </svg> */}
                 </div>
               </Link>
 
@@ -294,8 +303,8 @@ export default function Navbar() {
             </div>
 
             {/* Right: CTA + Contact */}
-            <div className="flex items-center gap-20">
-              {/* Request a Quote CTA (wider) */}
+            <div className="flex items-center gap-6 md:gap-10">
+              {/* Request a Quote CTA */}
               <button
                 type="button"
                 onClick={() => setQuoteOpen(true)}
@@ -320,9 +329,9 @@ export default function Navbar() {
           {mobileOpen && (
             <div className="mt-2 rounded-2xl bg-white p-4 shadow-lg md:hidden">
               {/* Mobile Logo only */}
-              <div className="flex items-center mb-4 pb-3 border-b border-gray-2 00">
+              <div className="flex items-center mb-4 pb-3 border-b border-gray-200">
                 <div className="relative w-8 h-8 rounded-full bg-[#1f5495]/10 grid place-items-center">
-                  <svg viewBox="0 0 64 64" className="w-5 h-5">
+                  <svg viewBox="0 0 64 64" className="w-5 h-5" aria-hidden="true">
                     <circle cx="32" cy="32" r="16" fill="none" stroke="#20D67B" strokeWidth="3" />
                     <circle cx="32" cy="32" r="8" fill="#FF6A00" />
                   </svg>
@@ -394,7 +403,13 @@ export default function Navbar() {
 
               <div className="mt-3 h-px bg-gray-200" />
 
-              <div className="mt-3 flex items-center justify-between">
+              <div className="mt-3 grid gap-3">
+                <a
+                  href="tel:1300650747"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-black px-4 py-3 text-sm font-semibold text-white hover:bg-gray-800 transition"
+                >
+                  <Phone size={16} /> Call +61 497 358 063
+                </a>
                 <button
                   type="button"
                   onClick={() => {
@@ -405,24 +420,20 @@ export default function Navbar() {
                 >
                   Request a Quote
                 </button>
-
-                <div className="hidden items-center gap-4">
-                  <Link
-                    href="/contact"
-                    className="flex items-center gap-2 rounded-md px-2 py-1 text-sm text-[#1f5495] hover:bg-gray-100"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    <span className="grid h-8 w-8 place-items-center rounded-md bg-yellow-400">
-                      <User className="h-5 w-5 text-[#1f5495]" />
-                    </span>
-                    Contact
-                  </Link>
-                </div>
               </div>
             </div>
           )}
         </div>
       </div>
+
+      {/* Floating quick-call on mobile */}
+      <a
+        href="tel:1300650747"
+        aria-label="Quick call West VIC Energy"
+        className="fixed sm:hidden bottom-4 right-4 z-50 inline-flex items-center justify-center h-12 w-12 rounded-full bg-orange-500 text-white shadow-lg animate-call-glow"
+      >
+        <Phone size={20} />
+      </a>
 
       {/* --- Modal: Request a Quote --- */}
       {quoteOpen && (
@@ -462,7 +473,7 @@ export default function Navbar() {
                     type="text"
                     required
                     className="w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-[#1f5495]"
-                    placeholder="John Doe"
+                    placeholder="John Smith"
                   />
                 </div>
                 <div>
@@ -473,7 +484,7 @@ export default function Navbar() {
                     required
                     pattern="^[0-9+\\-\\s()]{7,}$"
                     className="w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-[#1f5495]"
-                    placeholder="+1 555 123 4567"
+                    placeholder="04xx xxx xxx"
                   />
                 </div>
               </div>
@@ -490,12 +501,12 @@ export default function Navbar() {
                   />
                 </div>
                 <div>
-                  <label className="mb-1 block text-sm font-medium text-gray-700">City</label>
+                  <label className="mb-1 block text-sm font-medium text-gray-700">City/Suburb (VIC)</label>
                   <input
                     name="city"
                     type="text"
                     className="w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-[#1f5495]"
-                    placeholder="Your city"
+                    placeholder="Your suburb"
                   />
                 </div>
               </div>
@@ -540,6 +551,33 @@ export default function Navbar() {
           </div>
         </div>
       )}
+
+      {/* Global animation (or move to _app/layout) */}
+      <style jsx global>{`
+        @keyframes call-glow {
+          0% {
+            transform: scale(1);
+            background-color: #ffffff;
+            color: #ff6600;
+            box-shadow: 0 0 0 0 rgba(255, 165, 0, 0.6);
+          }
+          50% {
+            transform: scale(1.08);
+            background-color: #ffd700; /* gold */
+            color: #000;
+            box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.7);
+          }
+          100% {
+            transform: scale(1);
+            background-color: #ffffff;
+            color: #ff6600;
+            box-shadow: 0 0 0 0 rgba(255, 165, 0, 0.6);
+          }
+        }
+        .animate-call-glow {
+          animation: call-glow 2s infinite ease-in-out;
+        }
+      `}</style>
     </header>
   )
 }
@@ -553,7 +591,7 @@ export function SocialBase({
   path: string
 }) {
   return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
       <path d={path} />
     </svg>
   )
@@ -589,7 +627,7 @@ export function InstagramSvg({ className = "h-4 w-4" }) {
 /* Small inline chevron to avoid extra imports */
 function ChevronDown({ className = "h-4 w-4" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 20 20" fill="currentColor" className={className}>
+    <svg viewBox="0 0 20 20" fill="currentColor" className={className} aria-hidden="true">
       <path
         fillRule="evenodd"
         d="M5.23 7.21a.75.75 0 011.06.02L10 11.085l3.71-3.855a.75.75 0 111.08 1.04l-4.24 4.41a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"

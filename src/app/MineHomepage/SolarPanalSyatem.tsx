@@ -1,188 +1,109 @@
 "use client";
 
-
-
 export default function Solar10kwIntro() {
-
- const plans = [
+  const plans = [
     {
       title: "10.5kW Solar System",
-      subtitle: "Medium to Big Family Home",
-      savings: "Save Up To $2000 to $3500* Annually",
+      subtitle: "Medium to Large Family Home",
+      savings: "Save up to $2,000–$3,500* annually",
       features: [
-        "24 X 440W High-Efficiency N-Type Tier 1 Listed Solar Panels",
-        "8kW Smart Inbuilt Wi-Fi Inverter",
-        "Installation by CEC Accredited licenced Electricians",
+        "24 × 440W High-Efficiency N-Type Tier-1 Solar Panels",
+        "8kW Smart Wi-Fi Inverter",
+        "Installed by CEC-Accredited Licensed Electricians",
       ],
       highlight: false,
     },
     {
-      title: "6.6kw Solar System",
+      title: "6.6kW Solar System",
       subtitle: "Standard Family Home",
-      savings: "Save Up to $1000 - $2500* Annually",
+      savings: "Save up to $1,000–$2,500* annually",
       features: [
-        "15 X 440W High-Efficiency N-Type Tier 1 Listed Solar Panels",
-        "5kW Smart Inbuilt Wi-Fi Inverter",
-        "Installation by CEC Accredited licenced Electricians",
+        "15 × 440W High-Efficiency N-Type Tier-1 Solar Panels",
+        "5kW Smart Wi-Fi Inverter",
+        "Installed by CEC-Accredited Licensed Electricians",
       ],
-      highlight: true,
+      highlight: true, // Most popular
     },
     {
       title: "13.2kW Solar System",
-      subtitle: "Bigger Family Home",
-      savings: "Save Up to $3000 - $4500* Annually",
+      subtitle: "Larger Family Home",
+      savings: "Save up to $3,000–$4,500* annually",
       features: [
-        "30 X 440W High-Efficiency N-Type Tier 1 Listed Solar Panels",
-        "10kW Smart Inbuilt Wi-Fi Inverter",
-        "Installation by CEC Accredited licenced Electricians",
+        "30 × 440W High-Efficiency N-Type Tier-1 Solar Panels",
+        "10kW Smart Wi-Fi Inverter",
+        "Installed by CEC-Accredited Licensed Electricians",
       ],
       highlight: false,
     },
   ];
 
   return (
-    <section className="py-12 ">
+    <section className="py-12">
       <div className="text-center mb-12 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-          Let’s choose the most suitable & best solar panel system for your home.!!
+          Choose the best solar system for your home
         </h2>
+        <p className="mt-2 text-gray-600">
+          West VIC Energy packages sized for Victorian homes—quality hardware, expert install, real savings.
+        </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3  gap-15 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`relative border-2 py-15 rounded-lg px-8 shadow-xl  bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105  ${
-              plan.highlight ? "border-green-500" : "border-green-300"
+            className={`relative border-2 rounded-lg px-8 py-10 shadow-xl bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105 ${
+              plan.highlight ? "border-blue-900" : "border-blue-900"
             }`}
           >
             {plan.highlight && (
-              <div className="absolute -mt-15 w-full    transform -translate-x-1/12 bg-green-500 text-white px-4 py-2 text-xs font-semibold rounded">
-                AUSTRALIA’S MOST POPULAR.!!
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-900 text-white px-5 py-1.5 text-[10px] font-semibold rounded-full shadow">
+                AUSTRALIA’S MOST POPULAR
               </div>
             )}
 
-            <h3 className="text-xl font-bold text-center text-blue-600 mb-2">
+            <h3 className="text-xl font-bold text-center text-blue-800 mb-1">
               {plan.title}
             </h3>
             <p className="text-center text-gray-600 font-semibold">{plan.subtitle}</p>
 
-            <div className="mt-4 bg-gray-100 text-black border border-green-400  text-center py-2 text-xl font-semibold rounded">
+            <div className="mt-4 bg-gray-100 text-black border border-blue-700 text-center py-3 text-lg font-semibold rounded">
               {plan.savings}
             </div>
 
-            <ul className="mt-4 space-y-2 text-gray-700 text-sm">
+            <ul className="mt-5 space-y-2 text-gray-700 text-sm">
               {plan.features.map((feature, i) => (
-                <li key={i} className="leading-relaxed">{feature}</li>
+                <li key={i} className="leading-relaxed">• {feature}</li>
               ))}
             </ul>
 
-            <button className="mt-6 w-full bg-orange-500 text-white font-semibold py-3 rounded hover:bg-orange-600 transition">
-              Request A Free Quote
-            </button>
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <a
+                href="/quote"
+                className="w-full text-center bg-yellow-400 text-black font-semibold py-3 rounded hover:bg-orange-600 transition"
+                aria-label="Request a free solar quote from West VIC Energy"
+              >
+                Request a Free Quote
+              </a>
+              <a
+                href="tel:1300650747"
+                className="w-full text-center bg-black text-white font-semibold py-3 rounded hover:bg-gray-800 transition"
+                aria-label="Call West VIC Energy 1300 650 747"
+              >
+                Call +61 497 358 063
+              </a>
+            </div>
           </div>
         ))}
       </div>
 
-      <div className="mt-8 max-w-4xl mx-auto px-4 text-xs text-center text-gray-500">
+      <div className="mt-10 max-w-4xl mx-auto px-4 text-xs text-center text-gray-500">
         <p>
-          *Performance figures are just an estimation figures based on Clean Energy Council Guidelines and will vary from property to property.
-          Actual savings may vary according to your location, weather / climate conditions, the direction, pitch or angle of your roof,
-          or any shading or obstruction of your property as well as network export limitations. Speak to our consultant in order to make well-informed decision.
+          *Savings are indicative only and based on typical Victorian conditions and usage. Actual outcomes depend on
+          your location, roof orientation/pitch, shading, network export limits, tariff/FiT, and consumption patterns.
+          Estimates align with Clean Energy Council guidance. For a tailored assessment, request a site-specific quote.
         </p>
       </div>
     </section>
-  )
-
-    // const plans = [
-    //     {
-    //         title: "10.5kW Solar System",
-    //         subtitle: "Medium to Big Family Home",
-    //         savings: "Save Up To $2000 to $3500* Annually",
-    //         features: [
-    //             "24 X 440W High-Efficiency N-Type Tier 1 Listed Solar Panels",
-    //             "8kW Smart Inbuilt Wi-Fi Inverter",
-    //             "Installation by CEC Accredited licenced Electricians",
-    //         ],
-    //         highlight: false,
-    //     },
-    //     {
-    //         title: "6.6kw Solar System",
-    //         subtitle: "Standard Family Home",
-    //         savings: "Save Up to $1000 - $2500* Annually",
-    //         features: [
-    //             "15 X 440W High-Efficiency N-Type Tier 1 Listed Solar Panels",
-    //             "5kW Smart Inbuilt Wi-Fi Inverter",
-    //             "Installation by CEC Accredited licenced Electricians",
-    //         ],
-    //         highlight: true,
-    //     },
-    //     {
-    //         title: "13.2kW Solar System",
-    //         subtitle: "Bigger Family Home",
-    //         savings: "Save Up to $3000 - $4500* Annually",
-    //         features: [
-    //             "30 X 440W High-Efficiency N-Type Tier 1 Listed Solar Panels",
-    //             "10kW Smart Inbuilt Wi-Fi Inverter",
-    //             "Installation by CEC Accredited licenced Electricians",
-    //         ],
-    //         highlight: false,
-    //     },
-    // ];
-
-    // return (
-    //     <>
-    //         <section className="py-12 ">
-    //             <div className="text-center mb-12 px-4">
-    //                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-    //                     Let’s choose the most suitable & best solar panel system for your home.!!
-    //                 </h2>
-    //             </div>
-
-    //             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
-    //                 {plans.map((plan, index) => (
-    //                     <div
-    //                         key={index}
-    //                         className={`relative border-2 py-12 rounded-lg p-8  shadow-md bg-white ${plan.highlight ? "border-green-500" : "border-green-300"
-    //                             }`}
-    //                     >
-    //                         {plan.highlight && (
-    //                             <div className="absolute -mt-12 w-79   ms-48  transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 text-xs font-semibold rounded">
-    //                                 AUSTRALIA’S MOST POPULAR.!!
-    //                             </div>
-    //                         )}
-
-    //                         <h3 className="text-xl font-bold text-center text-blue-600 mb-2">
-    //                             {plan.title}
-    //                         </h3>
-    //                         <p className="text-center text-gray-600 font-semibold">{plan.subtitle}</p>
-
-    //                         <div className="mt-4 bg-green-100 border border-green-400 text-green-800 text-center py-2 text-sm font-semibold rounded">
-    //                             {plan.savings}
-    //                         </div>
-
-    //                         <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-    //                             {plan.features.map((feature, i) => (
-    //                                 <li key={i} className="leading-relaxed">{feature}</li>
-    //                             ))}
-    //                         </ul>
-
-    //                         <button className="mt-6 w-full bg-orange-500 text-white font-semibold py-3 rounded hover:bg-orange-600 transition">
-    //                             Request A Free Quote
-    //                         </button>
-    //                     </div>
-    //                 ))}
-    //             </div>
-
-    //             <div className="mt-8 max-w-4xl mx-auto px-4 text-xs text-center text-gray-500">
-    //                 <p>
-    //                     *Performance figures are just an estimation figures based on Clean Energy Council Guidelines and will vary from property to property.
-    //                     Actual savings may vary according to your location, weather / climate conditions, the direction, pitch or angle of your roof,
-    //                     or any shading or obstruction of your property as well as network export limitations. Speak to our consultant in order to make well-informed decision.
-    //                 </p>
-    //             </div>
-    //         </section>
-
-    //     </>
-    // )
+  );
 }
