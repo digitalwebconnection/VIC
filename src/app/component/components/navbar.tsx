@@ -211,7 +211,7 @@ export function Navigation() {
   }
 
   React.useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = () => {
       setOpenDropdown(null)
     }
 

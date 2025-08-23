@@ -53,7 +53,7 @@ export default function WhyAnker() {
                 <Bullet>Up to <strong>6 kW continuous output</strong> (per X1 unit)</Bullet>
                 <Bullet>
                   <span>&lt;<strong>20 ms</strong> switchover time</span>
-                  note="during power outages"
+                  note= during power outages&quot;
                 </Bullet>
                 <Bullet
                   note="This ensures you have reliable energy when you need it most."

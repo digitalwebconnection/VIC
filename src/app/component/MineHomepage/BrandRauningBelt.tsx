@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useRef } from "react";
 import { useKeenSlider } from "keen-slider/react";
@@ -17,7 +18,7 @@ const brands = [
 export default function BrandRauningBelt() {
     const timer = useRef<NodeJS.Timeout | null>(null);
 
-    const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    const [sliderRef] = useKeenSlider<HTMLDivElement>({
         loop: true,
         slides: {
             perView: 5,
@@ -51,7 +52,7 @@ export default function BrandRauningBelt() {
         },
     });
 
-    function startAutoSlide(instance: any) {
+    function startAutoSlide(instance: import("keen-slider/react").KeenSliderInstance) {
         if (timer.current) clearInterval(timer.current);
         timer.current = setInterval(() => {
             instance.next();
@@ -64,7 +65,7 @@ export default function BrandRauningBelt() {
                 Confused between so many brands?
             </h2>
             <p className="text-cyan-600 font-semibold mb-6">
-                Don't Worry!! We only carry brands with good reputation. Because your family deserves the best!!
+                Don&lsquo;t Worry!! We only carry brands with good reputation. Because your family deserves the best!!
             </p>
             <h3 className="text-orange-600 text-xl font-semibold mb-8">
                 Solar Panel Brands & Inverter Brands We Carry…

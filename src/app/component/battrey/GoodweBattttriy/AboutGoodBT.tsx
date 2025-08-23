@@ -2,7 +2,6 @@
 // Next.js (App Router) + Tailwind CSS
 // Drop this file at /app/goodwe/details/page.tsx
 // app/batteries/foxess/details/page.tsx
-import { Battery, Cog, Wrench, Monitor } from "lucide-react";
 
 import React from "react";
 
