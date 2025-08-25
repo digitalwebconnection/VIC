@@ -10,7 +10,7 @@ export default function SiteFooter() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="text-xl font-bold">MyApp</div>
+            <div className="text-xl font-bold"><img src="/logo.png" alt="" className="w-50" /></div>
             <p className="mt-3 text-sm text-gray-600">
               Building fast, modern experiences with Next.js & Tailwind CSS.
             </p>
@@ -77,8 +77,23 @@ export default function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 border-t pt-6 text-center text-sm text-gray-600">
-          © {year} MyApp. All rights reserved.
+        <div className="mt-10 border-y-2  py-6 text-center text-sm text-gray-600 flex items-center justify-around">
+          <div>
+            <img src="https://www.solarminer.com.au/wp-content/uploads/2023/10/sv-img-new.png" alt="" />
+          </div>
+
+          <div className="text-xl">
+            © {year} MyApp. All rights reserved.</div>
+        </div>
+        <div className="  py-6 text-center text-sm text-gray-600 gap-10 flex items-center justify-around">
+          <div>
+            <img src="/logo.png" alt=""  className="w-100"/>
+          </div>
+          <div>
+            <img src="https://b799436.smushcdn.com/799436/wp-content/uploads/2017/12/netcc-logo-approved-seller.png?lossy=1&strip=1&webp=1" alt="" className="w-120" />
+          </div>
+          <div className="text-lg">
+            *Performance figures are estimated based on CEC Guidelines and will vary from site to site. Please speak to an west vic energy to make an informed decision about your solar needs and potential cost savings.</div>
         </div>
       </div>
     </footer>

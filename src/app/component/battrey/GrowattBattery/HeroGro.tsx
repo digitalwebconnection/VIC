@@ -9,16 +9,16 @@ export default function HeroGro() {
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/1.jpg" // replace with your background image
+          src="https://www.solarminer.com.au/wp-content/uploads/2025/07/banner-bat-new.jpg" // replace with your background image
           alt="Background"
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-blue-900/70"></div>
+        <div className="absolute inset-0 bg-blue-900/20"></div>
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between z-10">
+      <div className="relative container mx-auto  px-6 md:px-25 flex flex-col md:flex-row items-center justify-between z-10">
         
         {/* Left Text Section */}
         <div className="max-w-lg">
@@ -60,7 +60,7 @@ export default function HeroGro() {
         {/* Right Image Section */}
         <div className="mt-8 md:mt-0">
           <Image
-            src="/images/growatt-battery.png" // replace with battery image
+            src="https://www.solarminer.com.au/wp-content/uploads/2025/07/battery-grow.png" // replace with battery image
             alt="Growatt Battery"
             width={250}
             height={400}

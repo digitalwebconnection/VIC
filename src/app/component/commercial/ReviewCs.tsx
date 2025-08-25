@@ -57,7 +57,7 @@ export default function ReviewCs() {
                 className="relative z-10 rounded-lg bg-white p-6 text-left shadow-sm ring-1 ring-gray-200"
               >
                 {/* Speech bubble tail */}
-                <div className="absolute -bottom-2 left-6 h-4 w-4 rotate-45 bg-white ring-1 ring-gray-200" />
+                <div className="absolute -bottom-2 left-6 h-4 w-4 rotate-45 bg-white ring-1 ring-white" />
 
                 <p className="mb-6 text-sm text-gray-600">{t.text}</p>
 

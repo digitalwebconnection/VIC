@@ -14,21 +14,21 @@ export default function HeroGoodWE() {
       {/* Background + overlay */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/1.jpg" // replace with your background image
+          src="https://www.solarminer.com.au/wp-content/uploads/2025/07/banner-bat-new.jpgs" // replace with your background image
           alt="Background"
           fill
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-blue-900/70" />
+        <div className="absolute inset-0 bg-blue-900/10" />
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between z-10">
+      <div className="relative container mx-auto px-6 md:px-25 flex flex-col md:flex-row items-center justify-between z-10">
         {/* Left: Text */}
         <div className="max-w-xl">
           {/* Title */}
-          <span className="inline-block bg-blue-700 px-4 py-2 rounded-md">
+          <span className="inline-block  px-4 py-2 rounded-md">
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">
               GoodWE Battery
             </h1>
@@ -69,7 +69,7 @@ export default function HeroGoodWE() {
         {/* Right: Product image */}
         <div className="mt-10 md:mt-0 w-full md:w-auto">
           <Image
-            src="/images/goodwe-battery.png" // replace with your battery image
+            src="https://www.solarminer.com.au/wp-content/uploads/2025/07/goodwe.png" // replace with your battery image
             alt="GoodWE Battery"
             width={460}
             height={520}

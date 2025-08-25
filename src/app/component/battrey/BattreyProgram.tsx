@@ -66,7 +66,7 @@ export default function BatteryProgram() {
             href="tel:1300285885"
             className="flex items-center gap-2 border border-red-600 text-red-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-50 transition"
           >
-            📞 1300 285 885
+            📞 +91 99740 61521
           </a>
         </div>
       </div>

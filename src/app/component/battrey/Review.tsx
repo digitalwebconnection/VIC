@@ -90,9 +90,9 @@ export default function Reviews() {
                 </div>
             </section>
             <section className="bg-[#f4f8fd] py-12 px-6 md:px-12">
-                <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between p-8 relative">
+                <div className="max-w-6xl mx-auto bg-gray-200 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between p-8 relative">
                     {/* Left Content */}
-                    <div className="flex-1 space-y-6">
+                    <div className="flex-1 space-y-20">
                         <div>
                             <p className="text-gray-600 font-medium">Power Your Home</p>
                             <h2 className="text-2xl md:text-3xl font-bold text-[#0a2a57]">
@@ -101,27 +101,29 @@ export default function Reviews() {
                         </div>
 
                         {/* Save Badge */}
-                        <div className="relative inline-block">
-                            <div className="absolute -left-6 -bottom-6 w-24 h-24 bg-yellow-400 rounded-full -z-10"></div>
-                            <div className="border border-red-400 rounded-xl shadow-lg bg-white px-6 py-4">
-                                <p className="text-red-500 font-semibold text-center">
-                                    Save up to
-                                </p>
-                                <p className="bg-[#0a2a57] text-white text-2xl font-bold rounded-lg px-4 py-2 text-center">
-                                    $18,600*
-                                </p>
+                        <div className=" flex gap-20">
+                            <div className="relative inline-block shadow-lg">
+                                <div className="absolute -left-6 -bottom-6 w-24 h-24 bg-yellow-400 rounded-full -z-10"></div>
+                                <div className="border border-red-400 rounded-xl shadow-lg bg-white px-6 py-4">
+                                    <p className="text-red-500 font-semibold text-center">
+                                        Save up to
+                                    </p>
+                                    <p className="bg-[#0a2a57] text-white text-2xl font-bold rounded-lg px-4 py-2 text-center">
+                                        $18,600*
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        {/* Call Now Section */}
-                        <div>
-                            <p className="text-gray-600 font-semibold">
-                                Call Now and Learn
-                            </p>
-                            <p className="text-gray-500 text-sm mb-3">How Much You Can Save</p>
-                            <button className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow-md">
-                                1300 285 885
-                            </button>
+                            {/* Call Now Section */}
+                            <div>
+                                <p className="text-gray-600 font-semibold">
+                                    Call Now and Learn
+                                </p>
+                                <p className="text-gray-500 text-sm mb-3">How Much You Can Save</p>
+                                <button className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow-xl">
+                                    +91 99740 61521
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -134,18 +136,18 @@ export default function Reviews() {
                             </div>
                         </div>
                         {/* Solar Panels + Battery (replace with your images) */}
-                        <Image
+                        {/* <Image
                             src="/solar-panels.png" // Replace with actual panel image
                             alt="Solar Panels"
                             width={220}
                             height={220}
                             className="mr-4"
-                        />
+                        /> */}
                         <Image
-                            src="/battery.png" // Replace with actual battery image
+                            src="https://www.solarminer.com.au/wp-content/uploads/2023/07/sbs-img.png" // Replace with actual battery image
                             alt="Battery"
-                            width={120}
-                            height={120}
+                            width={380}
+                            height={150}
                         />
                     </div>
                 </div>

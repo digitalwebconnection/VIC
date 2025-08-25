@@ -91,7 +91,7 @@ export default function WhyGroBt() {
                         <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-red-100 text-red-600">
                             <PhoneIcon />
                         </span>
-                        <span className="tracking-wide">1300 285 885</span>
+                        <span className="tracking-wide">+91 99740 61521</span>
                     </a>
                 </div>
             </section>

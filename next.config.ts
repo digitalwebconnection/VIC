@@ -14,7 +14,8 @@ const nextConfig = {
       't4.ftcdn.net',
       'thumbs.dreamstime.com',
       'waaree.com'
-      ,'images.rawpixel.com'
+      ,'images.rawpixel.com',
+      "www.solarminer.com.au",
     ],
     remotePatterns: [
       {
