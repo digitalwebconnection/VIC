@@ -81,7 +81,7 @@ export default function WhyGroBt() {
                         href="#contact"
                         className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-4 text-white font-semibold shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
                     >
-                        Get Expert Advice
+                   <a href="/component/contact">  Request a Free Quote</a> 
                     </a>
 
                     <a

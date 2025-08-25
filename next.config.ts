@@ -16,6 +16,7 @@ const nextConfig = {
       'waaree.com'
       ,'images.rawpixel.com',
       "www.solarminer.com.au",
+      "epring.co"
     ],
     remotePatterns: [
       {

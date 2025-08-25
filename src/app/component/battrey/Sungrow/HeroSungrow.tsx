@@ -61,7 +61,7 @@ export default function HeroSungrow() {
               href="#contact"
               className="bg-amber-600 text-black font-semibold px-6 py-3 rounded-full shadow  transition"
             >
-              Request a quote
+             <a href="/component/contact">  Request a Free Quote</a> 
             </a>
           </div>
         </div>

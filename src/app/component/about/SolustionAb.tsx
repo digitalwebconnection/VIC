@@ -62,13 +62,14 @@ const SolustionAb = () => {
               role="img"
               aria-label="Solar installation video placeholder"
             >
-              <button
+              {/* <button
                 className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center hover:scale-105 transition-transform focus:outline-none focus:ring-2 focus:ring-green-400"
                 aria-label="Play video"
                 type="button"
               >
                 <Play className="text-white w-7 h-7" />
-              </button>
+              </button> */}
+              <img src="/CommercialSolar1.jpg" alt="" className="h-60 w-full" />
             </div>
             <div className="absolute inset-0 flex items-center justify-center -z-10" aria-hidden="true">
               <div className="w-[480px] h-[250px] bg-blue-600 rounded-lg shadow-lg" />
@@ -122,7 +123,7 @@ const SolustionAb = () => {
                   className="bg-amber-400 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition"
                   aria-label="Request a free solar quote from West VIC Energy"
                 >
-                  Request a Quote
+                <a href="/component/contact">  Request a Free Quote</a> 
                 </a>
 
                 <a
@@ -142,7 +143,7 @@ const SolustionAb = () => {
             <div className="relative mt-8 lg:mt-0 w-full max-w-[500px] h-[360px] z-10">
               {/* If using this remote image, add its domain to next.config.js -> images.domains */}
               <Image
-                src="https://www.amperesolar.com.au/wp-content/uploads/2024/06/arista-square-1.png"
+                src="https://epring.co/wp-content/uploads/2025/03/1.png"
                 alt="Technician installing solar panels"
                 width={500}
                 height={800}

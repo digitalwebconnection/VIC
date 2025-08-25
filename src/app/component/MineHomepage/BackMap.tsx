@@ -33,7 +33,7 @@ export default function BackMap() {
                             {/* Button Section */}
                             <div>
                                 <button className="bg-white rounded-2xl text-black font-semibold px-10 py-4 shadow-md hover:bg-gray-200 transition">
-                                    Request a Free Quote
+                                   <a href="/component/contact">  Request a Free Quote</a> 
                                 </button>
                             </div>
                         </div>

@@ -59,9 +59,7 @@ export default function BatteryProgram() {
 
         {/* CTA */}
         <div className="mt-6 flex flex-col sm:flex-row items-center gap-4">
-          <button className="bg-blue-600  text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md transition">
-            Get Expert Advice
-          </button>
+         
           <a
             href="tel:+61 497 358 063"
             className="flex items-center gap-2 border border-amber-400 text-blue-600 px-6 py-3 rounded-full text-lg font-semibold  transition"

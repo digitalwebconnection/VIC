@@ -18,7 +18,7 @@ const HeroAb = () => {
                 </div>
 
                 {/* Breadcrumb Section */}
-                <div className="bg-transparent -mt-6 flex justify-center  max-w-7xl mx-auto">
+                {/* <div className="bg-transparent -mt-6 flex justify-center  max-w-7xl mx-auto">
                     <div className="bg-yellow-400 text-black text-lg flex items-center gap-2 px-6 py-2 rounded-full shadow-md w-full">
                         <Home size={16} />
                         <Link href="/" className="hover:underline">
@@ -27,7 +27,7 @@ const HeroAb = () => {
                         <span className="mx-1">|</span>
                         <span>About Us</span>
                     </div>
-                </div>
+                </div> */}
             </section>
         </>
 

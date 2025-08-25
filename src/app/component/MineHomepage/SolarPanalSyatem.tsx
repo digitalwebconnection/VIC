@@ -78,7 +78,7 @@ export default function Solar10kwIntro() {
             </ul>
 
             <button className="mt-6 w-full bg-amber-400 text-white font-semibold py-3 rounded hover:bg-blue-600 transition">
-              Request A Free Quote
+              <a href="/component/contact">Request a Quote</a> 
             </button>
           </div>
         ))}

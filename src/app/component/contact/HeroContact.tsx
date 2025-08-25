@@ -16,7 +16,7 @@ export default function HeroContact() {
 
 
       {/* Breadcrumb */}
-      <div className="max-w-7xl mx-auto ">
+      {/* <div className="max-w-7xl mx-auto ">
         <div className="flex -mt-6">
           <div className="bg-yellow-400 text-black w-full px-6 py-2 rounded-full shadow-md flex items-center space-x-3 text-lg">
             <FaHome className="w-5 h-5" />
@@ -25,7 +25,7 @@ export default function HeroContact() {
             <span className="font-medium">Contact</span>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
 
 

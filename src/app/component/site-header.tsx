@@ -19,8 +19,8 @@ import {
 type NavItem = { name: string; href: string };
 
 const NAV: NavItem[] = [
-  { name: "Home", href: "/" },
-  { name: "Teams", href: "/component/team" },
+  // { name: "Home", href: "/" },
+  // { name: "Teams", href: "/component/team" },
   { name: "About", href: "/component/about" },
   { name: "Contact", href: "/component/contact" },
 ];

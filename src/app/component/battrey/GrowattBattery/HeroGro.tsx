@@ -52,7 +52,7 @@ export default function HeroGro() {
               href="#"
               className="bg-amber-400 text-white font-semibold px-6 py-3 rounded-full shadow  transition"
             >
-              Request a quote
+              <a href="/component/contact">  Request a Free Quote</a> 
             </a>
           </div>
         </div>

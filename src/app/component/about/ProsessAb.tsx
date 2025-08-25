@@ -85,7 +85,7 @@ const ProsessAb = () => {
             className="inline-flex justify-center items-center rounded-full bg-blue-900 px-6 py-3 font-semibold text-white hover:bg-orange-600 transition"
             aria-label="Request a free solar quote from West VIC Energy"
           >
-            Get a Free Quote
+           <a href="/component/contact">  Request a Free Quote</a> 
           </a>
           <a
             href="tel:+61 497 358 063"

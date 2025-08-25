@@ -89,7 +89,7 @@ export default function WhyTesla() {
                 href="#contact"
                 className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm  focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
               >
-                Get Expert Advice
+<a href="/component/contact">  Request a Free Quote</a> 
               </a>
 
               <div className="inline-flex items-center gap-3 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow-sm">

@@ -18,7 +18,7 @@ export default function     CallSection() {
             <div className="flex items-center justify-center my-5 py-5 bg-black">
 
                 <a
-                    href="tel:1300650747"
+                    href="tel:  +61 497 358 063"
                     onClick={handleCallClick}
                     className="inline-flex items-center text-2xl sm:text-8xl font-bold gap-1 md:gap-2 relative"
                     onMouseEnter={() => setHover(true)}
@@ -37,7 +37,7 @@ export default function     CallSection() {
                                 transition: "opacity 0.8s",
                             }}
                         />
-                        1300 650 747
+                      +61 497 358 063
                     </span>
                 </a>
             </div>

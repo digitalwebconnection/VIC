@@ -6,14 +6,18 @@ import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
 
 const brands = [
-    "https://www.logoai.com/uploads/output/2022/01/08/357140277b9b048420b583ec1ca7040f.jpg",
-    "https://www.logoai.com/uploads/output/2022/01/08/357140277b9b048420b583ec1ca7040f.jpg",
-    "https://www.logoai.com/uploads/output/2022/01/08/357140277b9b048420b583ec1ca7040f.jpg",
-    "https://www.logoai.com/uploads/output/2022/01/08/357140277b9b048420b583ec1ca7040f.jpg",
-    "https://www.logoai.com/uploads/output/2022/01/08/357140277b9b048420b583ec1ca7040f.jpg",
-    "https://www.logoai.com/uploads/output/2022/01/08/357140277b9b048420b583ec1ca7040f.jpg",
-    "https://www.logoai.com/uploads/output/2022/01/08/357140277b9b048420b583ec1ca7040f.jpg",
-    "https://www.logoai.com/uploads/output/2022/01/08/357140277b9b048420b583ec1ca7040f.jpg",
+    "https://www.solarminer.com.au/wp-content/uploads/2025/04/CS-LOGO-RED-RGB-NEW-2024-W-TAG-2-1-1.png",
+    "https://www.solarminer.com.au/wp-content/uploads/2025/04/logo-4-2.png",
+    "https://www.solarminer.com.au/wp-content/uploads/2021/08/jinko.svg",
+    "https://www.solarminer.com.au/wp-content/uploads/2025/04/logo1-1.png",
+    "https://www.solarminer.com.au/wp-content/uploads/2021/08/sma.svg",
+    "https://www.solarminer.com.au/wp-content/uploads/2022/05/solax.jpg",
+    "https://www.solarminer.com.au/wp-content/uploads/2025/04/logo.f95f405-1-3.png",
+    "https://www.solarminer.com.au/wp-content/uploads/2025/04/logo-3.png",
+    "https://www.solarminer.com.au/wp-content/uploads/2025/04/193fe702daebc6a9150499b58b35273e-1.png",
+    "https://www.solarminer.com.au/wp-content/uploads/2021/08/growatt.svg",
+    "https://www.solarminer.com.au/wp-content/uploads/2022/05/Goodwe.jpg",
+    "https://www.solarminer.com.au/wp-content/uploads/2022/05/solis.jpg",
 ];
 
 export default function CompnyRuninBelt() {

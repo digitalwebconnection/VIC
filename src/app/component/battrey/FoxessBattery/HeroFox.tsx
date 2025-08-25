@@ -60,7 +60,7 @@ export default function HeroFox() {
               href="#contact"
               className="bg-amber-400 text-black font-semibold px-6 py-3 rounded-full shadow  transition"
             >
-              Request a quote
+             <a href="/component/contact">  Request a Free Quote</a> 
             </a>
           </div>
         </div>

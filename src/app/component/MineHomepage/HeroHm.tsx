@@ -20,7 +20,7 @@ export default function HeroHm() {
                         Practical renewable energy technology that reduces costs and helps the environment
                     </p>
                     <button className="mt-6 bg-amber-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition">
-                        Request a Quote
+                       <a href="/component/contact">Request a Quote</a> 
                     </button>
                     {/* Optional dots */}
                     {/* <div className="flex justify-center mt-8 space-x-2">
