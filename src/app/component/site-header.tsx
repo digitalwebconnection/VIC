@@ -46,15 +46,15 @@ const COMMERCIAL = [
 const RESIDENTIAL = [
   { name: "5kW Solar System", href: "/component/residential/5kw", desc: "Perfect for small homes with efficient appliances." },
   { name: "6kW Solar System", href: "/component/residential/6kw", desc: "Extra headroom for ACs and higher daytime use." },
-  { name: "10kW Solar System", href: "/component/residential/10kw", desc: "Spacious homes with multiple ACs & devices." },
+  { name: "10kW Solar System", href: "/component/residential/7kw", desc: "Spacious homes with multiple ACs & devices." },
   { name: "Hybrid Solar System", href: "/component/residential/hybrid", desc: "Grid + battery backup for uninterrupted power." },
 ];
 
 const BATTERY = [
   { name: "Growatt", href: "/component/battrey/GrowattBattery", desc: "Reliable solar battery storage for homes & businesses." },
   { name: "FoxESS", href: "/component/battrey/FoxessBattery", desc: "Efficient energy storage with advanced tech." },
-  { name: "GoodWE", href: "/component/battrey/GoodWEBattery", desc: "Trusted solar batteries with global presence." },
-  { name: "Alpha Ess", href: "/component/battrey/AlphaEssBattery", desc: "Innovative storage with smart management." },
+  { name: "GoodWE", href: "/component/battrey/GoodweBattttriy", desc: "Trusted solar batteries with global presence." },
+  { name: "Alpha Ess", href: "/component/battrey/AlphaEssSolar", desc: "Innovative storage with smart management." },
   { name: "Tesla", href: "/component/battrey/TeslaPowerwall", desc: "Premium Powerwall batteries for modern homes." },
   { name: "Sungrow", href: "/component/battrey/Sungrow", desc: "Durable and efficient battery solutions." },
   { name: "Anker Solix", href: "/component/battrey/AnkerSolix", desc: "Portable and powerful storage for flexible use." },
@@ -124,14 +124,14 @@ export default function SiteHeader() {
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1">
               <Mail className="h-3.5 w-3.5" />
-              info@example.com
+              admin@westvicenergy.com.au 
             </span>
             <span className="hidden items-center gap-1 sm:inline-flex">
               <MapPin className="h-3.5 w-3.5" />
-              Ahmedabad, Gujarat
+             19 ferriman way, truganina vic 3029
             </span>
           </div>
-          <Link
+          {/* <Link
             href="/"
             className="inline-flex items-center gap-2 rounded-full border px-2.5 py-1 font-medium text-gray-800 hover:bg-gray-50"
           >
@@ -140,7 +140,7 @@ export default function SiteHeader() {
             </span>
             Solar Battery Offers
             <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -219,7 +219,7 @@ export default function SiteHeader() {
               Get a Quote
             </Link>
             <a
-              href="tel:+919974061521"
+              href="tel:+61 497 358 063"
               className="inline-flex items-center gap-2 rounded-xl border px-3.5 py-2 text-sm font-semibold hover:bg-gray-50"
             >
               <Phone className="h-4 w-4" /> Call
@@ -292,7 +292,7 @@ export default function SiteHeader() {
                   Get a Quote
                 </Link>
                 <a
-                  href="tel:+919974061521"
+                  href="tel:+61 497 358 063"
                   className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border px-3 py-2 text-sm font-semibold hover:bg-gray-50"
                 >
                   <Phone className="h-4 w-4" /> Call
@@ -373,8 +373,8 @@ function Dropdown({ title, items, open, setOpen, otherClose, active, icon }: {
               Have questions?{" "}
               <Link href="/component/contact" className="font-medium text-gray-900 underline">Talk to an expert</Link>
             </span>
-            <a href="tel:+919974061521" className="rounded-lg border px-3 py-1.5 font-semibold hover:bg-gray-50">
-              Call +91 99740 61521
+            <a href="tel:+61 497 358 063" className="rounded-lg border px-3 py-1.5 font-semibold hover:bg-gray-50">
+              Call   +61 497 358 063
             </a>
           </div>
         </div>

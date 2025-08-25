@@ -10,7 +10,7 @@ const EnereyAb = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* LEFT CONTENT */}
         <div>
-          <p className="uppercase text-orange-500 font-semibold tracking-wide text-sm">
+          <p className="uppercase text-blue-500 font-semibold tracking-wide text-sm">
             Welcome to West VIC Energy
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 leading-tight">
@@ -24,13 +24,7 @@ const EnereyAb = () => {
 
           {/* Signature + Name (optional) */}
           <div className="mt-6">
-            <Image
-              src="/signature.png"
-              alt="Signature"
-              width={120}
-              height={60}
-              className="mb-2"
-            />
+           
             <h4 className="text-lg font-bold text-gray-900">West VIC Energy Team</h4>
             <p className="text-gray-500 text-sm">Solar & Battery Specialists (VIC)</p>
           </div>
@@ -39,7 +33,7 @@ const EnereyAb = () => {
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <a
               href="/quote"
-              className="inline-flex justify-center items-center rounded-full bg-blue-900 px-6 py-3 font-semibold text-white hover:bg-orange-600 transition"
+              className="inline-flex justify-center items-center rounded-full bg-blue-900 px-6 py-3 font-semibold text-white hover:bg-blue-900 transition"
               aria-label="Request a free solar quote from West VIC Energy"
             >
               Get a Free Quote

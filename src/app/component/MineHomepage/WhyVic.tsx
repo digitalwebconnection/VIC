@@ -107,7 +107,7 @@ export default function WhyVic() {
 
                                     <button
                                         type="submit"
-                                        className="w-full bg-gradient-to-r from-orange-400 to-yellow-400 text-white font-semibold py-2 rounded-md hover:opacity-90 transition"
+                                        className="w-full bg-gradient-to-r from-orange-300 to-yellow-400 text-black font-bold py-2 rounded-md hover:opacity-90 transition"
                                     >
                                         Submit
                                     </button>

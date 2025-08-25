@@ -53,11 +53,11 @@ export default function Solar10kwIntro() {
           <div
             key={index}
             className={`relative border-2 py-15 rounded-lg px-8 shadow-xl  bg-white cursor-pointer transform transition-transform duration-300 hover:scale-105  ${
-              plan.highlight ? "border-green-500" : "border-green-300"
+              plan.highlight ? "border-blue-500" : "border-blue-300"
             }`}
           >
             {plan.highlight && (
-              <div className="absolute -mt-15 w-full    transform -translate-x-1/12 bg-green-500 text-white px-4 py-2 text-xs font-semibold rounded">
+              <div className="absolute -mt-15 w-full    transform -translate-x-1/12 bg-blue-700 text-white px-4 py-2 text-xs font-semibold rounded">
                 AUSTRALIA’S MOST POPULAR.!!
               </div>
             )}
@@ -67,7 +67,7 @@ export default function Solar10kwIntro() {
             </h3>
             <p className="text-center text-gray-600 font-semibold">{plan.subtitle}</p>
 
-            <div className="mt-4 bg-gray-100 text-black border border-green-400  text-center py-2 text-xl font-semibold rounded">
+            <div className="mt-4 bg-gray-100 text-black border border-amber-400  text-center py-2 text-xl font-semibold rounded">
               {plan.savings}
             </div>
 
@@ -77,7 +77,7 @@ export default function Solar10kwIntro() {
               ))}
             </ul>
 
-            <button className="mt-6 w-full bg-orange-500 text-white font-semibold py-3 rounded hover:bg-orange-600 transition">
+            <button className="mt-6 w-full bg-amber-400 text-white font-semibold py-3 rounded hover:bg-blue-600 transition">
               Request A Free Quote
             </button>
           </div>

@@ -29,7 +29,7 @@ export default function FAQ() {
     <section className="py-16 px-6 md:px-12 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-          Frequently <span className="text-red-600">Asked</span> Questions
+          Frequently <span className="text-blue-600">Asked</span> Questions
         </h2>
 
         <div className="space-y-4">
@@ -44,9 +44,9 @@ export default function FAQ() {
               >
                 {faq.question}
                 {openIndex === index ? (
-                  <Minus className="text-red-600" size={20} />
+                  <Minus className="text-blue-600" size={20} />
                 ) : (
-                  <Plus className="text-red-600" size={20} />
+                  <Plus className="text-blue-600" size={20} />
                 )}
               </button>
               {openIndex === index && (

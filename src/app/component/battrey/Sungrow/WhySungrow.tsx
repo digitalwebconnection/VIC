@@ -87,7 +87,7 @@ export default function WhySungrow() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+              className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm  focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
             >
               Get Expert Advice
             </a>
@@ -102,7 +102,7 @@ export default function WhySungrow() {
               >
                 <path d="M2.25 5.25a2 2 0 012-2h3.108a2 2 0 011.94 1.515l.72 2.878a2 2 0 01-.5 1.923l-1.35 1.35a16.5 16.5 0 007.425 7.425l1.35-1.35a2 2 0 011.923-.5l2.878.72a2 2 0 011.515 1.94V19.75a2 2 0 01-2 2H18.75C10.41 21.75 2.25 13.59 2.25 5.25v0z"/>
               </svg>
-              +91 99740 61521
+              <a href="tel:+61 497 358 063">   +61 497 358 063</a>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { HomeIcon } from '@heroicons/react/24/solid';
 export default function Herotm ()  {
     return (
         <>
-            <div className=" bg-white mb-15 -mt-16">
+            <div className=" bg-white mb-15 ">
                 {/* Header section */}
                 <div className="bg-[#202153] text-white py-16 px-4">
                     <div className="max-w-7xl mx-auto">

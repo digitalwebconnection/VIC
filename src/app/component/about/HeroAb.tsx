@@ -6,9 +6,9 @@ import Link from "next/link";
 const HeroAb = () => {
   return (
      <>
-            <section className="w-full -mt-22 ">
+            <section className="w-full  ">
                 {/* Top Section */}
-                <div className="bg-[#1E215C] py-28 px-5 md:px-0  ">
+                <div className="bg-[#1E215C] py-25 px-5 md:px-0  ">
                     <div className="max-w-7xl mx-auto">
                         <h1 className="text-4xl md:text-5xl font-bold text-white">About Us</h1>
                         <p className="text-gray-300 mt-3 max-w-xl">

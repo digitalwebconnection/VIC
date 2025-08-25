@@ -19,7 +19,7 @@ export default function HeroHm() {
                     <p className="text-sm text-gray-300 mt-4">
                         Practical renewable energy technology that reduces costs and helps the environment
                     </p>
-                    <button className="mt-6 bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">
+                    <button className="mt-6 bg-amber-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition">
                         Request a Quote
                     </button>
                     {/* Optional dots */}

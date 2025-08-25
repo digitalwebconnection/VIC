@@ -9,9 +9,9 @@ export default function HeroCs() {
     ];
 
     return (
-        <div className="relative justify-center -mt-22">
+        <div className="relative justify-center ">
             {/* Hero Section */}
-            <div className="bg-[#1E215C] pt-29 py-45 px-5 md:px-0 z-0">
+            <div className="bg-[#1E215C] pt-25 pb-35 px-5 md:px-0 z-0">
                 <div className="max-w-7xl mx-auto">
                     <h1 className="text-4xl md:text-5xl font-bold text-white">
                         Commercial Solar

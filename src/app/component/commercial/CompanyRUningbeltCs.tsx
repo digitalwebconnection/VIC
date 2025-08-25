@@ -82,7 +82,7 @@ export default function CompnyRuninBeltCs() {
         Don&apos;t Worry!! We only carry brands with good reputation. Because your family
         deserves the best!!
       </p>
-      <h3 className="mb-8 text-xl font-semibold text-orange-600">
+      <h3 className="mb-8 text-xl font-semibold text-blue-600">
         Solar Panel Brands &amp; Inverter Brands We Carry…
       </h3>
 

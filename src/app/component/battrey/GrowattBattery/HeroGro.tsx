@@ -44,13 +44,13 @@ export default function HeroGro() {
           <div className="flex gap-4">
             <a
               href="#"
-              className="bg-white text-red-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+              className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
             >
               Download Datasheet
             </a>
             <a
               href="#"
-              className="bg-red-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-red-700 transition"
+              className="bg-amber-400 text-white font-semibold px-6 py-3 rounded-full shadow  transition"
             >
               Request a quote
             </a>

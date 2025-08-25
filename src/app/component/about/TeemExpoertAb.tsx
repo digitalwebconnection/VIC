@@ -31,12 +31,12 @@ const TeemExpoertAb = () => {
                                 <div className="w-40 h-40 rounded-full bg-gray-700  z-0"></div>
                             </div>
                             <h3 className="text-xl font-bold mt-4">Thomas Walkar</h3>
-                            <p className="text-orange-500 text-sm">Engineer Solutions</p>
+                            <p className="text-blue-500 text-sm">Engineer Solutions</p>
 
                             {/* Email */}
                             <div className="flex items-center gap-2 mt-2 bg-gray-100 px-3 py-1 rounded-full">
                                 <Mail size={16} className="text-orange-500" />
-                                <span className="text-sm">info@example.com</span>
+                                <span className="text-sm">admin@westvicenergy.com.au </span>
                             </div>
 
                             {/* Facebook */}
@@ -58,12 +58,12 @@ const TeemExpoertAb = () => {
                                 <div className="w-40 h-40 rounded-full bg-gray-700  z-0"></div>
                             </div>
                             <h3 className="text-xl font-bold mt-4">Willimes Jassi</h3>
-                            <p className="text-orange-500 text-sm">Engineer Solutions</p>
+                            <p className="text-blue-500 text-sm">Engineer Solutions</p>
 
                             {/* Email */}
                             <div className="flex items-center gap-2 mt-2 bg-gray-100 px-3 py-1 rounded-full">
                                 <Mail size={16} className="text-orange-500" />
-                                <span className="text-sm">info@example.com</span>
+                                <span className="text-sm">admin@westvicenergy.com.au </span>
                             </div>
 
                             {/* Facebook */}
@@ -85,7 +85,7 @@ const TeemExpoertAb = () => {
 
                 {/* ================== COMPANY HISTORY ================== */}
                 <section className="py-16 px-6 md:px-20 bg-white ">
-                    <p className="uppercase text-orange-500 font-semibold tracking-wide text-sm">
+                    <p className="uppercase text-blue-800 font-semibold tracking-wide text-sm">
                         Story of Solar Energy
                     </p>
                     <h2 className="text-3xl md:text-5xl font-bold mt-2 text-gray-900">

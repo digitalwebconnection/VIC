@@ -52,13 +52,13 @@ export default function  WhyVic10Kw() {
                         </ul>
 
                         {/* Call to Action */}
-                        <p className="text-orange-600">
+                        <p className="text-blue-600">
                             Contact us now to find out 10kW solar power system cost in Queensland.
                         </p>
                         <p className="mt-2">
                             Feel like you need more power? We have it all. Visit{" "}
                            
-                            <a href="#" className="text-orange-600 underline">
+                            <a href="#" className="text-blue-600 underline">
                                 Hybrid Solar System Solar Power System
                             </a>{" "}
                             for more info.
@@ -106,7 +106,7 @@ export default function  WhyVic10Kw() {
 
                             <button
                                 type="submit"
-                                className="w-full bg-gradient-to-r from-orange-400 to-yellow-400 text-white font-semibold py-2 rounded-md hover:opacity-90 transition"
+                                className="w-full bg-gradient-to-r from-amber-400 to-yellow-400 text-white font-semibold py-2 rounded-md hover:opacity-90 transition"
                             >
                                 Submit
                             </button>

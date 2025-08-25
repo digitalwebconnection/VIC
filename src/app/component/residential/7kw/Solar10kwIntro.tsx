@@ -9,7 +9,7 @@ export default function Solaer10kwIntro() {
                         <p className="text-sm text-gray-500 mb-4">Save Money and Reduce Your Carbon Footprint</p>
 
                         {/* Subheading */}
-                        <h2 className="text-lg font-semibold text-orange-500 mb-6">
+                        <h2 className="text-lg font-semibold text-blue-500 mb-6">
                             The Most Sold 10kw Solar Power System Package for Queensland Households
                         </h2>
 
@@ -27,7 +27,7 @@ export default function Solaer10kwIntro() {
                         {/* Cards Section */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
                             {/* Card 1 */}
-                            <div className="border border-orange-400 rounded-lg p-5 shadow-sm">
+                            <div className="border border-amber-400 rounded-lg p-5 shadow-sm">
                                 <h3 className="text-blue-900 font-semibold text-lg mb-2">Reduce your electricity bills</h3>
                                 <p className="text-gray-600 text-sm">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.

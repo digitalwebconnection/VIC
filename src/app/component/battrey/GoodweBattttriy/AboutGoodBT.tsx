@@ -160,7 +160,7 @@ export default function AboutGoodBt() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="flex flex-col items-start gap-3">
                             {/* Warranty icon */}
-                            <svg viewBox="0 0 24 24" className="h-12 w-12 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.6">
+                            <svg viewBox="0 0 24 24" className="h-12 w-12 text-amber-400" fill="none" stroke="currentColor" strokeWidth="1.6">
                                 <path d="M6 4h12a1 1 0 011 1v9.5a6.5 6.5 0 11-14 0V5a1 1 0 011-1z" />
                                 <path d="M9 8h6M9 11h6M12 21a6.5 6.5 0 006.5-6.5" />
                             </svg>
@@ -170,7 +170,7 @@ export default function AboutGoodBt() {
 
                         <div className="flex flex-col items-start gap-3">
                             {/* Battery type icon */}
-                            <svg viewBox="0 0 24 24" className="h-12 w-12 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.6">
+                            <svg viewBox="0 0 24 24" className="h-12 w-12 text-blue-600" fill="none" stroke="currentColor" strokeWidth="1.6">
                                 <rect x="3" y="7" width="16" height="10" rx="2" />
                                 <rect x="19" y="10" width="2" height="4" />
                                 <path d="M6.5 17l3-5 2 3 2-4 2 6" />
@@ -181,7 +181,7 @@ export default function AboutGoodBt() {
 
                         <div className="flex flex-col items-start gap-3">
                             {/* Low maintenance icon */}
-                            <svg viewBox="0 0 24 24" className="h-12 w-12 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.6">
+                            <svg viewBox="0 0 24 24" className="h-12 w-12 text-amber-400" fill="none" stroke="currentColor" strokeWidth="1.6">
                                 <circle cx="12" cy="12" r="9" />
                                 <path d="M8 12h8M12 8v8" />
                             </svg>
@@ -191,7 +191,7 @@ export default function AboutGoodBt() {
 
                         <div className="flex flex-col items-start gap-3">
                             {/* 24/7 monitoring icon */}
-                            <svg viewBox="0 0 24 24" className="h-12 w-12 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.6">
+                            <svg viewBox="0 0 24 24" className="h-12 w-12 text-blue-600" fill="none" stroke="currentColor" strokeWidth="1.6">
                                 <rect x="3" y="4" width="18" height="14" rx="2" />
                                 <path d="M7 18v2h10v-2M6 9h7m2 0h3M6 12h5m2 0h5M6 15h3m2 0h7" />
                             </svg>

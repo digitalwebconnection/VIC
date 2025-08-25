@@ -31,7 +31,7 @@ export default function ContactCardTm() {
 
   return (
     <>
-      <div className="mt-16 grid md:grid-cols-2 gap-10 items-center bg-[#20225A] rounded-lg p-20 relative max-w-7xl mx-auto mb-[50px]">
+      <div className="my-26 grid md:grid-cols-2 gap-10 items-center bg-[#20225A] rounded-lg p-20 relative max-w-7xl mx-auto mb-[50px]">
         {/* Left Text */}
         <div className="text-white">
           <p className="text-red-400 uppercase font-semibold tracking-wide">Request a Quote</p>
@@ -44,7 +44,7 @@ export default function ContactCardTm() {
         </div>
 
         {/* Right Form */}
-        <div className="bg-green-600 p-8 rounded-xl shadow-2xl w-full max-w-md md:absolute md:right-10 md:top-1/2 md:-translate-y-1/2 mt-[15px]">
+        <div className="bg-green-400 p-8  rounded-xl shadow-2xl w-full max-w-md md:absolute md:right-10 md:top-1/2 md:-translate-y-1/2 mt-[50px]">
           <form className="space-y-4" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -52,7 +52,7 @@ export default function ContactCardTm() {
               placeholder="Complete Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-green-300 outline-none"
+              className="w-full p-3 rounded-lg border border-gray-800 focus:ring-2 focus:ring-green-300 outline-none"
               required
             />
             <input
@@ -61,7 +61,7 @@ export default function ContactCardTm() {
               placeholder="Email Address"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-green-300 outline-none"
+              className="w-full p-3 rounded-lg border border-gray-800 focus:ring-2 focus:ring-green-300 outline-none"
               required
             />
             <input
@@ -71,7 +71,7 @@ export default function ContactCardTm() {
               value={formData.phone}
               onChange={handleChange}
               inputMode="tel"
-              className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-green-300 outline-none"
+              className="w-full p-3 rounded-lg border border-gray-800 focus:ring-2 focus:ring-green-300 outline-none"
               required
             />
             <textarea
@@ -80,17 +80,20 @@ export default function ContactCardTm() {
               value={formData.message}
               onChange={handleChange}
               rows={3}
-              className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-green-300 outline-none"
+              className="w-full p-3 rounded-lg border border-gray-800 focus:ring-2 focus:ring-green-300 outline-none"
             />
             <button
               type="submit"
-              className="w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+              className="w-full bg-amber-400 text-white py-3 rounded-lg font-bold hover:bg-blue-600 transition"
             >
               Send Message
             </button>
           </form>
         </div>
+       
       </div>
+      
+<div className='py-5 md:py-20'></div>
     </>
   );
 }

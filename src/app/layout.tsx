@@ -4,8 +4,8 @@ import SiteHeader from "./component/site-header";
 import SiteFooter from "./component/site-footer";
 
 export const metadata: Metadata = {
-  title: "MyApp",
-  description: "Next.js + Tailwind v4 starter",
+  title: "West Vic Energy",
+  description: "West Vic Energy - Your Trusted Partner for Renewable Energy Solutions in Victoria, Australia",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

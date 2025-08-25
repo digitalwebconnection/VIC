@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: "GoodWE battery, high performance energy storage, smart battery system, solar energy storage",
 }
 
-export default function GoodWEPage() {
+export default function Page() {
   const models = [
     {
       name: "Lynx Home F",

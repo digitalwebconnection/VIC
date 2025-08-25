@@ -196,7 +196,7 @@ export default function FoxEssDetailsPage() {
                 <div className="grid md:grid-cols-4 py-15 gap-10 text-center">
                     {/* Warranty */}
                     <div>
-                        <Battery className="w-12 h-12 mx-auto text-red-500 mb-4" />
+                        <Battery className="w-12 h-12 mx-auto text-amber-400 mb-4" />
                         <h4 className="font-bold">Warranty duration</h4>
                         <p className="text-gray-600 mt-2">
                             10 years (standard) or 5 years (selected series)
@@ -205,7 +205,7 @@ export default function FoxEssDetailsPage() {
 
                     {/* Battery Type */}
                     <div>
-                        <Cog className="w-12 h-12 mx-auto text-red-500 mb-4" />
+                        <Cog className="w-12 h-12 mx-auto text-blue-600 mb-4" />
                         <h4 className="font-bold">Battery type</h4>
                         <p className="text-gray-600 mt-2">
                             Cobalt-free LiFePO₄ lithium-ion
@@ -214,7 +214,7 @@ export default function FoxEssDetailsPage() {
 
                     {/* Low Maintenance */}
                     <div>
-                        <Wrench className="w-12 h-12 mx-auto text-red-500 mb-4" />
+                        <Wrench className="w-12 h-12 mx-auto text-amber-400 mb-4" />
                         <h4 className="font-bold">Low Maintenance</h4>
                         <p className="text-gray-600 mt-2">
                             Low maintenance solar battery with high performance and affordable prices.
@@ -223,7 +223,7 @@ export default function FoxEssDetailsPage() {
 
                     {/* Monitoring */}
                     <div>
-                        <Monitor className="w-12 h-12 mx-auto text-red-500 mb-4" />
+                        <Monitor className="w-12 h-12 mx-auto text-blue-600 mb-4" />
                         <h4 className="font-bold">24/7 Monitoring</h4>
                         <p className="text-gray-600 mt-2">
                             A user-friendly interface allows for 24-hour monitoring to track real time data and performance.

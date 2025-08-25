@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
@@ -5,14 +6,14 @@ export default function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t bg-white">
+    <footer className="border-t bg-white ">
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <div className="text-xl font-bold"><img src="/logo.png" alt="" className="w-50" /></div>
             <p className="mt-3 text-sm text-gray-600">
-              Building fast, modern experiences with Next.js & Tailwind CSS.
+              West Vic Energy
             </p>
           </div>
 
@@ -38,19 +39,19 @@ export default function SiteFooter() {
             <ul className="mt-3 space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <Phone className="mt-0.5 h-4 w-4" aria-hidden="true" />
-                <a href="tel:+919974061521" className="hover:text-gray-900">
-                  +91 99740 61521
+                <a href="tel:+61 497 358 063" className="hover:text-gray-900">
+                  +61 497 358 063
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4" aria-hidden="true" />
                 <a href="mailto:info@example.com" className="hover:text-gray-900">
-                  info@example.com
+                 admin@westvicenergy.com.au 
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4" aria-hidden="true" />
-                <span>8 The Green Suite A, Dover, DE 19901, USA</span>
+                <span>19 ferriman way, truganina vic 3029</span>
               </li>
             </ul>
           </div>
@@ -83,7 +84,7 @@ export default function SiteFooter() {
           </div>
 
           <div className="text-xl">
-            © {year} MyApp. All rights reserved.</div>
+            © {year} west vic energy. All rights reserved.</div>
         </div>
         <div className="  py-6 text-center text-sm text-gray-600 gap-10 flex items-center justify-around">
           <div>
@@ -92,7 +93,7 @@ export default function SiteFooter() {
           <div>
             <img src="https://b799436.smushcdn.com/799436/wp-content/uploads/2017/12/netcc-logo-approved-seller.png?lossy=1&strip=1&webp=1" alt="" className="w-120" />
           </div>
-          <div className="text-lg">
+          <div className="text-lg text-start">
             *Performance figures are estimated based on CEC Guidelines and will vary from site to site. Please speak to an west vic energy to make an informed decision about your solar needs and potential cost savings.</div>
         </div>
       </div>

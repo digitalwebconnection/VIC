@@ -35,7 +35,7 @@ export default function PaymentPlan() {
                         * option with $0 upfront also available.
                     </span>
                 </h2>
-                <p className="mt-4 text-lg text-teal-500 font-semibold text-center">
+                <p className="mt-4 text-lg text-blue-500 font-semibold text-center">
                     Making solar, battery and home improvements affordable for Aussies
                 </p>
 
@@ -59,7 +59,7 @@ export default function PaymentPlan() {
 
                             {/* Content */}
                             <div className="relative p-6 flex flex-col h-full text-gray-900 hover:text-white hover:bg-black/60" style={{ fontFamily: 'Poppins', opacity: 0.9 }}>
-                                <div className="text-teal-800   text-xl font-semibold">step</div>
+                                <div className="text-amber-400   text-xl font-semibold">step</div>
                                 <div className="text-6xl ms-11 -mt-10 font-extrabold text-gray-200 select-none">
                                     {step.number}
                                 </div>

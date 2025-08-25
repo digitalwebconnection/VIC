@@ -6,19 +6,19 @@
 import React from "react";
 
 // Simple check-badge icon
-const CheckBadge: React.FC<{ className?: string }>=({ className })=> (
+const CheckBadge: React.FC<{ className?: string }> = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="currentColor"
     aria-hidden
-    className={"h-6 w-6 text-blue-700 flex-shrink-0 "+(className||"")}
+    className={"h-6 w-6 text-blue-700 flex-shrink-0 " + (className || "")}
   >
-    <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.03 12.28l-2.97-2.97a.75.75 0 10-1.06 1.06l3.5 3.5a.75.75 0 001.06 0l6.5-6.5a.75.75 0 10-1.06-1.06l-5.97 5.97z"/>
+    <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.03 12.28l-2.97-2.97a.75.75 0 10-1.06 1.06l3.5 3.5a.75.75 0 001.06 0l6.5-6.5a.75.75 0 10-1.06-1.06l-5.97 5.97z" />
   </svg>
 );
 
-const Bullet: React.FC<React.PropsWithChildren<{title: string}>> = ({ title, children }) => (
+const Bullet: React.FC<React.PropsWithChildren<{ title: string }>> = ({ title, children }) => (
   <li className="flex gap-4">
     <CheckBadge />
     <div>
@@ -30,7 +30,7 @@ const Bullet: React.FC<React.PropsWithChildren<{title: string}>> = ({ title, chi
   </li>
 );
 
-export default function WhyFoxBt(){
+export default function WhyFoxBt() {
   return (
     <main className="bg-white text-gray-800">
       <section className="w-full">
@@ -70,7 +70,7 @@ export default function WhyFoxBt(){
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+                className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm  focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
               >
                 Get Expert Advice
               </a>
@@ -83,9 +83,9 @@ export default function WhyFoxBt(){
                   aria-hidden
                   className="h-5 w-5"
                 >
-                  <path d="M2.25 5.25a2 2 0 012-2h3.108a2 2 0 011.94 1.515l.72 2.878a2 2 0 01-.5 1.923l-1.35 1.35a16.5 16.5 0 007.425 7.425l1.35-1.35a2 2 0 011.923-.5l2.878.72a2 2 0 011.515 1.94V19.75a2 2 0 01-2 2H18.75C10.41 21.75 2.25 13.59 2.25 5.25v0z"/>
+                  <path d="M2.25 5.25a2 2 0 012-2h3.108a2 2 0 011.94 1.515l.72 2.878a2 2 0 01-.5 1.923l-1.35 1.35a16.5 16.5 0 007.425 7.425l1.35-1.35a2 2 0 011.923-.5l2.878.72a2 2 0 011.515 1.94V19.75a2 2 0 01-2 2H18.75C10.41 21.75 2.25 13.59 2.25 5.25v0z" />
                 </svg>
-               +91 99740 61521
+                <a href="tel:+61 497 358 063">   +61 497 358 063</a>
               </div>
             </div>
           </div>

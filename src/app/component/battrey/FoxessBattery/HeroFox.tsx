@@ -52,13 +52,13 @@ export default function HeroFox() {
           <div className="flex gap-4">
             <a
               href="/docs/foxess-datasheet.pdf"
-              className="bg-white text-red-600 font-semibold px-6 py-3 rounded-full shadow border-2 border-red-500 hover:bg-gray-100 transition"
+              className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow border-2 border-amber-500 hover:bg-gray-100 transition"
             >
               Download Datasheet
             </a>
             <a
               href="#contact"
-              className="bg-red-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-red-700 transition"
+              className="bg-amber-400 text-black font-semibold px-6 py-3 rounded-full shadow  transition"
             >
               Request a quote
             </a>

@@ -147,7 +147,7 @@ export default function AboutAnker() {
                                 {/* Warranty icon */}
                                 <svg
                                     viewBox="0 0 24 24"
-                                    className="h-12 w-12 text-red-600"
+                                    className="h-12 w-12 text-amber-400"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="1.6"
@@ -165,7 +165,7 @@ export default function AboutAnker() {
                                 {/* Battery type icon */}
                                 <svg
                                     viewBox="0 0 24 24"
-                                    className="h-12 w-12 text-red-600"
+                                    className="h-12 w-12 text-blue-600"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="1.6"
@@ -184,7 +184,7 @@ export default function AboutAnker() {
                                 {/* Low maintenance icon */}
                                 <svg
                                     viewBox="0 0 24 24"
-                                    className="h-12 w-12 text-red-600"
+                                    className="h-12 w-12 text-amber-400"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="1.6"
@@ -202,7 +202,7 @@ export default function AboutAnker() {
                                 {/* Monitoring icon */}
                                 <svg
                                     viewBox="0 0 24 24"
-                                    className="h-12 w-12 text-red-600"
+                                    className="h-12 w-12 text-blue-600"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="1.6"

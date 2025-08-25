@@ -12,7 +12,7 @@ export default function Page() {
    <EnereyAb/>
    <ProsessAb/>
    <SolustionAb/>
-   <CircalAb/>
+   {/* <CircalAb/> */}
    <TeemExpoertAb/>
 
    </>

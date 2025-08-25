@@ -5,19 +5,19 @@ export default function System5Kwcardes() {
     const warrantyCards = [
         {
             title: "Performance Warranty on 5kW Solar System",
-            color: "bg-orange-500",
+            color: "bg-amber-400",
         },
         {
             title: "Workmanship & Replacement Warranty for 5kW Solar System Panels",
-            color: "bg-sky-500",
+            color: "bg-sky-800",
         },
         {
             title: "Product Warranty on 5kW Inverters",
-            color: "bg-orange-500",
+            color: "bg-amber-400",
         },
         {
             title: "5kW Solar System Packages Available On-Demand",
-            color: "bg-sky-500",
+            color: "bg-sky-800",
         },
     ];
 
@@ -47,13 +47,13 @@ export default function System5Kwcardes() {
 
             {/* Call to Action Bar */}
             <div className="flex flex-col sm:flex-row justify-end items-center gap-2 w-full">
-                <button className="absolute z-0 bg-orange-500 w-full text-white px-6 py-3 font-semibold rounded hover:bg-orange-600 transition">
+                <button className="absolute z-0 bg-amber-400 w-full text-black px-6 py-3 font-bold rounded  transition">
                     Get A Free 30-Minute Consultation
                 </button>
                  <div className="flex items-center justify-center w-full sm:w-auto me-70  my-10  pe-0 md:pe-90">
                    <a
                             href="tel:+61 497 358 063"
-                            className="flex items-center z-10 relative md:-mb-0 -mb-40  h-15 px-15 bg-sky-500 text-white py-4 font-semibold rounded hover:bg-sky-600 transition"
+                            className="flex items-center z-10 relative md:-mb-0 -mb-40  h-15 px-15 bg-sky-900 text-white py-4 font-semibold rounded hover:bg-sky-600 transition"
                         >
                             <FiPhone className="mr-2" />
                             +61 497 358 063

@@ -32,7 +32,7 @@ const SolustionAb = () => {
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <p className="uppercase text-orange-500 font-semibold tracking-wider text-sm mb-2">
+          <p className="uppercase text-blue-500 font-semibold tracking-wider text-sm mb-2">
             Solar Energy Solutions
           </p>
           <h2 className="text-3xl md:text-5xl font-bold">
@@ -63,7 +63,7 @@ const SolustionAb = () => {
               aria-label="Solar installation video placeholder"
             >
               <button
-                className="w-14 h-14 rounded-full bg-green-600 flex items-center justify-center hover:scale-105 transition-transform focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center hover:scale-105 transition-transform focus:outline-none focus:ring-2 focus:ring-green-400"
                 aria-label="Play video"
                 type="button"
               >
@@ -71,7 +71,7 @@ const SolustionAb = () => {
               </button>
             </div>
             <div className="absolute inset-0 flex items-center justify-center -z-10" aria-hidden="true">
-              <div className="w-[480px] h-[250px] bg-green-600 rounded-lg shadow-lg" />
+              <div className="w-[480px] h-[250px] bg-blue-600 rounded-lg shadow-lg" />
             </div>
           </div>
 
@@ -106,7 +106,7 @@ const SolustionAb = () => {
 
         {/* CTA banner */}
         <section className="relative my-16">
-          <div className="relative bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl flex flex-col lg:flex-row items-center justify-between p-8 lg:p-10 text-white overflow-hidden">
+          <div className="relative bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl flex flex-col lg:flex-row items-center justify-between p-8 lg:px-10 text-white overflow-hidden">
             {/* Left Content */}
             <div className="max-w-xl">
               <h2 className="text-2xl md:text-4xl font-bold leading-snug">
@@ -126,27 +126,27 @@ const SolustionAb = () => {
                 </a>
 
                 <a
-                  href="tel:1300650747"
+                  href="tel:+61 497 358 063"
                   className="inline-flex items-center gap-2"
-                  aria-label="Call West VIC Energy on 1300 650 747"
+                  aria-label="Call West VIC Energy on +61 497 358 063"
                 >
                   <span className="bg-green-600 w-9 h-9 flex items-center justify-center rounded-full">
                     <Phone className="w-5 h-5 text-white" />
                   </span>
-                  <span className="font-medium">1300 650 747</span>
+                  <span className="font-medium">+61 497 358 063</span>
                 </a>
               </div>
             </div>
 
             {/* Right Image */}
-            <div className="mt-8 lg:mt-0 w-full max-w-[500px] h-[360px]">
+            <div className="relative mt-8 lg:mt-0 w-full max-w-[500px] h-[360px] z-10">
               {/* If using this remote image, add its domain to next.config.js -> images.domains */}
               <Image
                 src="https://www.amperesolar.com.au/wp-content/uploads/2024/06/arista-square-1.png"
                 alt="Technician installing solar panels"
                 width={500}
-                height={600}
-                className="object-contain w-full h-full"
+                height={800}
+                className="object-contain w-full h-full relative z-10"
                 priority={false}
               />
             </div>

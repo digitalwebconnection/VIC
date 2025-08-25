@@ -18,7 +18,7 @@ export default function AboutGroBt() {
                     </p>
 
                     {/* Highlighted Quote */}
-                    <blockquote className="text-xl italic text-gray-700 border-l-4 border-red-500 pl-4 mb-10">
+                    <blockquote className="text-xl italic text-gray-700 border-l-4 border-amber-400 pl-4 mb-10">
                         “Growatt is a global solar energy company from China, known for producing solar inverters and increasingly popular lithium battery storage systems. Their battery line is branded ARK, and it’s designed to work seamlessly with Growatt hybrid inverters or be added to an existing solar setup.”
                     </blockquote>
 
@@ -34,7 +34,7 @@ export default function AboutGroBt() {
 
                         <p>
                             Growatt also outshines in smart energy management. Their solar batteries come with intelligent
-                            <span className="text-red-600 font-medium"> battery management systems </span>
+                            <span className="text-amber-400 font-medium"> battery management systems </span>
                             and are maintained by monitoring platforms. These tools offer real-time performance tracking and remote control, enabling users to monitor their energy usage and optimize system performance naturally.
                         </p>
 
@@ -105,7 +105,7 @@ export default function AboutGroBt() {
                     <div className="grid md:grid-cols-4 gap-10 text-center">
                         {/* Warranty */}
                         <div>
-                            <Battery className="w-12 h-12 mx-auto text-red-500 mb-4" />
+                            <Battery className="w-12 h-12 mx-auto text-amber-400 mb-4" />
                             <h4 className="font-bold">Warranty duration</h4>
                             <p className="text-gray-600 mt-2">
                                 10 years (standard) or 5 years (selected series)
@@ -114,7 +114,7 @@ export default function AboutGroBt() {
 
                         {/* Battery Type */}
                         <div>
-                            <Cog className="w-12 h-12 mx-auto text-red-500 mb-4" />
+                            <Cog className="w-12 h-12 mx-auto text-blue-600 mb-4" />
                             <h4 className="font-bold">Battery type</h4>
                             <p className="text-gray-600 mt-2">
                                 Cobalt-free LiFePO₄ lithium-ion
@@ -123,7 +123,7 @@ export default function AboutGroBt() {
 
                         {/* Low Maintenance */}
                         <div>
-                            <Wrench className="w-12 h-12 mx-auto text-red-500 mb-4" />
+                            <Wrench className="w-12 h-12 mx-auto text-amber-400 mb-4" />
                             <h4 className="font-bold">Low Maintenance</h4>
                             <p className="text-gray-600 mt-2">
                                 Low maintenance solar battery with high performance and affordable prices.
@@ -132,7 +132,7 @@ export default function AboutGroBt() {
 
                         {/* Monitoring */}
                         <div>
-                            <Monitor className="w-12 h-12 mx-auto text-red-500 mb-4" />
+                            <Monitor className="w-12 h-12 mx-auto text-blue-600 mb-4" />
                             <h4 className="font-bold">24/7 Monitoring</h4>
                             <p className="text-gray-600 mt-2">
                                 A user-friendly interface allows for 24-hour monitoring to track real time data and performance.

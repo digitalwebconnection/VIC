@@ -14,7 +14,7 @@ export default function HeroGoodWE() {
       {/* Background + overlay */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="https://www.solarminer.com.au/wp-content/uploads/2025/07/banner-bat-new.jpgs" // replace with your background image
+          src="https://www.solarminer.com.au/wp-content/uploads/2025/07/banner-bat-new.jpg" // replace with your background image
           alt="Background"
           fill
           priority
@@ -53,13 +53,13 @@ export default function HeroGoodWE() {
           <div className="flex gap-4">
             <a
               href="/docs/goodwe-datasheet.pdf"
-              className="bg-white text-red-600 font-semibold px-6 py-3 rounded-full shadow border-2 border-red-500 hover:bg-gray-100 transition"
+              className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow border-2 border-amber-400 hover:bg-gray-100 transition"
             >
               Download Datasheet
             </a>
             <a
               href="#contact"
-              className="bg-red-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-red-700 transition"
+              className="bg-amber-400 text-black font-semibold px-6 py-3 rounded-full shadow transition"
             >
               Request a quote
             </a>

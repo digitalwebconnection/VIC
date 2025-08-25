@@ -60,7 +60,7 @@ export default function AboutTm() {
           {/* Profile Info */}
           <div>
             <h2 className="text-2xl font-bold">Thomas Walkar</h2>
-            <p className="text-orange-500 font-semibold">Engineer Solutions</p>
+            <p className="text-blue-600 font-semibold">Engineer Solutions</p>
             <p className="mt-4 text-sm text-gray-500">
               Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -77,30 +77,30 @@ export default function AboutTm() {
         {/* Contact Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex items-center border-2 border-blue-600 rounded-full py-4 px-6 space-x-4">
-            <div className="bg-orange-500 text-white p-2 rounded-full">
+            <div className="bg-blue-800  text-white p-2 rounded-full">
               <PhoneIcon className="h-5 w-5" />
             </div>
             <div>
               <p className="text-xs text-gray-500">Phone No:</p>
-              <p className="text-sm font-medium">01234 525 407 - 01234 525 407</p>
+              <p className="text-sm font-medium">+61 497 358 063</p>
             </div>
           </div>
           <div className="flex items-center border-2 border-blue-600 rounded-full py-4 px-6 space-x-4">
-            <div className="bg-orange-500 text-white p-2 rounded-full">
+            <div className="bg-blue-800 text-white p-2 rounded-full">
               <MapPinIcon className="h-5 w-5" />
             </div>
             <div>
               <p className="text-xs text-gray-500">Address:</p>
-              <p className="text-sm font-medium">12/7 new town, 245x Town 1214, USA</p>
+              <p className="text-sm font-medium">19 ferriman way, truganina vic 3029</p>
             </div>
           </div>
           <div className="flex items-center border-2 border-blue-600 rounded-full py-4 px-6 space-x-4">
-            <div className="bg-orange-500 text-white p-2 rounded-full">
+            <div className="bg-blue-800  text-white p-2 rounded-full">
               <EnvelopeIcon className="h-5 w-5" />
             </div>
             <div>
               <p className="text-xs text-gray-500">Email Address:</p>
-              <p className="text-sm font-medium">username@domainname.com</p>
+              <p className="text-sm font-medium">admin@westvicenergy.com.au </p>
             </div>
           </div>
         </div>

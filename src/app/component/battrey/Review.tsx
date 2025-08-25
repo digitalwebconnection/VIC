@@ -83,7 +83,7 @@ export default function Reviews() {
 
                     {/* CTA Button */}
                     <div className="flex justify-center">
-                        <button className="px-8 py-3 bg-white border border-red-500 text-red-600 font-semibold rounded-full shadow hover:bg-red-50 transition">
+                        <button   className="px-8 py-3 bg-white border border-amber-400 text-blue-600 font-semibold rounded-full shadow transition">
                             See all reviews
                         </button>
                     </div>
@@ -104,8 +104,8 @@ export default function Reviews() {
                         <div className=" flex gap-20">
                             <div className="relative inline-block shadow-lg">
                                 <div className="absolute -left-6 -bottom-6 w-24 h-24 bg-yellow-400 rounded-full -z-10"></div>
-                                <div className="border border-red-400 rounded-xl shadow-lg bg-white px-6 py-4">
-                                    <p className="text-red-500 font-semibold text-center">
+                                <div className="border border-blue-400 rounded-xl shadow-lg bg-white px-6 py-4">
+                                    <p className="text-amber-500 font-semibold text-center">
                                         Save up to
                                     </p>
                                     <p className="bg-[#0a2a57] text-white text-2xl font-bold rounded-lg px-4 py-2 text-center">
@@ -120,8 +120,8 @@ export default function Reviews() {
                                     Call Now and Learn
                                 </p>
                                 <p className="text-gray-500 text-sm mb-3">How Much You Can Save</p>
-                                <button className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow-xl">
-                                    +91 99740 61521
+                                <button  className="bg-blue-800  text-white font-semibold px-6 py-3 rounded-full shadow-xl">
+                                  <a href="tel:+61 497 358 063">  +61 497 358 063</a>
                                 </button>
                             </div>
                         </div>

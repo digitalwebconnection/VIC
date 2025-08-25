@@ -79,19 +79,19 @@ export default function WhyGroBt() {
                 <div className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                     <a
                         href="#contact"
-                        className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-4 text-white font-semibold shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                        className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-4 text-white font-semibold shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
                     >
                         Get Expert Advice
                     </a>
 
                     <a
-                        href="tel:1300285885"
-                        className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-white px-6 py-4 font-semibold text-red-600 hover:bg-red-50"
+                        href="tel:+61 497 358 063"
+                        className="inline-flex items-center gap-2 rounded-full border border-amber-400 bg-white px-6 py-4 font-semibold text-red-600 "
                     >
-                        <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-red-100 text-red-600">
+                        <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 text-blue-600">
                             <PhoneIcon />
                         </span>
-                        <span className="tracking-wide">+91 99740 61521</span>
+                        <span className=" text-blue-600">+61 497 358 063</span>
                     </a>
                 </div>
             </section>
