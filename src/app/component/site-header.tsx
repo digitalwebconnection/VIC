@@ -118,7 +118,7 @@ export default function SiteHeader() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur">
+    <header className=" top-0 z-50 bg-white/80 backdrop-blur">
       <div className="border-b">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs text-gray-600">
           <div className="flex items-center gap-4">
