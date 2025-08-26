@@ -19,10 +19,8 @@ import {
 type NavItem = { name: string; href: string };
 
 const NAV: NavItem[] = [
-  // { name: "Home", href: "/" },
-  // { name: "Teams", href: "/component/team" },
   { name: "About", href: "/component/about" },
-  { name: "Contact", href: "/component/contact" }, // rendered after Battery
+  { name: "Contact", href: "/component/contact" },
 ];
 
 const COMMERCIAL = [
@@ -109,7 +107,7 @@ export default function SiteHeader() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50  bg-white/80 backdrop-blur">
       <div className="border-b">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs text-gray-600">
           <div className="flex items-center gap-4">
@@ -122,7 +120,6 @@ export default function SiteHeader() {
               19 ferriman way, truganina vic 3029
             </span>
           </div>
-          {/* <Link ...>Promo</Link> */}
         </div>
       </div>
 
@@ -135,13 +132,12 @@ export default function SiteHeader() {
 
           {/* Desktop links */}
           <ul className="hidden items-center gap-6 lg:flex">
-            {/* Left-side simple links (About, etc.) */}
             {NAV_WITHOUT_CONTACT.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
                   className={
-                    "inline-flex items-center text-sm font-medium transition " +
+                    "inline-flex items-center text-sm font-medium transition me-12" +
                     (isActive(item.href) ? "text-black" : "text-gray-600 hover:text-gray-900")
                   }
                 >
@@ -174,7 +170,6 @@ export default function SiteHeader() {
             </li>
 
             <li className="relative" ref={batteryRef}>
-              {/* 🔗 parentHref makes the title click navigate; chevron toggles dropdown */}
               <Dropdown
                 title="Solar Battery Offer"
                 parentHref="/component/battrey"
@@ -187,7 +182,6 @@ export default function SiteHeader() {
               />
             </li>
 
-            {/* Contact AFTER Battery */}
             {CONTACT_ITEM && (
               <li>
                 <Link
@@ -235,7 +229,6 @@ export default function SiteHeader() {
         {openMobile && (
           <div className="lg:hidden">
             <ul className="mt-2 flex flex-col gap-1 pb-4">
-              {/* About, etc. (no Contact yet) */}
               {NAV_WITHOUT_CONTACT.map((item) => (
                 <li key={item.href}>
                   <Link
@@ -275,7 +268,6 @@ export default function SiteHeader() {
                 onNavigate={() => setOpenMobile(false)}
               />
 
-              {/* Contact after Battery */}
               {CONTACT_ITEM && (
                 <li className="mt-1">
                   <Link
@@ -328,7 +320,7 @@ function Dropdown({
   otherClose,
   active,
   icon,
-  parentHref, // 🔗 new
+  parentHref,
 }: {
   title: string;
   items: DropdownItem[];
@@ -337,12 +329,11 @@ function Dropdown({
   otherClose: React.Dispatch<React.SetStateAction<boolean>>[];
   active?: boolean;
   icon?: "battery";
-  parentHref?: string; // 🔗 new
+  parentHref?: string;
 }) {
   return (
     <>
       <div className="inline-flex items-center gap-1">
-        {/* Title (navigates if parentHref provided) */}
         {parentHref ? (
           <Link
             href={parentHref}
@@ -365,7 +356,6 @@ function Dropdown({
           </span>
         )}
 
-        {/* Chevron (only toggles dropdown, does NOT navigate) */}
         <button
           type="button"
           onClick={(e) => {
@@ -386,7 +376,7 @@ function Dropdown({
       {open && (
         <div
           role="menu"
-          className="absolute left-1/2 top-full mt-3 w-[720px] -translate-x-1/2 rounded-2xl border bg-white shadow-xl"
+          className="absolute left-1/2 top-full mt-3 w-[720px] -translate-x-1/2 rounded-2xl border bg-white shadow-xl z-50"
         >
           <div className="absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-l border-t bg-white" />
           <div className="grid gap-2 p-3 sm:grid-cols-3">

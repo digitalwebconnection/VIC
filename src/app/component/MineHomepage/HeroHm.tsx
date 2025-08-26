@@ -15,12 +15,12 @@ const SLIDES: Slide[] = [
     overlay: "bg-black/40",
   },
   {
-    src: "/images/4.jpg",
+    src: "/images/3.jpg",
     cta: { href: "/component/contact", label: "Get Free Consultation" },
     overlay: "bg-black/40",
   },
   {
-    src: "/images/3.jpg",
+    src: "/images/4.jpg",
     cta: { href: "/component/contact", label: "See Plans & Pricing" },
     overlay: "bg-black/40",
   },

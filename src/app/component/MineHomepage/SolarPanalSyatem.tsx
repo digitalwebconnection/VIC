@@ -17,7 +17,7 @@ export default function Solar10kwIntro() {
       highlight: false,
     },
     {
-      title: "6.6kw Solar System",
+      title: "6.6kW Solar System",
       subtitle: "Standard Family Home",
       savings: "Save Up to $1000 - $2500* Annually",
       features: [
@@ -48,7 +48,7 @@ export default function Solar10kwIntro() {
         </h2>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3  gap-15 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3  gap-14 px-2">
         {plans.map((plan, index) => (
           <div
             key={index}
@@ -57,7 +57,7 @@ export default function Solar10kwIntro() {
             }`}
           >
             {plan.highlight && (
-              <div className="absolute -ms-0  -mt-15 w-93 text-center   transform -translate-x-1/12 bg-blue-700 text-white px-4 py-2 text-xs font-semibold rounded">
+              <div className="absolute left-8  -mt-15 w-[382px] text-center   transform -translate-x-1/12 bg-blue-700 text-white px-4 py-2 text-xs font-semibold rounded-t-md ">
                 AUSTRALIA’S MOST POPULAR.!!
               </div>
             )}

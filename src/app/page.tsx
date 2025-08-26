@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <>
       {/* Popup overlays entire page */}
-      <LeadPopup delayMs={3000} snoozeDays={7} title="Limited-time Solar Offer" />
+      <LeadPopup delayMs={3000}  title="Limited-time Solar Offer" />
 
       <HeroHm />
       <CallSection />

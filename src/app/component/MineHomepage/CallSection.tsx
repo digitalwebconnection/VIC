@@ -17,7 +17,7 @@ export default function     CallSection() {
             <p className=" max-w-7xl mx-auto text-sm pt-5">*Estimated battery pricing is based on the West Vic Energy 10.1kWh AC Coupled Battery Package and applies to standard metropolitan areas only. Additional freight costs may apply for regional installations. Prices shown include the anticipated Federal Battery Rebate expected to commence from 1st July 2025. Please note that rebates are not guaranteed and are subject to change in line with government policy, eligibility criteria, and program updates. Final battery pricing will be adjusted according to the applicable rebate at the time of installation.
             </p>
              <p className=" max-w-7xl mx-auto text-sm pt-5">This promotion is available for standard metropolitan installations only. Regional and non-standard installations may attract additional costs. Pricing is calculated after the Small-Scale Technology Certificates (STCs) have been assigned to West Vic Energy Pty Ltd or its authorised agents. Additional charges may apply for factors such as double-storey properties, complex roof types, meter box upgrades, or three-phase power connections.</p>
-            <div className="flex items-center justify-center my-5 py-5 bg-black">
+            <div className="flex items-center justify-center my-5 py-5 bg-blue-950">
 
                 <a
                     href="tel:  +61 497 358 063"
@@ -26,8 +26,8 @@ export default function     CallSection() {
                     onMouseEnter={() => setHover(true)}
                     onMouseLeave={() => setHover(false)}
                 >
-                    <span className="text-orange-700">CALL NOW</span>
-                    <span className="relative text-gray-400">
+                    <span className="text-amber-400">CALL NOW</span>
+                    <span className="relative text-white">
                         <FiPhone
                             style={{
                                 position: "absolute",
