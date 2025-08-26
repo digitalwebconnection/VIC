@@ -137,7 +137,7 @@ export default function SiteHeader() {
                 <Link
                   href={item.href}
                   className={
-                    "inline-flex items-center text-sm font-medium transition me-12" +
+                    "inline-flex items-center pe-8 text-sm font-medium transition " +
                     (isActive(item.href) ? "text-black" : "text-gray-600 hover:text-gray-900")
                   }
                 >
