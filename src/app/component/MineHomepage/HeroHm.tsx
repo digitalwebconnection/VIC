@@ -8,7 +8,7 @@ export default function HeroHm() {
       style={{ backgroundImage: "url('/images/mainhero.jpg')" }}
     >
       {/* blue/black tint to “lower opacity” of the bg image */}
-      <div className="absolute inset-0 bg-[#17185d]/60" />
+      {/* <div className="absolute inset-0 bg-[#17185d]/60" /> */}
 
       <div className="relative z-10  px-4 mx-auto max-w-7xl  pt-80">
         <a href="/component/contact" className="inline-block bg-amber-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition">
