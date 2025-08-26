@@ -1,37 +1,38 @@
 "use client";
 
-import { Home } from "lucide-react";
-import Link from "next/link";
+import Image from "next/image";
 
 const HeroAb = () => {
-  return (
-     <>
-            <section className="w-full  ">
-                {/* Top Section */}
-                <div className="bg-[#1E215C] py-25 px-5 md:px-0  ">
-                    <div className="max-w-7xl mx-auto">
-                        <h1 className="text-4xl md:text-5xl font-bold text-white">About Us</h1>
-                        <p className="text-gray-300 mt-3 max-w-xl">
+    return (
+        <>
+            <section
+                className="relative bg-cover bg-center bg-no-repeat min-h-[380px]"
+                style={{ backgroundImage: "url('/images/mainhero.jpg')" }}
+            >
+                {/* blue/black tint to “lower opacity” of the bg image */}
+                <div className="absolute inset-0 bg-[#17185d]/60" />
+
+                <div className="relative pt-55 px-5 md:px-20   ">
+                    <div className="max-w-7xl mx-auto ">
+                        <h1 className="text-4xl md:text-5xl font-bold text-amber-400">About Us</h1>
+                        <p className="text-white mt-3 max-w-xl">
                             Practical renewable energy technology that reduces costs <br /> and helps the environment
                         </p>
                     </div>
                 </div>
-
-                {/* Breadcrumb Section */}
-                {/* <div className="bg-transparent -mt-6 flex justify-center  max-w-7xl mx-auto">
-                    <div className="bg-yellow-400 text-black text-lg flex items-center gap-2 px-6 py-2 rounded-full shadow-md w-full">
-                        <Home size={16} />
-                        <Link href="/" className="hover:underline">
-                            Home
-                        </Link>
-                        <span className="mx-1">|</span>
-                        <span>About Us</span>
-                    </div>
-                </div> */}
             </section>
+            {/* <section
+                className="relative bg-cover bg-center bg-no-repeat min-h-[380px]"
+                style={{ backgroundImage: "url('/images/mainhero.jpg')" }}
+            >
+                <div className="absolute inset-0 bg-blue/20" />
+              
+               
+
+            </section> */}
         </>
 
-  )
+    )
 }
 
 export default HeroAb

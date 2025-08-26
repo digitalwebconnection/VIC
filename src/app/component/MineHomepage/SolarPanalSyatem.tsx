@@ -6,7 +6,7 @@ export default function Solar10kwIntro() {
 
  const plans = [
     {
-      title: "10.5kW Solar System",
+      title: "10kW Solar System",
       subtitle: "Medium to Big Family Home",
       savings: "Save Up To $2000 to $3500* Annually",
       features: [
@@ -57,7 +57,7 @@ export default function Solar10kwIntro() {
             }`}
           >
             {plan.highlight && (
-              <div className="absolute -mt-15 w-full    transform -translate-x-1/12 bg-blue-700 text-white px-4 py-2 text-xs font-semibold rounded">
+              <div className="absolute -ms-0  -mt-15 w-93 text-center   transform -translate-x-1/12 bg-blue-700 text-white px-4 py-2 text-xs font-semibold rounded">
                 AUSTRALIA’S MOST POPULAR.!!
               </div>
             )}
@@ -86,9 +86,7 @@ export default function Solar10kwIntro() {
 
       <div className="mt-8 max-w-4xl mx-auto px-4 text-xs text-center text-gray-500">
         <p>
-          *Performance figures are just an estimation figures based on Clean Energy Council Guidelines and will vary from property to property.
-          Actual savings may vary according to your location, weather / climate conditions, the direction, pitch or angle of your roof,
-          or any shading or obstruction of your property as well as network export limitations. Speak to our consultant in order to make well-informed decision.
+         Performance figures are provided as estimates based on Clean Energy Council guidelines and may differ from property to property. Actual energy generation and savings depend on several factors including your location, local climate and weather conditions, roof direction and pitch, shading or obstructions, as well as network export limitations. Please consult with a West Vic Energy representative to receive tailored advice and make a well-informed decision.
         </p>
       </div>
     </section>

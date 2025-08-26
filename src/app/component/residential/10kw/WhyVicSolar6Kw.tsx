@@ -1,4 +1,4 @@
-export default function WhyVic20Kw() {
+export default function WhyVicSolar6Kw() {
     return(
              <>
             <div className=" bg-white flex items-center justify-center py-12 px-6">
@@ -7,7 +7,7 @@ export default function WhyVic20Kw() {
                     <div className="max-w-4xl mx-auto">
                         {/* Salient Features */}
                         <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                            Salient Features of 20kW Solar System
+                            Salient Features of 10kw  Solar Power System
                         </h2>
                         <ul className="list-none space-y-3 mb-8">
                             <li className="flex items-start">
@@ -28,13 +28,13 @@ export default function WhyVic20Kw() {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
-                                System configured by best 20kW Solar System installation and maintenance team in Queensland
+                                System configured by best 10kw  solar power system installation and maintenance team in Queensland
                             </li>
                         </ul>
 
                         {/* Technical Specifications */}
                         <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                            Technical Specifications for 20kW Solar System
+                            Technical Specifications for 10kw  Solar Power System
                         </h2>
                         <ul className="list-none space-y-3 mb-6">
                             <li className="flex items-start">
@@ -43,7 +43,7 @@ export default function WhyVic20Kw() {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
-                                <strong>Inverter:</strong> 20kW inverter manufactured by reputed companies & recommended by CEC-accredited technicians
+                                <strong>Inverter:</strong> 10kw  inverter manufactured by reputed companies & recommended by CEC-accredited technicians
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
@@ -52,20 +52,7 @@ export default function WhyVic20Kw() {
                         </ul>
 
                         {/* Call to Action */}
-                        <p className="text-blue-400">
-                            Contact us now to find out 20kW solar power system cost in Queensland.
-                        </p>
-                        <p className="mt-2">
-                            Feel like you need more power? We have it all. Visit{" "}
-                           <a href="#" className="text-blue-600 underline">
-                                30kW Solar System
-                            </a>{" "}
-                            or{" "}
-                            <a href="#" className="text-blue-600 underline">
-                                50kW Solar System
-                            </a>{" "}
-                            for more info.
-                        </p>
+                  
                     </div>
 
 

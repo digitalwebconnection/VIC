@@ -1,4 +1,4 @@
-export default function Solar5kwintro() {
+export default function Solar5Kwintro () {
     return (
         <>
             <div className="bg-white p-6 md:p-12">
@@ -6,7 +6,7 @@ export default function Solar5kwintro() {
                     <div>
                         {/* Header */}
                         <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">
-                            5kw Solar System
+                             6.6kw  Solar System
                         </h1>
                         <p className="text-sm text-gray-500 mb-4">
                             Save Money and Reduce Your Carbon Footprint
@@ -14,14 +14,14 @@ export default function Solar5kwintro() {
 
                         {/* Subheading */}
                         <h2 className="text-lg font-semibold text-blue-500 mb-6">
-                            A Popular 5kw Solar Power System Package for Queensland Households
+                            A Popular 6.6kw  Solar Power System Package for Queensland Households
                         </h2>
 
                         {/* Description */}
                         <p className="text-gray-700 mb-8">
-                            The efficient 5kw solar power system is an excellent residential
+                            The efficient  6.6kw  solar power system is an excellent residential
                             solution for homeowners in Queensland. It delivers strong performance
-                            with a high-quality 5kw inverter and 15 Monocrystalline Tier-1 solar
+                            with a high-quality  6.6kw  inverter and 15 Monocrystalline Tier-1 solar
                             panels with a 330-watt power output each.
                             <br />
                             Our solar experts and CEC-certified technicians install and configure

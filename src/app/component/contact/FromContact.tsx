@@ -80,35 +80,36 @@ export default function FromContact() {
                     {/* Right - Contact Info */}
                     <div className="space-y-4">
                         <h3 className="font-bold text-sm uppercase">Contact Information</h3>
-                        <div className="bg-blue-600 text-white rounded-xl p-4 items-start space-y-4">
+                        <div className="bg-blue-950 text-white rounded-xl p-4 items-start space-y-4">
                             <div className="p-2 bg-white text-blue-800 rounded-full h-8 w-8  ">
                                 <FaPhone />
                             </div>
                             <div>
                                 <p className="font-bold">Phone No:</p>
-                                <p className="text-sm">01234 525 407 - 01234 525 407</p>
+                                <p className="text-sm"> <a href="tel:  +61 497 358 063">+61 497 358 063</a></p>
                             </div>
                         </div>
 
-                        <div className="bg-blue-600 text-white rounded-xl p-4  items-start space-y-4 ">
+                        <div className="bg-blue-950 text-white rounded-xl p-4  items-start space-y-4 ">
                             <div className="p-2 bg-white text-blue-800 rounded-full h-8 w-8 ">
                                 <FaMapMarkerAlt />
                             </div>
                             <div>
                                 <p className="font-bold">Location:</p>
                                 <p className="text-sm">
-                                    12/7 new town, 245x Town 1214 Street, United State
+                                    19 ferriman way, truganina vic 3029
+
                                 </p>
                             </div>
                         </div>
 
-                        <div className="bg-blue-600 text-white rounded-xl p-4  items-start space-y-4">
+                        <div className="bg-blue-950 text-white rounded-xl p-4  items-start space-y-4">
                             <div className="p-2 bg-white text-blue-800 rounded-full h-8 w-8 ">
                                 <FaEnvelope />
                             </div>
                             <div>
                                 <p className="font-bold">Email Address:</p>
-                                <p className="text-sm">username@domainname.com</p>
+                                <p className="text-sm">admin@westvicenergy.com.au </p>
                             </div>
                         </div>
                     </div>

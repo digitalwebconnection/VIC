@@ -1,26 +1,25 @@
-export default function Contain20Kw(){
-
-    return (
+export default function Solaer10kwIntro() {
+    return(
         <>
-            <div className=" bg-white p-6 md:p-12">
+         <div className=" bg-white p-6 md:p-12">
                 <div className="max-w-7xl mx-auto   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-                    <div className=" ">
+                    <div className="">
                         {/* Header */}
-                        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">20kW Solar System</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">13.2kw  Solar System</h1>
                         <p className="text-sm text-gray-500 mb-4">Save Money and Reduce Your Carbon Footprint</p>
 
                         {/* Subheading */}
                         <h2 className="text-lg font-semibold text-blue-500 mb-6">
-                            The Most Sold 5kw Solar Power System Package for Queensland Households
+                            The Most Sold 13.2kw  Solar Power System Package for Queensland Households
                         </h2>
 
                         {/* Description */}
                         <p className="text-gray-700 mb-8">
-                            The powerful 20kW Solar System system is an ideal residential solar solution for the small homeowners
-                            in Queensland. Optimal power output is ensured through a high-quality 20kw inverter and 15 Monocrystalline
+                            The powerful 13.2kw  solar power system is an ideal residential solar solution for the small homeowners
+                            in Queensland. Optimal power output is ensured through a high-quality 5kw inverter and 15 Monocrystalline
                             Tier-1 solar panels with a 330-watt Power output.
                             <br />
-                            Our solar experts and CEC-certified technicians install and configure this powerful 20kw solar power
+                            Our solar experts and CEC-certified technicians install and configure this powerful 5kw solar power
                             system on your rooftop with complete efficiency to ensure seamless power output for a long time.
                         </p>
                     </div>

@@ -23,11 +23,11 @@ export default function SiteFooter() {
               Quick Links
             </div>
             <ul className="mt-3 space-y-2 text-sm">
-              <li><Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link></li>
-              <li><Link href="/services" className="text-gray-600 hover:text-gray-900">Services</Link></li>
-              <li><Link href="/pricing" className="text-gray-600 hover:text-gray-900">Pricing</Link></li>
-              <li><Link href="/about" className="text-gray-600 hover:text-gray-900">About</Link></li>
-              <li><Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link></li>
+              <li><Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link> </li>
+              {/* <li><Link href="/component/services" className="text-gray-600 hover:text-gray-900">Services</Link></li> */}
+              {/* <li><Link href="/component/pricing" className="text-gray-600 hover:text-gray-900">Pricing</Link></li> */}
+              <li><Link href="/component/about" className="text-gray-600 hover:text-gray-900">About</Link></li>
+              <li><Link href="/component/contact" className="text-gray-600 hover:text-gray-900">Contact</Link></li>
             </ul>
           </div>
 

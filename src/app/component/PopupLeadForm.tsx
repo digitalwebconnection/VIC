@@ -8,30 +8,35 @@ export default function PopupLeadForm({ delayMs = 3000 }: Props) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    // don't show again if dismissed (per browser)
     if (typeof window === "undefined") return;
+
+    // prevent showing again if dismissed
     if (localStorage.getItem("leadPopupDismissed") === "1") return;
 
     const t = setTimeout(() => setOpen(true), delayMs);
     return () => clearTimeout(t);
   }, [delayMs]);
 
-  // prevent background scroll when open
+  // lock background scroll when modal is open
   useEffect(() => {
-    if (!open) return;
-    const original = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = original; };
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
   }, [open]);
 
   const close = () => {
     setOpen(false);
-    try { localStorage.setItem("leadPopupDismissed", "1"); } catch {}
+    if (typeof window !== "undefined") {
+      localStorage.setItem("leadPopupDismissed", "1");
+    }
   };
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: send to your API
+    // 👉 Send form data to API here
+    alert("Form submitted ✅");
     close();
   };
 
@@ -44,11 +49,11 @@ export default function PopupLeadForm({ delayMs = 3000 }: Props) {
       className="fixed inset-0 z-[1000] flex items-center justify-center"
     >
       {/* overlay */}
-      <button
-        aria-label="Close popup"
+      <div
         onClick={close}
         className="absolute inset-0 bg-black/60"
       />
+
       {/* modal */}
       <div className="relative w-[92vw] max-w-md rounded-2xl bg-white p-6 shadow-2xl">
         <button

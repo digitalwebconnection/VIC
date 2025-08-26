@@ -1,18 +1,18 @@
-export default function WhyHybride() {
+export default function WhyVicSolar5Kw () {
     return (
         <>
-            <div className=" bg-white flex items-center justify-center py-12 px-6">
+            <div className="bg-white flex items-center justify-center py-12 px-6">
                 <div className="max-w-7xl w-full grid md:grid-cols-2 gap-15">
                     {/* Left Side: Info */}
                     <div className="max-w-4xl mx-auto">
                         {/* Salient Features */}
                         <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                            Salient Features of 15kw  System Solar Power System
+                            Salient Features of  6.6kw  Solar Power System
                         </h2>
                         <ul className="list-none space-y-3 mb-8">
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
-                                Powerful solar panels & Inverter approved by CEC
+                                Powerful solar panels & inverter approved by CEC
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
@@ -28,22 +28,22 @@ export default function WhyHybride() {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
-                                System configured by best 15kw  System solar power system installation and maintenance team in Queensland
+                                System configured by the best  6.6kw  solar power system installation and maintenance team in Queensland
                             </li>
                         </ul>
 
                         {/* Technical Specifications */}
                         <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                            Technical Specifications for 15kw  System Solar Power System
+                            Technical Specifications for  6.6kw  Solar Power System
                         </h2>
                         <ul className="list-none space-y-3 mb-6">
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
-                                <strong>Solar Panels:</strong> 15×330 Watt High-quality Solar Panels (Tier-I)
+                                <strong>Solar Panels:</strong> 14×370 Watt High-quality Solar Panels (Tier-I)
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
-                                <strong>Inverter:</strong> 15kw  System inverter manufactured by reputed companies & recommended by CEC-accredited technicians
+                                <strong>Inverter:</strong>  6.6kw  inverter manufactured by reputed companies & recommended by CEC-accredited technicians
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
@@ -51,10 +51,9 @@ export default function WhyHybride() {
                             </li>
                         </ul>
 
-                     
-                
+                        {/* Call to Action */}
+                        
                     </div>
-
 
                     {/* Right Side: Form */}
                     <div>
@@ -62,7 +61,7 @@ export default function WhyHybride() {
                             Straight from our desk, to your Inbox.
                         </h3>
 
-                        <form className="space-y-4 " >
+                        <form className="space-y-4">
                             <input
                                 required
                                 type="text"
@@ -96,7 +95,7 @@ export default function WhyHybride() {
 
                             <button
                                 type="submit"
-                                className="w-full bg-gradient-to-r from-amber-400 to-yellow-400 text-black font-bold py-2 rounded-md hover:opacity-90 transition"
+                                className="w-full bg-gradient-to-r from-amber-400 to-yellow-400 text-white font-semibold py-2 rounded-md hover:opacity-90 transition"
                             >
                                 Submit
                             </button>
@@ -105,5 +104,5 @@ export default function WhyHybride() {
                 </div>
             </div>
         </>
-    )
+    );
 }

@@ -22,32 +22,20 @@ const NAV: NavItem[] = [
   // { name: "Home", href: "/" },
   // { name: "Teams", href: "/component/team" },
   { name: "About", href: "/component/about" },
-  { name: "Contact", href: "/component/contact" },
+  { name: "Contact", href: "/component/contact" }, // rendered after Battery
 ];
 
 const COMMERCIAL = [
-  {
-    name: "20kW Solar System",
-    href: "/component/commercial/20kw",
-    desc: "Ideal for small businesses with moderate daytime load.",
-  },
-  {
-    name: "30kW Solar System",
-    href: "/component/commercial/30kw",
-    desc: "Balanced capacity for shops, clinics, and offices.",
-  },
-  {
-    name: "50kW Solar System",
-    href: "/component/commercial/50kw",
-    desc: "Great for showrooms & medium facilities with higher demand.",
-  },
+  { name: "30kW Solar System", href: "/component/commercial/30kw", desc: "Balanced capacity for shops, clinics, and offices." },
+  { name: "50kW Solar System", href: "/component/commercial/50kw", desc: "Great for showrooms & medium facilities with higher demand." },
+  { name: "100kW Solar System", href: "/component/commercial/100kw", desc: "Ideal for small businesses with moderate daytime load." },
 ];
 
 const RESIDENTIAL = [
-  { name: "5kW Solar System", href: "/component/residential/5kw", desc: "Perfect for small homes with efficient appliances." },
-  { name: "6kW Solar System", href: "/component/residential/6kw", desc: "Extra headroom for ACs and higher daytime use." },
-  { name: "10kW Solar System", href: "/component/residential/7kw", desc: "Spacious homes with multiple ACs & devices." },
-  { name: "Hybrid Solar System", href: "/component/residential/hybrid", desc: "Grid + battery backup for uninterrupted power." },
+  { name: "6.6kW Solar System", href: "/component/residential/6.6kw", desc: "Perfect for small homes with efficient appliances." },
+  { name: "10kW Solar System", href: "/component/residential/10kw", desc: "Extra headroom for ACs and higher daytime use." },
+  { name: "13.2kW Solar System", href: "/component/residential/13.2kw", desc: "Spacious homes with multiple ACs & devices." },
+  { name: "15kw Solar System", href: "/component/residential/15kw", desc: "Grid + battery backup for uninterrupted power." },
 ];
 
 const BATTERY = [
@@ -59,6 +47,10 @@ const BATTERY = [
   { name: "Sungrow", href: "/component/battrey/Sungrow", desc: "Durable and efficient battery solutions." },
   { name: "Anker Solix", href: "/component/battrey/AnkerSolix", desc: "Portable and powerful storage for flexible use." },
 ];
+
+// Helper: NAV items except Contact (we’ll place Contact later)
+const NAV_WITHOUT_CONTACT = NAV.filter((n) => n.name.toLowerCase() !== "contact");
+const CONTACT_ITEM = NAV.find((n) => n.name.toLowerCase() === "contact");
 
 export default function SiteHeader() {
   const pathname = usePathname();
@@ -75,8 +67,7 @@ export default function SiteHeader() {
   const batteryRef = useRef<HTMLLIElement | null>(null);
 
   const isActive = useCallback(
-    (href: string) =>
-      href === "/" ? pathname === "/" : pathname?.startsWith(href),
+    (href: string) => (href === "/" ? pathname === "/" : pathname?.startsWith(href)),
     [pathname]
   );
 
@@ -118,29 +109,20 @@ export default function SiteHeader() {
   }, [pathname]);
 
   return (
-    <header className=" top-0 z-50 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur">
       <div className="border-b">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs text-gray-600">
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1">
               <Mail className="h-3.5 w-3.5" />
-              admin@westvicenergy.com.au 
+              admin@westvicenergy.com.au
             </span>
             <span className="hidden items-center gap-1 sm:inline-flex">
               <MapPin className="h-3.5 w-3.5" />
-             19 ferriman way, truganina vic 3029
+              19 ferriman way, truganina vic 3029
             </span>
           </div>
-          {/* <Link
-            href="/"
-            className="inline-flex items-center gap-2 rounded-full border px-2.5 py-1 font-medium text-gray-800 hover:bg-gray-50"
-          >
-            <span className="rounded-full bg-amber-400/30 px-2 py-0.5 text-[10px] font-bold text-amber-800">
-              New
-            </span>
-            Solar Battery Offers
-            <ArrowRight className="h-3.5 w-3.5" />
-          </Link> */}
+          {/* <Link ...>Promo</Link> */}
         </div>
       </div>
 
@@ -148,32 +130,37 @@ export default function SiteHeader() {
         <div className="flex h-16 items-center justify-between">
           {/* Brand */}
           <Link href="/" className="inline-flex items-center gap-2" aria-label="Home">
-            <Image
-              src="/logo.png"
-              alt="Company Logo"
-              width={120}
-              height={40}
-              priority
-            />
+            <Image src="/logo.png" alt="Company Logo" width={120} height={40} priority />
           </Link>
 
           {/* Desktop links */}
           <ul className="hidden items-center gap-6 lg:flex">
-            {NAV.map((item) => (
+            {/* Left-side simple links (About, etc.) */}
+            {NAV_WITHOUT_CONTACT.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
                   className={
                     "inline-flex items-center text-sm font-medium transition " +
-                    (isActive(item.href)
-                      ? "text-black"
-                      : "text-gray-600 hover:text-gray-900")
+                    (isActive(item.href) ? "text-black" : "text-gray-600 hover:text-gray-900")
                   }
                 >
                   {item.name}
                 </Link>
               </li>
             ))}
+
+            {/* Dropdowns */}
+            <li className="relative" ref={residentialRef}>
+              <Dropdown
+                title="Residential"
+                items={RESIDENTIAL}
+                open={openResidential}
+                setOpen={setOpenResidential}
+                otherClose={[setOpenCommercial, setOpenBattery]}
+                active={pathname?.startsWith("/component/residential") || pathname?.startsWith("/residential")}
+              />
+            </li>
 
             <li className="relative" ref={commercialRef}>
               <Dropdown
@@ -186,28 +173,34 @@ export default function SiteHeader() {
               />
             </li>
 
-            <li className="relative" ref={residentialRef}>
-              <Dropdown
-                title="Residential"
-                items={RESIDENTIAL}
-                open={openResidential}
-                setOpen={setOpenResidential}
-                otherClose={[setOpenCommercial, setOpenBattery]}
-                active={pathname?.startsWith("/residential")}
-              />
-            </li>
-
             <li className="relative" ref={batteryRef}>
+              {/* 🔗 parentHref makes the title click navigate; chevron toggles dropdown */}
               <Dropdown
                 title="Solar Battery Offer"
+                parentHref="/component/battrey"
                 items={BATTERY}
                 open={openBattery}
                 setOpen={setOpenBattery}
                 otherClose={[setOpenCommercial, setOpenResidential]}
-                active={pathname?.startsWith("/battery")}
+                active={pathname?.startsWith("/component/battrey")}
                 icon="battery"
               />
             </li>
+
+            {/* Contact AFTER Battery */}
+            {CONTACT_ITEM && (
+              <li>
+                <Link
+                  href={CONTACT_ITEM.href}
+                  className={
+                    "inline-flex items-center text-sm font-medium transition " +
+                    (isActive(CONTACT_ITEM.href) ? "text-black" : "text-gray-600 hover:text-gray-900")
+                  }
+                >
+                  {CONTACT_ITEM.name}
+                </Link>
+              </li>
+            )}
           </ul>
 
           {/* Right CTAs */}
@@ -242,16 +235,15 @@ export default function SiteHeader() {
         {openMobile && (
           <div className="lg:hidden">
             <ul className="mt-2 flex flex-col gap-1 pb-4">
-              {NAV.map((item) => (
+              {/* About, etc. (no Contact yet) */}
+              {NAV_WITHOUT_CONTACT.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     onClick={() => setOpenMobile(false)}
                     className={
                       "block rounded-lg px-3 py-2 text-sm font-medium transition " +
-                      (isActive(item.href)
-                        ? "bg-gray-100 text-gray-900"
-                        : "text-gray-700 hover:bg-gray-50")
+                      (isActive(item.href) ? "bg-gray-100 text-gray-900" : "text-gray-700 hover:bg-gray-50")
                     }
                   >
                     {item.name}
@@ -283,6 +275,22 @@ export default function SiteHeader() {
                 onNavigate={() => setOpenMobile(false)}
               />
 
+              {/* Contact after Battery */}
+              {CONTACT_ITEM && (
+                <li className="mt-1">
+                  <Link
+                    href={CONTACT_ITEM.href}
+                    onClick={() => setOpenMobile(false)}
+                    className={
+                      "block rounded-lg px-3 py-2 text-sm font-medium transition " +
+                      (isActive(CONTACT_ITEM.href) ? "bg-gray-100 text-gray-900" : "text-gray-700 hover:bg-gray-50")
+                    }
+                  >
+                    {CONTACT_ITEM.name}
+                  </Link>
+                </li>
+              )}
+
               <li className="mt-2 flex gap-2 px-1">
                 <Link
                   href="/component/contact"
@@ -312,7 +320,16 @@ export default function SiteHeader() {
 
 type DropdownItem = { name: string; href: string; desc: string };
 
-function Dropdown({ title, items, open, setOpen, otherClose, active, icon }: {
+function Dropdown({
+  title,
+  items,
+  open,
+  setOpen,
+  otherClose,
+  active,
+  icon,
+  parentHref, // 🔗 new
+}: {
   title: string;
   items: DropdownItem[];
   open: boolean;
@@ -320,25 +337,51 @@ function Dropdown({ title, items, open, setOpen, otherClose, active, icon }: {
   otherClose: React.Dispatch<React.SetStateAction<boolean>>[];
   active?: boolean;
   icon?: "battery";
+  parentHref?: string; // 🔗 new
 }) {
   return (
     <>
-      <button
-        type="button"
-        onClick={() => {
-          setOpen((v) => !v);
-          otherClose.forEach((fn) => fn(false));
-        }}
-        className={
-          "inline-flex items-center gap-1 rounded-lg px-2 py-1.5 text-sm font-medium transition " +
-          (active ? "text-black" : "text-gray-600 hover:text-gray-900")
-        }
-        aria-haspopup="menu"
-        aria-expanded={open}
-      >
-        {title}
-        <ChevronDown className={"h-4 w-4 transition-transform " + (open ? "rotate-180" : "")} />
-      </button>
+      <div className="inline-flex items-center gap-1">
+        {/* Title (navigates if parentHref provided) */}
+        {parentHref ? (
+          <Link
+            href={parentHref}
+            className={
+              "inline-flex items-center text-sm font-medium transition " +
+              (active ? "text-black" : "text-gray-600 hover:text-gray-900")
+            }
+            aria-label={title}
+          >
+            {title}
+          </Link>
+        ) : (
+          <span
+            className={
+              "inline-flex items-center text-sm font-medium " +
+              (active ? "text-black" : "text-gray-600")
+            }
+          >
+            {title}
+          </span>
+        )}
+
+        {/* Chevron (only toggles dropdown, does NOT navigate) */}
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            setOpen((v) => !v);
+            otherClose.forEach((fn) => fn(false));
+          }}
+          className="inline-flex items-center rounded-lg px-1.5 py-1 hover:bg-gray-100"
+          aria-haspopup="menu"
+          aria-expanded={open}
+          aria-label={`Toggle ${title} menu`}
+        >
+          <ChevronDown className={"h-4 w-4 transition-transform " + (open ? "rotate-180" : "")} />
+        </button>
+      </div>
 
       {open && (
         <div
@@ -348,14 +391,15 @@ function Dropdown({ title, items, open, setOpen, otherClose, active, icon }: {
           <div className="absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-l border-t bg-white" />
           <div className="grid gap-2 p-3 sm:grid-cols-3">
             {items.map((item) => (
-              <Link key={item.href} href={item.href} role="menuitem" className="group rounded-xl border p-4 transition hover:border-gray-300 hover:bg-gray-50 focus:outline-none">
+              <Link
+                key={item.href}
+                href={item.href}
+                role="menuitem"
+                className="group rounded-xl border p-4 transition hover:border-gray-300 hover:bg-gray-50 focus:outline-none"
+              >
                 <div className="flex items-start gap-3">
                   <span className="mt-0.5 inline-flex rounded-lg border p-2">
-                    {icon === "battery" ? (
-                      <Battery className="h-4 w-4" aria-hidden="true" />
-                    ) : (
-                      <SunMedium className="h-4 w-4" aria-hidden="true" />
-                    )}
+                    {icon === "battery" ? <Battery className="h-4 w-4" /> : <SunMedium className="h-4 w-4" />}
                   </span>
                   <div>
                     <div className="text-sm font-semibold text-gray-900">{item.name}</div>
@@ -371,10 +415,12 @@ function Dropdown({ title, items, open, setOpen, otherClose, active, icon }: {
           <div className="flex items-center justify-between border-t px-4 py-3 text-xs text-gray-600">
             <span>
               Have questions?{" "}
-              <Link href="/component/contact" className="font-medium text-gray-900 underline">Talk to an expert</Link>
+              <Link href="/component/contact" className="font-medium text-gray-900 underline">
+                Talk to an expert
+              </Link>
             </span>
             <a href="tel:+61 497 358 063" className="rounded-lg border px-3 py-1.5 font-semibold hover:bg-gray-50">
-              Call   +61 497 358 063
+              Call +61 497 358 063
             </a>
           </div>
         </div>
@@ -383,7 +429,13 @@ function Dropdown({ title, items, open, setOpen, otherClose, active, icon }: {
   );
 }
 
-function MobileSection({ title, open, setOpen, items, onNavigate }: {
+function MobileSection({
+  title,
+  open,
+  setOpen,
+  items,
+  onNavigate,
+}: {
   title: string;
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -405,7 +457,11 @@ function MobileSection({ title, open, setOpen, items, onNavigate }: {
         <ul className="mt-1 space-y-1 pl-3">
           {items.map((item) => (
             <li key={item.href}>
-              <Link href={item.href} onClick={onNavigate} className="block rounded-lg px-3 py-2 text-sm hover:bg-gray-50">
+              <Link
+                href={item.href}
+                onClick={onNavigate}
+                className="block rounded-lg px-3 py-2 text-sm hover:bg-gray-50"
+              >
                 <div className="font-medium">{item.name}</div>
                 <div className="text-xs text-gray-600">{item.desc}</div>
               </Link>

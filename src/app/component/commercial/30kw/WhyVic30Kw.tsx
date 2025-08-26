@@ -52,17 +52,6 @@ export default function WhyVic30Kw() {
                         </ul>
 
                         {/* Call to Action */}
-                        <p className="text-blue-600">
-                            Contact us now to find out 30kW solar power system cost in Queensland.
-                        </p>
-                        <p className="mt-2">
-                            Feel like you need more power? We have it all. Visit{" "}
-                           
-                            <a href="#" className="text-blue-600 underline">
-                                50kW Solar System
-                            </a>{" "}
-                            for more info.
-                        </p>
                     </div>
 
 

@@ -9,24 +9,24 @@ import HeroHm from "./component/MineHomepage/HeroHm";
 import PaymentPlan from "./component/MineHomepage/PaymentPlan";
 import SolarPanalSyatem from "./component/MineHomepage/SolarPanalSyatem";
 import WhyVic from "./component/MineHomepage/WhyVic";
-import PopupLeadForm from "./component/PopupLeadForm"; // <-- path as per your structure
+import  SolarCalculator from "./solar-calculator/page"; 
+
 
 export default function Page() {
   return (
     <>
       <HeroHm />
       <CallSection />
-      {/* calculeter add */}
       <SolarPanalSyatem />
       <WhyVic />
+      <SolarCalculator/>
       <PaymentPlan />
       <BackMap />
       <BrandRauningBelt />
       <Fetucher />
       <FaqsHm />
 
-      {/* 3s delayed popup */}
-      <PopupLeadForm delayMs={3000} />
+
     </>
   );
 }

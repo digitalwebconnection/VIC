@@ -10,12 +10,7 @@
         "aria-required-children": "off"
       }
     ],
-    "axe/forms": [
-      "default",
-      {
-        "select-name": "off"
-      }
-    ],
+    "axe/forms": "off",
     "compat-api/html": [
       "default",
       {

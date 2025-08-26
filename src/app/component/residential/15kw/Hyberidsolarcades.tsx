@@ -1,25 +1,25 @@
 "use client";
 import { FiPhone } from "react-icons/fi";
 
-export default function System50kw() {
+export default function Hyberidsolarcades() {
   const warrantyCards = [
     {
-      title: "Performance Warranty on 50kw Solar System",
+      title: "Performance Warranty on 15kw Solar System",
       color: "bg-amber-400",
       text: "text-black",
     },
     {
-      title: "Workmanship & Replacement Warranty for 50kw Solar System Panels",
+      title: "Workmanship & Replacement Warranty for 15kw Solar System Panels",
       color: "bg-sky-800",
       text: "text-white",
     },
     {
-      title: "Product Warranty on 50kw Solar System with 50kW Solar Panels",
+      title: "Product Warranty on 15kw Solar System with 50kW Solar Panels",
       color: "bg-amber-400",
       text: "text-black",
     },
     {
-      title: "50kw Solar System Packages Available On-Demand",
+      title: "15kw Solar System Packages Available On-Demand",
       color: "bg-sky-800",
       text: "text-white",
     },
@@ -29,7 +29,7 @@ export default function System50kw() {
     <>
       <div className="max-w-full mx-auto my-10">
         <h2 className="text-center text-2xl font-bold mb-8 text-gray-900">
-          Excellent Warranty Coverage on 50kw Solar System
+          Excellent Warranty Coverage on 15kw Solar System
         </h2>
 
         {/* Cards */}

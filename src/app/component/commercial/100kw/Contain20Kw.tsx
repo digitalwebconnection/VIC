@@ -1,11 +1,12 @@
-export default function Solar6kwintro() {
-    return(
+export default function Contain20Kw(){
+
+    return (
         <>
-        <div className=" bg-white p-6 md:p-12">
+            <div className=" bg-white p-6 md:p-12">
                 <div className="max-w-7xl mx-auto   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-                    <div className="">
+                    <div className=" ">
                         {/* Header */}
-                        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">6.6kw Solar System</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">100kw Solar System</h1>
                         <p className="text-sm text-gray-500 mb-4">Save Money and Reduce Your Carbon Footprint</p>
 
                         {/* Subheading */}
@@ -15,11 +16,11 @@ export default function Solar6kwintro() {
 
                         {/* Description */}
                         <p className="text-gray-700 mb-8">
-                            The powerful 6.6kw solar power system is an ideal residential solar solution for the small homeowners
-                            in Queensland. Optimal power output is ensured through a high-quality 5kw inverter and 15 Monocrystalline
+                            The powerful 100kw Solar System system is an ideal residential solar solution for the small homeowners
+                            in Queensland. Optimal power output is ensured through a high-quality 100kw inverter and 15 Monocrystalline
                             Tier-1 solar panels with a 330-watt Power output.
                             <br />
-                            Our solar experts and CEC-certified technicians install and configure this powerful 5kw solar power
+                            Our solar experts and CEC-certified technicians install and configure this powerful 100kw solar power
                             system on your rooftop with complete efficiency to ensure seamless power output for a long time.
                         </p>
                     </div>
@@ -66,7 +67,6 @@ export default function Solar6kwintro() {
                     </div>
                 </div>
             </div>
-        
         </>
     )
 }

@@ -1,13 +1,13 @@
-export default function  WhyVic10Kw() {
+export default function WhyVic20Kw() {
     return(
-              <>
+             <>
             <div className=" bg-white flex items-center justify-center py-12 px-6">
                 <div className="max-w-7xl w-full grid md:grid-cols-2 gap-15">
                     {/* Left Side: Info */}
                     <div className="max-w-4xl mx-auto">
                         {/* Salient Features */}
                         <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                            Salient Features of 10kW Solar Power System
+                            Salient Features of 100kw Solar System
                         </h2>
                         <ul className="list-none space-y-3 mb-8">
                             <li className="flex items-start">
@@ -28,13 +28,13 @@ export default function  WhyVic10Kw() {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
-                                System configured by best 10kW solar power system installation and maintenance team in Queensland
+                                System configured by best 100kw Solar System installation and maintenance team in Queensland
                             </li>
                         </ul>
 
                         {/* Technical Specifications */}
                         <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                            Technical Specifications for 10kW Solar Power System
+                            Technical Specifications for 100kw Solar System
                         </h2>
                         <ul className="list-none space-y-3 mb-6">
                             <li className="flex items-start">
@@ -43,7 +43,7 @@ export default function  WhyVic10Kw() {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
-                                <strong>Inverter:</strong> 10kW inverter manufactured by reputed companies & recommended by CEC-accredited technicians
+                                <strong>Inverter:</strong> 100kw inverter manufactured by reputed companies & recommended by CEC-accredited technicians
                             </li>
                             <li className="flex items-start">
                                 <span className="text-green-500 mr-3 mt-1">✔</span>
@@ -52,17 +52,7 @@ export default function  WhyVic10Kw() {
                         </ul>
 
                         {/* Call to Action */}
-                        <p className="text-blue-600">
-                            Contact us now to find out 10kW solar power system cost in Queensland.
-                        </p>
-                        <p className="mt-2">
-                            Feel like you need more power? We have it all. Visit{" "}
-                           
-                            <a href="#" className="text-blue-600 underline">
-                                Hybrid Solar System Solar Power System
-                            </a>{" "}
-                            for more info.
-                        </p>
+                    
                     </div>
 
 
@@ -106,7 +96,7 @@ export default function  WhyVic10Kw() {
 
                             <button
                                 type="submit"
-                                className="w-full bg-gradient-to-r from-amber-400 to-yellow-400 text-white font-semibold py-2 rounded-md hover:opacity-90 transition"
+                                className="w-full bg-gradient-to-r from-amber-400 to-yellow-400 text-black font-bold py-2 rounded-md hover:opacity-90 transition"
                             >
                                 Submit
                             </button>

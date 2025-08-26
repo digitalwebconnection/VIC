@@ -1,21 +1,21 @@
-export default function Solaer10kwIntro() {
+export default function SolarResidensalintro() {
     return(
         <>
-         <div className=" bg-white p-6 md:p-12">
+        <div className=" bg-white p-6 md:p-12">
                 <div className="max-w-7xl mx-auto   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
                     <div className="">
                         {/* Header */}
-                        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">10kw Solar System</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">15kw  System</h1>
                         <p className="text-sm text-gray-500 mb-4">Save Money and Reduce Your Carbon Footprint</p>
 
                         {/* Subheading */}
                         <h2 className="text-lg font-semibold text-blue-500 mb-6">
-                            The Most Sold 10kw Solar Power System Package for Queensland Households
+                            The Most Sold 15kw  System Solar Power System Package for Queensland Households
                         </h2>
 
                         {/* Description */}
                         <p className="text-gray-700 mb-8">
-                            The powerful 10kw solar power system is an ideal residential solar solution for the small homeowners
+                            The powerful 15kw  System solar power system is an ideal residential solar solution for the small homeowners
                             in Queensland. Optimal power output is ensured through a high-quality 5kw inverter and 15 Monocrystalline
                             Tier-1 solar panels with a 330-watt Power output.
                             <br />
