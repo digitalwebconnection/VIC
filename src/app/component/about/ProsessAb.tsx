@@ -13,23 +13,23 @@ type Step = {
 const steps: Step[] = [
   {
     id: 1,
-    title: "Book a Free Consultation",
+    title: "Book Your Free Consultation",
     description:
-      "Share a recent bill and your address. We’ll review your usage, roof, and retailer plan to see what suits your home in VIC.",
+      "Send us your latest electricity bill and address. Our experts will assess your energy use, roof suitability, and current plan to find the best solar solution for your home in Victoria.",
     icon: <Calendar size={32} className="text-[#1f5495]" />,
   },
   {
     id: 2,
-    title: "Tailored System & Savings",
+    title: "Custom Design & Savings Plan",
     description:
-      "Get a custom design with STC incentives, estimated production, payback, and tariff/FiT guidance—no pressure, no jargon.",
+      "Receive a tailored solar & battery design with estimated production, payback timeline, STC rebates, and Feed-in Tariff guidance—explained in simple, jargon-free language.",
     icon: <Calculator size={32} className="text-[#1f5495]" />,
   },
   {
     id: 3,
-    title: "Install & Ongoing Support",
+    title: "Professional Install & Ongoing Care",
     description:
-      "CEC-accredited install, smart monitoring setup, and after-sales care. We’re here long after the switch-on.",
+      "Our CEC-accredited installers set up your system with smart monitoring and provide full handover. Plus, our dedicated support team ensures peace of mind long after installation.",
     icon: <BadgeCheck size={32} className="text-[#1f5495]" />,
   },
 ];
@@ -40,12 +40,12 @@ const ProsessAb = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-0 text-center">
         {/* Tagline */}
         <p className="uppercase text-orange-500 font-semibold tracking-wide text-sm">
-          Our process & how we help
+          Our Proven Process
         </p>
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
-          What to expect with West VIC Energy
+          Solar Made Simple with West Vic Energy
         </h2>
 
         {/* Steps Grid */}
@@ -81,11 +81,11 @@ const ProsessAb = () => {
         {/* CTA row */}
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
           <a
-            href="/quote"
+            href="/component/contact"
             className="inline-flex justify-center items-center rounded-full bg-blue-900 px-6 py-3 font-semibold text-white hover:bg-orange-600 transition"
             aria-label="Request a free solar quote from West VIC Energy"
           >
-           <a href="/component/contact">  Request a Free Quote</a> 
+            Request a Free Quote
           </a>
           <a
             href="tel:+61 497 358 063"
@@ -97,7 +97,7 @@ const ProsessAb = () => {
         </div>
 
         <p className="mt-3 text-xs text-gray-500">
-          Estimates are indicative only; actual outcomes depend on site conditions, retailer plans, and usage.
+          *Savings estimates are indicative only. Actual results vary depending on site conditions, retailer plans, and energy usage.
         </p>
       </div>
     </section>

@@ -114,7 +114,7 @@ const SolustionAb = () => {
                 Get in touch to discuss how we can help you
               </h2>
               <p className="text-blue-100 mt-2">
-                We’re pleased to welcome homeowners and businesses across Victoria.
+                We’re pleased to welcome home owners and businesses across Victoria.
               </p>
 
               <div className="flex items-center gap-4 mt-6 flex-wrap">

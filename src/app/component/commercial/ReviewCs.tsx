@@ -1,106 +1,78 @@
 import Image from "next/image";
 
-type Testimonial = {
-  name: string;
-  title: string;
-  image: string;
-  text: string;
-};
-
-const BLUR =
-  "data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="; // tiny 1x1 transparent placeholder
+// tiny 1x1 transparent placeholder
 
 export default function ReviewCs() {
-  const testimonials: Testimonial[] = [
-    {
-      name: "Grace Hall",
-      title: "Founder",
-      image:
-        "https://images.unsplash.com/photo-1558449028-b53a39d100fc?fm=jpg&q=60&w=1200&ixlib=rb-4.1.0",
-      text:
-        "I was hesitant to switch to solar, but this company made it easy and affordable.",
-    },
-    {
-      name: "Connor Walker",
-      title: "Programmer",
-      image:
-        "https://images.unsplash.com/photo-1558449028-b53a39d100fc?fm=jpg&q=60&w=1200&ixlib=rb-4.1.0",
-      text:
-        "I've already seen a significant decrease in my energy bills since going solar with them.",
-    },
-    {
-      name: "Kira Wood",
-      title: "Customer",
-      image:
-        "https://images.unsplash.com/photo-1558449028-b53a39d100fc?fm=jpg&q=60&w=1200&ixlib=rb-4.1.0",
-      text:
-        "Their team was professional, knowledgeable, and provided excellent customer service.",
-    },
-  ];
+   const testimonials = [
+        {
+            name: "Emily Johnson",
+            title: "Homeowner – Ballarat",
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?fm=jpg&q=60&w=3000",
+            text: "West Vic Energy made going solar so simple! The team explained everything clearly and I’ve already noticed huge savings on my electricity bills.",
+        },
+        {
+            name: "Mark Wilson",
+            title: "Small Business Owner – Geelong",
+            image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?fm=jpg&q=60&w=3000",
+            text: "As a business owner, reducing overhead costs is vital. Their solar package was affordable and the installation was quick and professional.",
+        },
+        {
+            name: "Sophie & Liam Carter",
+            title: "Young Family – Melbourne",
+            image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?fm=jpg&q=60&w=3000",
+            text: "We wanted to lower our carbon footprint for our kids’ future. West Vic Energy delivered an easy, affordable solar solution that we love.",
+        },
+    ];
 
-  return (
-    <section className="bg-white">
-      {/* Testimonials Section */}
-      <div className="bg-blue-50 px-6 py-14">
-        <div className="mx-auto max-w-7xl text-center">
-          <h5 className="mb-2 text-sm font-semibold uppercase text-blue-900">
-            Our Testimonials
-          </h5>
-          <h2 className="mb-10 text-2xl font-bold text-gray-800 md:text-3xl">
-            What Our Customers <span className="whitespace-nowrap">Say</span>
-          </h2>
+    return (
+        <div className="bg-white">
+            <div className="bg-blue-50 py-14 px-6">
+                <div className="max-w-7xl mx-auto text-center">
+                    <h5 className="text-sm font-semibold text-blue-900 uppercase mb-2">
+                        Real Stories, Real Impact
+                    </h5>
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-10">
+                        What Our Customers Say About West Vic Energy
+                    </h2>
 
-          <ul className="grid gap-6 md:grid-cols-3" role="list">
-            {testimonials.map((t, i) => (
-              <li
-                key={i}
-                className="relative z-10 rounded-lg bg-white p-6 text-left shadow-sm ring-1 ring-gray-200"
-              >
-                {/* Speech bubble tail */}
-                <div className="absolute -bottom-2 left-6 h-4 w-4 rotate-45 bg-white ring-1 ring-white" />
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {testimonials.map((testimonial, index) => (
+                            <div
+                                key={index}
+                                className="relative bg-white p-6 rounded-lg shadow-md text-left hover:shadow-lg transition z-10"
+                            >
+                                <div className="absolute left-6 -bottom-2 w-4 h-4 bg-white rotate-45" />
+                                <p className="text-gray-600 text-sm mb-6 italic">
+                                    “{testimonial.text}”
+                                </p>
+                                <div className="flex items-center gap-3">
+                                    <Image
+                                        src={testimonial.image}
+                                        alt={testimonial.name}
+                                        width={45}
+                                        height={45}
+                                        className="rounded-full object-cover"
+                                    />
+                                    <div>
+                                        <p className="font-bold text-sm text-blue-900">{testimonial.name}</p>
+                                        <p className="text-xs text-gray-500">{testimonial.title}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
 
-                <p className="mb-6 text-sm text-gray-600">{t.text}</p>
-
-                {/* User Info */}
-                <div className="flex items-center gap-3">
-                  <div className="relative h-10 w-10">
-                    <Image
-                      src={t.image}
-                      alt={`${t.name} — ${t.title}`}
-                      fill
-                      sizes="40px"
-                      className="rounded-full object-cover"
-                      placeholder="blur"
-                      blurDataURL={BLUR}
-                      // Works even if images.domains/remotePatterns is not set:
-                      unoptimized
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-blue-900">{t.name}</p>
-                    <p className="text-xs text-gray-500">{t.title}</p>
-                  </div>
+                    {/* Dots */}
+                    <div className="mt-8 flex justify-center gap-2">
+                        {[0, 1, 2].map((i) => (
+                            <span
+                                key={i}
+                                className={`w-2 h-2 rounded-full ${i === 0 ? "bg-blue-900" : "bg-gray-300"}`}
+                            />
+                        ))}
+                    </div>
                 </div>
-              </li>
-            ))}
-          </ul>
-
-          {/* Carousel dots (static visual) */}
-          <div className="mt-8 flex justify-center gap-2">
-            {[0, 1, 2].map((i) => (
-              <span
-                key={i}
-                aria-hidden="true"
-                className={`h-2 w-2 rounded-full ${
-                  i === 0 ? "bg-blue-900" : "bg-gray-300"
-                }`}
-              />
-            ))}
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
-  );
+    );
 }

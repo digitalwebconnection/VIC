@@ -27,9 +27,9 @@ const Section: React.FC<{ title: string; children: React.ReactNode }> = ({
 );
 
 export const metadata = {
-    title: "Anker SOLIX – Specs & Series",
+    title: "Anker SOLIX – Specs & Series | West Vic Energy",
     description:
-        "SOLIX X1 home energy system and SOLIX F-Series portable stations specs with warranty, chemistry, and monitoring.",
+        "Explore Anker SOLIX home and portable solar battery solutions with specs, warranty, and monitoring — proudly offered by West Vic Energy.",
 };
 
 export default function AboutAnker() {
@@ -39,12 +39,13 @@ export default function AboutAnker() {
                 <section className="relative mx-auto max-w-7xl px-6 md:px-0 py-12 md:py-16">
                     {/* Page Title */}
                     <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-blue-900">
-                        Anker Solix Solar Battery
+                        Anker Solix Solar Battery – Installed by West Vic Energy
                     </h1>
 
                     {/* Subheading */}
                     <p className="mt-4 text-lg md:text-xl font-semibold text-gray-900">
-                        Start storing your excess solar power and reducing your electricity bills further.
+                        Start storing your excess solar power and reduce electricity bills further — 
+                        with trusted installation from West Vic Energy.
                     </p>
 
                     {/* Quote */}
@@ -57,7 +58,7 @@ export default function AboutAnker() {
                                 “
                             </span>
                             <p>
-                                Anker SOLIX combines safety, power, scalability, and smart energy management in one cohesive package—backed by Anker’s reputation for quality tech. Whether you need full‑home backup, RV power, or outdoor reliability, SOLIX is a top contender in its class.
+                                Anker SOLIX combines safety, power, scalability, and smart energy management in one cohesive package—backed by Anker’s reputation for quality tech. With professional installation by West Vic Energy, you can trust long-term reliability and expert support for your solar storage.
                             </p>
                             <span
                                 className="absolute -bottom-8 right-6 text-6xl font-black text-blue-100 select-none"
@@ -71,23 +72,24 @@ export default function AboutAnker() {
                     {/* Body Copy */}
                     <div className="prose prose-slate max-w-none mt-6">
                         <p>
-                            The Anker SOLIX Solar Battery lineup brings together forward‑thinking battery technology, smart design, and modular flexibility, providing compelling solutions across transportable and <a href="#" className="text-blue-700 hover:underline">home energy storage</a> use cases.
+                            The Anker SOLIX Solar Battery lineup, offered by <strong>West Vic Energy</strong>, brings together forward-thinking battery technology, smart design, and modular flexibility — providing powerful solutions across transportable and{" "}
+                            <a href="#" className="text-blue-700 hover:underline">home energy storage</a> applications.
                         </p>
 
                         <p>
-                            This is Anker’s full‑feature home battery solution. It supports scalable capacity from <strong>5 kWh</strong> up to <strong>180 kWh</strong> and output from <strong>3 to 36 kW</strong>, sized for residential and commercial energy requirements. It features Storm Guard mode to pre‑charge before outages, and rapid UPS switch in under <strong>20 ms</strong>.
+                            This is Anker’s full-feature home battery solution. It supports scalable capacity from <strong>5 kWh</strong> up to <strong>180 kWh</strong> and output from <strong>3 to 36 kW</strong>, sized for residential and commercial requirements. Installed by <strong>West Vic Energy</strong>, it features Storm Guard mode to pre-charge before outages, and rapid UPS switch in under <strong>20 ms</strong>.
                         </p>
 
                         <p>
-                            It runs across extreme temperatures (<strong>−20 °C to 55 °C</strong>), has <strong>IP65/66</strong> and <strong>C5</strong> corrosion resistance, and includes smart module‑level optimization to avoid performance bottlenecks.
+                            It runs across extreme temperatures (<strong>−20 °C to 55 °C</strong>), has <strong>IP65/66</strong> and <strong>C5</strong> corrosion resistance, and includes smart module-level optimization to avoid performance bottlenecks — ensuring reliable performance for years with West Vic Energy support.
                         </p>
 
                         <p>
-                            Anker Solix portable power stations are built around <strong>LiFePO<sub>4</sub></strong> (Lithium Iron Phosphate) battery chemistry, offering long lifespan (around <strong>3,000 cycles</strong>) and steadfast performance.
+                            Anker Solix portable power stations are built around <strong>LiFePO<sub>4</sub></strong> (Lithium Iron Phosphate) chemistry, offering long lifespan (around <strong>3,000 cycles</strong>) and steadfast performance — available from <strong>West Vic Energy</strong>.
                         </p>
 
                         <p>
-                            The <strong>SOLIX C300</strong> packs <strong>288 Wh</strong> of capacity, supports up to <strong>300 W</strong> continuous AC output (<strong>600 W</strong> surge), and recharges fully in about <strong>70 minutes</strong> via AC power. Solar recharging up to <strong>100 W</strong> input is supported via an <strong>XT‑60</strong> connector, making it perfect for off‑grid tools, camping, or emergency backup.
+                            The <strong>SOLIX C300</strong> packs <strong>288 Wh</strong> of capacity, supports up to <strong>300 W</strong> continuous AC output (<strong>600 W</strong> surge), and recharges fully in about <strong>70 minutes</strong> via AC power. Solar recharging up to <strong>100 W</strong> input is supported via an <strong>XT-60</strong> connector — a perfect portable companion, supplied by West Vic Energy for off-grid tools, camping, or emergency backup.
                         </p>
                     </div>
                 </section>
@@ -95,7 +97,7 @@ export default function AboutAnker() {
                     <section className="mx-auto max-w-7xl px-6 md:px-0 py-12 md:py-16">
                         {/* Top comparison grid */}
                         <div className="grid md:grid-cols-2 gap-10 md:gap-14">
-                            <Section title="SOLIX X1 Home Energy System">
+                            <Section title="SOLIX X1 Home Energy System (Available from West Vic Energy)">
                                 <Bulleted label="Modular design">
                                     Combines a power module (built-in hybrid inverter and controller) with
                                     <strong> 1–6 battery modules</strong> (each 5 kWh LFP), totaling
@@ -112,11 +114,11 @@ export default function AboutAnker() {
                                     +55 °C), app monitoring, modular fault isolation
                                 </Bulleted>
                                 <Bulleted label="Warranty">
-                                    10 years or total throughput per module
+                                    10 years or total throughput per module — with West Vic Energy installation support
                                 </Bulleted>
                             </Section>
 
-                            <Section title="SOLIX F-Series Portable Power Stations">
+                            <Section title="SOLIX F-Series Portable Power Stations (Supplied by West Vic Energy)">
                                 <Bulleted>
                                     Includes <strong>F2000 (2,048 Wh)</strong> and{" "}
                                     <strong>F3800 (3,840 Wh)</strong> base units with <strong>6,000 W</strong>{" "}
@@ -133,7 +135,7 @@ export default function AboutAnker() {
                                 </Bulleted>
                                 <Bulleted label="Use cases">
                                     <strong>Portable</strong>, ideal for RV/off-grid living, emergency power,
-                                    or mobile job sites.
+                                    or mobile job sites — available from West Vic Energy.
                                 </Bulleted>
                             </Section>
                         </div>
@@ -157,7 +159,7 @@ export default function AboutAnker() {
                                 </svg>
                                 <h4 className="text-lg font-bold">Warranty duration</h4>
                                 <p className="text-gray-700">
-                                    10 years (standard) or 5 years (selected series)
+                                    10 years (standard) or 5 years (selected series) — with local West Vic Energy support
                                 </p>
                             </div>
 
@@ -176,7 +178,7 @@ export default function AboutAnker() {
                                 </svg>
                                 <h4 className="text-lg font-bold">Battery type</h4>
                                 <p className="text-gray-700">
-                                    Cobalt-free LiFePO<sub>4</sub> lithium-ion
+                                    Cobalt-free LiFePO<sub>4</sub> lithium-ion — trusted by West Vic Energy
                                 </p>
                             </div>
 
@@ -194,7 +196,7 @@ export default function AboutAnker() {
                                 </svg>
                                 <h4 className="text-lg font-bold">Low Maintenance</h4>
                                 <p className="text-gray-700">
-                                    Low maintenance solar battery with high performance and affordable prices.
+                                    Low maintenance solar battery with high performance and affordable prices — supplied by West Vic Energy.
                                 </p>
                             </div>
 
@@ -212,8 +214,8 @@ export default function AboutAnker() {
                                 </svg>
                                 <h4 className="text-lg font-bold">24/7 Monitoring</h4>
                                 <p className="text-gray-700">
-                                    A user-friendly interface allows for 24-hour monitoring to track real time
-                                    data and performance.
+                                    A user-friendly interface allows for 24-hour monitoring to track real-time
+                                    data and performance — supported by West Vic Energy.
                                 </p>
                             </div>
                         </div>

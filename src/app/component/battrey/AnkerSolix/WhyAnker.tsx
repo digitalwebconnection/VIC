@@ -27,12 +27,10 @@ const Bullet: React.FC<
 );
 
 export const metadata = {
-  title: "Why Choose Anker Solix Solar Battery?",
+  title: "Why Choose Anker Solix Solar Battery? | West Vic Energy",
   description:
-    "Fast charging & <20 ms switchover, safe LiFePO₄ chemistry, modular scalability, all-weather design, and smart energy optimization.",
+    "West Vic Energy supplies and installs Anker SOLIX solar batteries in Australia. Safe LiFePO₄ chemistry, modular scalability, fast charging, and smart monitoring for homes & businesses.",
 };
-
-
 
 export default function WhyAnker() {
   return (
@@ -41,8 +39,16 @@ export default function WhyAnker() {
         <section className="mx-auto max-w-7xl px-6 md:px-0 py-8 md:py-10">
           <div className="rounded-2xl bg-slate-100/80 p-6 md:p-8 ring-1 ring-slate-200 shadow-2xl">
             <h1 className="text-[28px] md:text-4xl font-extrabold tracking-tight text-red-600">
-              Why Choose Anker Solix Solar Battery?
+              Why Choose Anker Solix Solar Battery with West Vic Energy?
             </h1>
+
+            {/* Company Intro */}
+            <p className="mt-4 text-gray-700 text-lg">
+              At <strong>West Vic Energy</strong>, we bring cutting-edge solar storage
+              solutions to Australian homes and businesses. Partnering with
+              trusted brands like <strong>Anker</strong>, we ensure you get reliable,
+              efficient, and future-ready energy independence.
+            </p>
 
             {/* Group 1 */}
             <div className="mt-6">
@@ -51,16 +57,12 @@ export default function WhyAnker() {
               </h3>
               <ul className="mt-2 space-y-3">
                 <Bullet>Up to <strong>6 kW continuous output</strong> (per X1 unit)</Bullet>
-                <Bullet>
-                  <span>&lt;<strong>20 ms</strong> switchover time</span>
-                  note= during power outages&quot;
+                <Bullet note="Instant switchover during power outages ensures uninterrupted power.">
+                  &lt;<strong>20 ms</strong> switchover time
                 </Bullet>
-                <Bullet
-                  note="This ensures you have reliable energy when you need it most."
-                >
+                <Bullet note="This ensures you have reliable energy when you need it most.">
                   Fast recharging via solar or AC power
                 </Bullet>
-
               </ul>
             </div>
 
@@ -70,8 +72,7 @@ export default function WhyAnker() {
                 Safe &amp; Long-Lasting LFP Battery Chemistry
               </h3>
               <p className="mt-1 text-gray-700">
-                Anker SOLIX uses <strong>Lithium Iron Phosphate (LiFePO₄)</strong>{" "}
-                batteries—offering:
+                Anker SOLIX uses <strong>Lithium Iron Phosphate (LiFePO₄)</strong> batteries—offering:
               </p>
               <ul className="mt-2 space-y-3">
                 <Bullet>Up to <strong>6,000 charge cycles</strong></Bullet>
@@ -92,8 +93,7 @@ export default function WhyAnker() {
               </p>
               <ul className="mt-2 space-y-3">
                 <Bullet>
-                  Start with <strong>5–30 kWh</strong>, scale up to{" "}
-                  <strong>180 kWh</strong>
+                  Start with <strong>5–30 kWh</strong>, scale up to <strong>180 kWh</strong>
                 </Bullet>
                 <Bullet>Mix new and old battery modules (future-proofed design)</Bullet>
                 <Bullet>Ideal for small homes to large buildings</Bullet>
@@ -128,8 +128,7 @@ export default function WhyAnker() {
                   Control via the <strong>Anker SOLIX app</strong>
                 </Bullet>
                 <Bullet>
-                  Features like <strong>Storm Guard</strong>, off-grid mode, and
-                  time-of-use scheduling
+                  Features like <strong>Storm Guard</strong>, off-grid mode, and time-of-use scheduling
                 </Bullet>
                 <Bullet>
                   Integrates with <strong>solar panels, EV chargers, and more</strong>
@@ -137,13 +136,25 @@ export default function WhyAnker() {
               </ul>
             </div>
 
+            {/* Closing Section */}
+            <div className="mt-10 bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900">
+                Why West Vic Energy?
+              </h3>
+              <p className="mt-2 text-gray-700">
+                Choosing the right battery is only half the journey—the right installer makes all the difference. 
+                At <strong>West Vic Energy</strong>, we provide expert installation, tailored system design, and 
+                ongoing support so your Anker SOLIX system performs at its best for years to come.
+              </p>
+            </div>
+
             {/* CTAs */}
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
-                href="#contact"
+                href="/component/contact"
                 className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm  focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
               >
-               <a href="/component/contact">  Request a Free Quote</a> 
+                Request a Free Quote
               </a>
 
               <div className="inline-flex items-center gap-3 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow-sm">
@@ -156,7 +167,7 @@ export default function WhyAnker() {
                 >
                   <path d="M2.25 5.25a2 2 0 012-2h3.108a2 2 0 011.94 1.515l.72 2.878a2 2 0 01-.5 1.923l-1.35 1.35a16.5 16.5 0 007.425 7.425l1.35-1.35a2 2 0 011.923-.5l2.878.72a2 2 0 011.515 1.94V19.75a2 2 0 01-2 2H18.75C10.41 21.75 2.25 13.59 2.25 5.25v0z" />
                 </svg>
-            <a href="tel:+61 497 358 063">   +61 497 358 063</a>
+                <a href="tel:+61 497 358 063">+61 497 358 063</a>
               </div>
             </div>
           </div>
@@ -165,3 +176,4 @@ export default function WhyAnker() {
     </>
   );
 }
+

@@ -1,10 +1,8 @@
 import React from "react";
 
-
 const Dot = () => (
     <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-gray-900" />
 );
-
 
 const Bulleted: React.FC<React.PropsWithChildren<{ label?: string }>> = ({ label, children }) => (
     <li className="flex items-start gap-2">
@@ -16,7 +14,6 @@ const Bulleted: React.FC<React.PropsWithChildren<{ label?: string }>> = ({ label
     </li>
 );
 
-
 const Series: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
     <div className="space-y-3">
         <h3 className="text-lg md:text-xl font-extrabold text-gray-900">{title}</h3>
@@ -24,20 +21,17 @@ const Series: React.FC<{ title: string; children: React.ReactNode }> = ({ title,
     </div>
 );
 
-
 export const specsMetadata = {
-  title: "Tesla Powerwall Specs",
-  description: "Tesla Powerwall technical specifications.",
+    title: "Tesla Powerwall Specs | West Vic Energy",
+    description: "Tesla Powerwall technical specifications by West Vic Energy.",
 };
-
-
-
 
 export const metadata = {
-    title: "Tesla Powerwall Solar Battery",
+    title: "Tesla Powerwall Solar Battery | West Vic Energy",
     description:
-        "Start storing your excess solar power and reducing your electricity bills further.",
+        "Start storing your excess solar power and reducing your electricity bills with Tesla Powerwall, proudly offered by West Vic Energy.",
 };
+
 export default function AboutTesla() {
     return (
         <>
@@ -45,12 +39,12 @@ export default function AboutTesla() {
                 <section className="relative mx-auto max-w-7xl px-6 md:px-0 py-12 md:py-16">
                     {/* Page Title */}
                     <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-blue-900">
-                        Tesla Powerwall Solar Battery
+                        Tesla Powerwall Solar Battery – Powered by West Vic Energy
                     </h1>
 
                     {/* Subheading */}
                     <p className="mt-4 text-lg md:text-xl font-semibold text-gray-900">
-                        Start storing your excess solar power and reducing your electricity bills further.
+                        Store your excess solar energy, lower your electricity bills, and gain true energy independence with West Vic Energy.
                     </p>
 
                     {/* Quote */}
@@ -60,7 +54,7 @@ export default function AboutTesla() {
                                 “
                             </span>
                             <p>
-                                Tesla Powerwall 3 stands out for its high capacity, integrated solar inverter, smart energy management, over‑the‑air updates, and seamless integration with the Tesla ecosystem. These features make it a robust and future‑proof choice for homeowners looking to enhance their energy independence and resilience.
+                                Tesla Powerwall 3 stands out for its high capacity, integrated solar inverter, smart energy management, over-the-air updates, and seamless integration with the Tesla ecosystem. With West Vic Energy, you get expert installation and ongoing support for long-term reliability.
                             </p>
                             <span className="absolute -bottom-8 right-6 text-6xl font-black text-blue-100 select-none" aria-hidden>
                                 ”
@@ -71,47 +65,31 @@ export default function AboutTesla() {
                     {/* Body Copy */}
                     <div className="prose prose-slate max-w-none mt-6">
                         <p>
-                            The <strong>Tesla Powerwall Solar Battery</strong> is one of the most progressive and consistent
-                            <a href="#" className="text-blue-700 hover:underline"> energy storage systems</a> accessible for residential and small commercial use. Designed by Tesla, a leader in energy innovation, the Powerwall integrates with solar panel systems to store additional energy produced during the day for use at night or during power outages.
+                            The <strong>Tesla Powerwall Solar Battery</strong>, offered by <strong>West Vic Energy</strong>, is one of the most advanced
+                            and reliable <a href="#" className="text-blue-700 hover:underline">energy storage solutions</a> available for homes and small businesses.
+                            It integrates with solar panels to store unused energy for later use—giving you power at night, during peak tariff times, or in blackouts.
                         </p>
 
                         <p>
-                            This allows homeowners to decrease their dependence on the grid, lower electricity bills, and maintain a stable power supply even during blackouts.
+                            Each unit provides <strong>13.5 kWh usable energy</strong> with scalable options—install up to 10 Powerwalls for higher capacity.
+                            With round-trip efficiency up to <strong>92%</strong> and a durable LiFePO<sub>4</sub> chemistry, it’s built for safety and performance.
                         </p>
 
                         <p>
-                            One of the standout features of the Tesla Powerwall is its <strong>high energy capacity</strong>. Each unit provides <strong>13.5 kWh of usable energy</strong>, which is enough to power crucial household appliances for numerous hours or more, depending on usage.
-                        </p>
-
-                        <p>
-                            The system is also <strong>scalable</strong>, allowing users to install up to <strong>10 Powerwall units</strong> together to increase their total storage capacity based on household energy requirements.
-                        </p>
-
-                        <p>
-                            The Tesla Powerwall is known for its <strong>effectiveness and durability</strong>. It delivers up to <strong>90–92% round‑trip efficiency</strong>, meaning most of the energy stored can be effectively used. Its battery chemistry <strong>Lithium Iron Phosphate (LiFePO<sub>4</sub>)</strong> in the latest models is engineered for protection, long cycle life, and thermal stability.
-                        </p>
-
-                        <p>
-                            The Powerwall is also equipped with an advanced <strong>Battery Management System (BMS)</strong> that monitors and protects the battery, safeguarding optimal performance over its lifetime.
-                        </p>
-
-                        <p>
-                            Another key benefit of the Tesla Powerwall is its <strong>intelligent backup capability</strong>. In the event of a power outage, the system detects the failure and rapidly switches to battery power.
-                        </p>
-
-                        <p>
-                            This transition is so fast (within milliseconds) that users often don’t even notice the switch. Tesla’s <strong>Storm Watch mode</strong> also helps prepare the battery ahead of severe weather by ensuring it’s fully charged.
+                            Backed by Tesla’s innovation and West Vic Energy’s trusted local expertise, you can count on seamless installation,
+                            ongoing monitoring, and dedicated support.
                         </p>
                     </div>
                 </section>
+
+                {/* Comparison */}
                 <main className="bg-white text-gray-900">
                     <section className="mx-auto max-w-7xl px-6 md:px-0 py-12 md:py-16">
-                        {/* Top comparison grid */}
                         <div className="grid md:grid-cols-2 gap-10 md:gap-14">
                             <Series title="Tesla Powerwall 2">
                                 <Bulleted label="Usable capacity">~13.5 kWh</Bulleted>
                                 <Bulleted label="Power output">5 kW continuous, 7 kW peak</Bulleted>
-                                <Bulleted>Integrated inverter (AC‑coupled system)</Bulleted>
+                                <Bulleted>Integrated inverter (AC-coupled system)</Bulleted>
                                 <Bulleted>Backup power for homes during outages</Bulleted>
                                 <Bulleted>Widely installed and proven technology</Bulleted>
                             </Series>
@@ -120,7 +98,7 @@ export default function AboutTesla() {
                                 <Bulleted label="Usable capacity">~13.5 kWh</Bulleted>
                                 <Bulleted label="Higher power output">11.5 kW continuous</Bulleted>
                                 <Bulleted>Integrated solar inverter (streamlined installation)</Bulleted>
-                                <Bulleted>Advanced software with over‑the‑air updates</Bulleted>
+                                <Bulleted>Advanced software with over-the-air updates</Bulleted>
                                 <Bulleted>Seamless integration with Tesla Solar Roof and EV chargers</Bulleted>
                             </Series>
                         </div>
@@ -128,7 +106,6 @@ export default function AboutTesla() {
                         {/* Divider */}
                         <hr className="my-12 border-slate-200" />
 
-                        {/* Bottom icon features */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                             <div className="flex flex-col items-start gap-3">
                                 {/* Warranty icon */}
@@ -162,7 +139,7 @@ export default function AboutTesla() {
                             </div>
 
                             <div className="flex flex-col items-start gap-3">
-                                {/* Monitoring icon */}
+                                {/* 24/7 monitoring icon */}
                                 <svg viewBox="0 0 24 24" className="h-12 w-12 text-blue-600" fill="none" stroke="currentColor" strokeWidth="1.6">
                                     <rect x="3" y="4" width="18" height="14" rx="2" />
                                     <path d="M7 18v2h10v-2M6 9h7m2 0h3M6 12h5m2 0h5M6 15h3m2 0h7" />
@@ -173,7 +150,6 @@ export default function AboutTesla() {
                         </div>
                     </section>
                 </main>
-
             </main>
         </>
     );

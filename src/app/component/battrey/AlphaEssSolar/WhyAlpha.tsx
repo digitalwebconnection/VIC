@@ -24,91 +24,120 @@ const Header: React.FC<React.PropsWithChildren> = ({ children }) => (
 );
 
 export const metadata = {
-  title: "Why Choose Alpha Ess Solar Battery?",
+  title: "Why West Vic Energy Recommends Alpha ESS Batteries",
   description:
-    "Safety with LiFePO4, modular scalability, integrated hybrid inverter & backup, smart monitoring, and proven reliability.",
+    "Backed by West Vic Energy’s expertise, Alpha ESS batteries offer safe LiFePO4 chemistry, smart energy management, reliable backup, and scalable power solutions.",
 };
 
 export default function WhyAlpha() {
   return (
-    <>
-      <main className="bg-white text-gray-800">
-        <section className="mx-auto max-w-7xl px-6 md:px-0 py-8 md:py-10">
-          <div className="rounded-2xl bg-slate-100/80 p-6 md:p-9 ring-1 ring-slate-200 shadow-2xl">
-            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-blue-900">Why Choose Alpha Ess Solar Battery?</h1>
+    <main className="bg-white text-gray-800">
+      <section className="mx-auto max-w-7xl px-6 md:px-0 py-8 md:py-10">
+        <div className="rounded-2xl bg-slate-100/80 p-6 md:p-9 ring-1 ring-slate-200 shadow-2xl">
+          {/* Heading */}
+          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-blue-900">
+            Why Choose Alpha ESS Solar Battery with West Vic Energy?
+          </h1>
 
-            <div className="mt-7 md:mt-8 space-y-7">
-              <div className="space-y-2">
-                <Header>Safety with LiFePO<sub>4</sub> Chemistry</Header>
-                <ul className="space-y-2">
-                  <Bullet>
-                    Alpha ESS batteries use lithium iron phosphate (LiFePO<sub>4</sub>) cells — known for excellent thermal stability, low fire risk, and long life.
-                  </Bullet>
-                </ul>
-              </div>
-
-              <div className="space-y-2">
-                <Header>Modular &amp; Scalable Design</Header>
-                <ul className="space-y-2">
-                  <Bullet>
-                    Start small and easily add battery modules later to increase capacity—perfect if your energy needs grow or you want flexibility.
-                  </Bullet>
-                </ul>
-              </div>
-
-              <div className="space-y-2">
-                <Header>Integrated Hybrid Inverter &amp; Backup Power</Header>
-                <ul className="space-y-2">
-                  <Bullet>
-                    Alpha ESS combines battery and inverter in one compact unit with fast, seamless power backup (&lt;20ms switch) during outages.
-                  </Bullet>
-                </ul>
-              </div>
-
-              <div className="space-y-2">
-                <Header>Smart Energy Management &amp; Monitoring</Header>
-                <ul className="space-y-2">
-                  <Bullet>
-                    Control and monitor your system remotely with the AlphaCloud app, optimizing your solar usage and system health in real time.
-                  </Bullet>
-                </ul>
-              </div>
-
-              <div className="space-y-2">
-                <Header>Proven Reliability &amp; Warranty</Header>
-                <ul className="space-y-2">
-                  <Bullet>
-                    Tier‑1 global brand with thousands of installations worldwide, backed by solid warranties and support, including fire suppression features on some models.
-                  </Bullet>
-                </ul>
-              </div>
+          {/* Content */}
+          <div className="mt-7 md:mt-8 space-y-7">
+            <div className="space-y-2">
+              <Header>Safe & Reliable LiFePO<sub>4</sub> Chemistry</Header>
+              <ul className="space-y-2">
+                <Bullet>
+                  Lithium iron phosphate (LiFePO<sub>4</sub>) batteries offer excellent safety, thermal stability, and long lifespan.
+                </Bullet>
+                <Bullet>
+                  Peace of mind with low fire risk and reliable energy storage—perfect for Australian conditions.
+                </Bullet>
+              </ul>
             </div>
 
-            {/* CTAs */}
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm  focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
-              >
-                <a href="/component/contact">  Request a Free Quote</a> s
-              </a>
+            <div className="space-y-2">
+              <Header>Modular, Scalable & Future-Ready</Header>
+              <ul className="space-y-2">
+                <Bullet>
+                  Start with a smaller system and expand as your energy needs grow.  
+                </Bullet>
+                <Bullet>
+                  Flexible design lets households and businesses upgrade capacity without replacing the full system.
+                </Bullet>
+              </ul>
+            </div>
 
-              <div className="inline-flex items-center gap-3 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow-sm">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden
-                  className="h-5 w-5"
-                >
-                  <path d="M2.25 5.25a2 2 0 012-2h3.108a2 2 0 011.94 1.515l.72 2.878a2 2 0 01-.5 1.923l-1.35 1.35a16.5 16.5 0 007.425 7.425l1.35-1.35a2 2 0 011.923-.5l2.878.72a2 2 0 011.515 1.94V19.75a2 2 0 01-2 2H18.75C10.41 21.75 2.25 13.59 2.25 5.25v0z" />
-                </svg>
-               <a href="tel:+61 497 358 063">   +61 497 358 063</a>
-              </div>
+            <div className="space-y-2">
+              <Header>Backup Power for Blackouts</Header>
+              <ul className="space-y-2">
+                <Bullet>
+                  Integrated hybrid inverter with seamless backup power (switches in under 20ms).  
+                </Bullet>
+                <Bullet>
+                  Stay powered during grid outages—essential for rural and regional Victoria.
+                </Bullet>
+              </ul>
+            </div>
+
+            <div className="space-y-2">
+              <Header>Smart Monitoring & Energy Control</Header>
+              <ul className="space-y-2">
+                <Bullet>
+                  Track your usage in real time with the AlphaCloud app.  
+                </Bullet>
+                <Bullet>
+                  Optimize solar generation, battery charge/discharge, and grid imports for maximum savings.  
+                </Bullet>
+              </ul>
+            </div>
+
+            <div className="space-y-2">
+              <Header>Trusted by West Vic Energy Customers</Header>
+              <ul className="space-y-2">
+                <Bullet>
+                  Thousands of Alpha ESS systems installed globally, supported by West Vic Energy’s local expertise.  
+                </Bullet>
+                <Bullet>
+                  Strong product warranties, on-ground support, and proven performance for Australian homes & businesses.  
+                </Bullet>
+              </ul>
+            </div>
+
+            <div className="space-y-2">
+              <Header>Sustainable & Cost-Effective</Header>
+              <ul className="space-y-2">
+                <Bullet>
+                  Store excess solar and use it at night—cutting bills and reducing reliance on the grid.  
+                </Bullet>
+                <Bullet>
+                  West Vic Energy ensures professional installation tailored to your energy goals.  
+                </Bullet>
+              </ul>
             </div>
           </div>
-        </section>
-      </main>
-    </>
+
+          {/* CTA Section */}
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a
+              href="/component/contact"
+              className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+            >
+              Request a Free Quote
+            </a>
+
+            <div className="inline-flex items-center gap-3 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden
+                className="h-5 w-5"
+              >
+                <path d="M2.25 5.25a2 2 0 012-2h3.108a2 2 0 011.94 1.515l.72 2.878a2 2 0 01-.5 1.923l-1.35 1.35a16.5 16.5 0 007.425 7.425l1.35-1.35a2 2 0 011.923-.5l2.878.72a2 2 0 011.515 1.94V19.75a2 2 0 01-2 2H18.75C10.41 21.75 2.25 13.59 2.25 5.25v0z" />
+              </svg>
+              <a href="tel:+61 497 358 063">+61 497 358 063</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

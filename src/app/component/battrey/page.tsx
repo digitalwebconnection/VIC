@@ -1,6 +1,6 @@
 "use client";
 import { Card, CardContent } from "../ui/card";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BatteryCharging, ShieldCheck, Sun, Zap } from "lucide-react";
 import Link from "next/link";
 
 const BATTERIES = [
@@ -41,14 +41,44 @@ const BATTERIES = [
   },
 ];
 
+const BENEFITS = [
+  {
+    title: "Energy Independence",
+    desc: "Store excess solar power and reduce reliance on the grid.",
+    icon: <Zap className="h-6 w-6 text-red-600" />,
+  },
+  {
+    title: "Backup Power",
+    desc: "Keep your home running during blackouts & outages.",
+    icon: <BatteryCharging className="h-6 w-6 text-red-600" />,
+  },
+  {
+    title: "Save More Money",
+    desc: "Use stored energy at night and lower your electricity bills.",
+    icon: <Sun className="h-6 w-6 text-red-600" />,
+  },
+  {
+    title: "Future-Ready",
+    desc: "Smart battery tech that grows with your solar system.",
+    icon: <ShieldCheck className="h-6 w-6 text-red-600" />,
+  },
+];
+
 export default function BatteryPage() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold text-center text-red-700 mb-10">
+      {/* Intro */}
+      <h1 className="text-4xl font-bold text-center text-blue-900 mb-4">
         🔋 Solar Battery Storage Solutions
       </h1>
+      <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
+        At <span className="font-semibold text-blue-700">West Vic Energy</span>,
+        we provide advanced solar battery systems that let you store excess
+        solar power, cut electricity bills, and enjoy reliable backup energy.
+      </p>
 
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+      {/* Battery Grid */}
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mb-16">
         {BATTERIES.map((batt, idx) => (
           <Card
             key={idx}
@@ -64,7 +94,7 @@ export default function BatteryPage() {
               <div className="mt-4">
                 <Link
                   href={batt.href}
-                  className="inline-flex items-center text-red-600 font-medium hover:underline"
+                  className="inline-flex items-center text-blue-600 font-medium hover:underline"
                 >
                   View details <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -72,6 +102,44 @@ export default function BatteryPage() {
             </CardContent>
           </Card>
         ))}
+      </div>
+
+      {/* Benefits Section */}
+      <div className="bg-gray-50 rounded-2xl p-8 mb-16">
+        <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">
+          Why Choose Solar Battery Storage?
+        </h2>
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+          {BENEFITS.map((benefit, i) => (
+            <div
+              key={i}
+              className="text-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            >
+              <div className="flex justify-center mb-3">{benefit.icon}</div>
+              <h3 className="font-semibold text-lg text-gray-900">
+                {benefit.title}
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">{benefit.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="text-center">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          Ready to Power Your Home with Smart Battery Storage?
+        </h2>
+        <p className="text-gray-600 mb-6">
+          Talk to our solar experts today and find the perfect battery solution
+          for your energy needs.
+        </p>
+        <Link
+          href="/contact"
+          className="bg-blue-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition"
+        >
+          Get a Free Quote
+        </Link>
       </div>
     </section>
   );

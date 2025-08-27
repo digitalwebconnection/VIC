@@ -10,7 +10,8 @@ import WhyVic10Kw from "./WhyVic10Kw";
 
 export default function Residential7kwPage() {
   return (
-      <><HeroRs />
+      <>
+      <HeroRs />
       <Solaer10kwIntro />
       <WhyVic10Kw />
       <FaqRs />

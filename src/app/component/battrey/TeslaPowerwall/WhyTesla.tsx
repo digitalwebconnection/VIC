@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Check: React.FC<{ className?: string }> = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +12,6 @@ const Check: React.FC<{ className?: string }> = ({ className }) => (
   </svg>
 );
 
-
 const Bullet: React.FC<React.PropsWithChildren> = ({ children }) => (
   <li className="flex gap-3 text-gray-800 leading-relaxed">
     <Check />
@@ -21,11 +19,10 @@ const Bullet: React.FC<React.PropsWithChildren> = ({ children }) => (
   </li>
 );
 
-
 export const metadata = {
-  title: "Why Choose Tesla Solar Battery?",
+  title: "Why Choose Tesla Solar Battery? | West Vic Energy",
   description:
-    "High energy capacity, integrated inverter, smart app control, seamless Tesla ecosystem integration, and OTA updates.",
+    "West Vic Energy brings you Tesla Powerwall — high energy capacity, built-in inverter, smart app control, and seamless Tesla ecosystem integration.",
 };
 
 export default function WhyTesla() {
@@ -34,50 +31,85 @@ export default function WhyTesla() {
       <main className="bg-white text-gray-800">
         <section className="mx-auto max-w-7xl px-6 md:px-0 py-8 md:py-10">
           <div className="rounded-2xl bg-slate-100/80 p-6 md:p-9 ring-1 ring-slate-200 shadow-2xl">
-            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-blue-900">Why Choose Tesla Solar Battery?</h1>
+            {/* Heading */}
+            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-blue-900">
+              Why Choose Tesla Solar Battery with{" "}
+              <span className="text-blue-700">West Vic Energy</span>?
+            </h1>
 
+            {/* Intro */}
+            <p className="mt-4 text-lg text-gray-700">
+              At <strong>West Vic Energy</strong>, we provide homeowners with
+              cutting-edge energy storage solutions like the{" "}
+              <strong>Tesla Powerwall</strong> — delivering reliability,
+              efficiency, and seamless integration for a smarter, sustainable
+              future.
+            </p>
+
+            {/* Features */}
             <div className="mt-7 md:mt-8 space-y-6">
               <div className="space-y-1">
-                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">High Energy Capacity &amp; Power Output</h3>
+                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">
+                  High Energy Capacity &amp; Power Output
+                </h3>
                 <ul className="space-y-2">
                   <Bullet>
-                    With about <strong>13.5 kWh</strong> usable storage and up to <strong>11.5 kW</strong> continuous power (Powerwall 3), Tesla batteries can power most household needs—even during outages.
+                    With about <strong>13.5 kWh</strong> usable storage and up to{" "}
+                    <strong>11.5 kW</strong> continuous power (Powerwall 3),
+                    Tesla batteries can power most household needs—even during
+                    outages.
                   </Bullet>
                 </ul>
               </div>
 
               <div className="space-y-1">
-                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">Integrated Inverter &amp; Easy Installation</h3>
+                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">
+                  Integrated Inverter &amp; Easy Installation
+                </h3>
                 <ul className="space-y-2">
                   <Bullet>
-                    Tesla Powerwall includes a built‑in inverter, simplifying installation and reducing extra equipment and costs.
+                    Tesla Powerwall includes a built-in inverter, simplifying
+                    installation and reducing extra equipment and costs —
+                    installed by <strong>West Vic Energy</strong> experts.
                   </Bullet>
                 </ul>
               </div>
 
               <div className="space-y-1">
-                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">Smart Energy Management &amp; App Control</h3>
+                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">
+                  Smart Energy Management &amp; App Control
+                </h3>
                 <ul className="space-y-2">
                   <Bullet>
-                    The Tesla app lets you monitor, control, and optimize energy usage in real time, helping you save money and maximize solar use.
+                    The Tesla app lets you monitor, control, and optimize energy
+                    usage in real time, helping you save money and maximize
+                    solar use.
                   </Bullet>
                 </ul>
               </div>
 
               <div className="space-y-1">
-                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">Seamless Integration with Tesla Ecosystem</h3>
+                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">
+                  Seamless Integration with Tesla Ecosystem
+                </h3>
                 <ul className="space-y-2">
                   <Bullet>
-                    Works smoothly with Tesla Solar Roof and EV chargers for a comprehensive, clean‑energy home solution.
+                    Works smoothly with Tesla Solar Roof and EV chargers for a
+                    comprehensive, clean-energy home solution with{" "}
+                    <strong>West Vic Energy</strong>.
                   </Bullet>
                 </ul>
               </div>
 
               <div className="space-y-1">
-                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">Regular Over‑the‑Air Software Updates</h3>
+                <h3 className="text-xl md:text-2xl font-extrabold text-gray-900">
+                  Regular Over-the-Air Software Updates
+                </h3>
                 <ul className="space-y-2">
                   <Bullet>
-                    Keeps your system updated with new features and improvements automatically, future‑proofing your investment.
+                    Keeps your system updated with new features and improvements
+                    automatically, future-proofing your investment with{" "}
+                    <strong>West Vic Energy</strong>.
                   </Bullet>
                 </ul>
               </div>
@@ -86,10 +118,10 @@ export default function WhyTesla() {
             {/* CTAs */}
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
-                href="#contact"
+                href="/component/contact"
                 className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm  focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
               >
-<a href="/component/contact">  Request a Free Quote</a> 
+                Request a Free Quote
               </a>
 
               <div className="inline-flex items-center gap-3 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow-sm">
@@ -102,9 +134,15 @@ export default function WhyTesla() {
                 >
                   <path d="M2.25 5.25a2 2 0 012-2h3.108a2 2 0 011.94 1.515l.72 2.878a2 2 0 01-.5 1.923l-1.35 1.35a16.5 16.5 0 007.425 7.425l1.35-1.35a2 2 0 011.923-.5l2.878.72a2 2 0 011.515 1.94V19.75a2 2 0 01-2 2H18.75C10.41 21.75 2.25 13.59 2.25 5.25v0z" />
                 </svg>
-               <a href="tel:+61 497 358 063">   +61 497 358 063</a>
+                <a href="tel:+61 497 358 063">+61 497 358 063</a>
               </div>
             </div>
+
+            {/* Company Branding */}
+            <p className="mt-6 text-center text-gray-600 text-sm">
+              Powered by <strong>West Vic Energy</strong> — your trusted clean
+              energy partner in Victoria.
+            </p>
           </div>
         </section>
       </main>

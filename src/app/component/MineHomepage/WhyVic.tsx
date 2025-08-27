@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState } from "react";
@@ -15,31 +14,31 @@ const features = [
     icon: "✔️",
     title: "Proven Quality Products:",
     description:
-      "Quality of products, as well as services, are of top-most importance to us. We believe quality can’t be compromised at any cost.",
+      "Quality of products and services is our highest priority. At West Vic Energy, we believe quality should never be compromised.",
   },
   {
     icon: "💰",
     title: "Competitive Pricing:",
     description:
-      "We aim to be competitive in our prices for the level of quality we deliver. Quality comes at a cost and there is no substitute for it.",
+      "We provide competitive pricing for the premium level of quality we deliver. Quality comes at a cost—and we ensure you get the best value for it.",
   },
   {
     icon: "💳",
     title: "Flexible Finance Options:",
     description:
-      "We have flexible finance options available for our customers with $0 upfront so you can repay from your savings on your electricity bills.",
+      "Our flexible finance plans, including $0 upfront payment options, allow you to repay comfortably from the savings on your electricity bills.",
   },
   {
     icon: "⚙️",
     title: "Seamless Start To End Process:",
     description:
-      "We offer seamless start to end process experience for our customers which makes solar system purchase easy, simple & quicker by holding their hand at every stage.",
+      "We make the solar journey easy, simple, and hassle-free by guiding our customers at every stage—from consultation to installation.",
   },
   {
     icon: "🎖️",
-    title: "Unbeatable After Sales Care:",
+    title: "Unbeatable After-Sales Care:",
     description:
-      "We have a dedicated team of customer service which takes care of all the after-sales issues and aim to resolve it as soon as possible.",
+      "Our dedicated customer support team ensures all after-sales issues are resolved promptly, giving you complete peace of mind.",
   },
 ];
 
@@ -109,7 +108,6 @@ export default function WhyVic() {
       phone: form.phone,
       address: form.address,
       postcode: form.postcode,
-      // redirect: "https://yourdomain.com/thank-you", // optional
       botcheck: "",
       ref_page: typeof window !== "undefined" ? window.location.href : "",
     };
@@ -154,11 +152,12 @@ export default function WhyVic() {
                 </h2>
                 
                 <p className="text-lg text-gray-700">
-                  Smart House Solar is 2021 & 2022 Product Review Award Winner Solar Power
-                  Company serving in the whole of Queensland and New South Wales. We have
-                  rated 4.8 Stars out of 5 by more than 400+ Queenslanders for enhancing
-                  the satisfaction levels of our customers with quality products,
-                  installations, and prompt after-sales service.
+                  West Vic Energy is a trusted solar power company serving{" "}
+                  <span className="font-semibold">Victoria and Queensland</span>. 
+                  We are committed to delivering quality solar products, professional 
+                  installations, and reliable after-sales support. With hundreds of 
+                  satisfied customers, we continue to raise the benchmark for 
+                  excellence in the solar industry.
                 </p>
 
                 {/* Features */}

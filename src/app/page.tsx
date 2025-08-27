@@ -15,7 +15,7 @@ import LeadPopup from "./popup/LeadPopup";
 export default function Page() {
   return (
     <>
-            <LeadPopup delayMs={3000} snoozeDays={1} debug={true} />
+            <LeadPopup delayMs={3000} snoozeDays={0} debug={true} />
 
       <HeroHm />
       <CallSection />

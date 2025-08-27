@@ -28,7 +28,7 @@ export default function SolarCalculator() {
     <div className="min-h-screen bg-gray-50 py-10 px-4">
       <div className="max-w-3xl mx-auto bg-white shadow rounded-xl p-6 space-y-6">
         <h1 className="text-2xl font-bold text-gray-800">
-          ☀️ Australian Solar Calculator
+            Find Your Solar Savings
         </h1>
         <p className="text-sm text-gray-600">
           Estimate your solar system generation, costs, savings, and payback period.
