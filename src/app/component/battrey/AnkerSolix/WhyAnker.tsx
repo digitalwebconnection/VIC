@@ -38,7 +38,7 @@ export default function WhyAnker() {
       <main className="bg-white text-gray-800">
         <section className="mx-auto max-w-7xl px-6 md:px-0 py-8 md:py-10">
           <div className="rounded-2xl bg-slate-100/80 p-6 md:p-8 ring-1 ring-slate-200 shadow-2xl">
-            <h1 className="text-[28px] md:text-4xl font-extrabold tracking-tight text-red-600">
+            <h1 className="text-[28px] md:text-4xl font-extrabold tracking-tight text-blue-800">
               Why Choose Anker Solix Solar Battery with West Vic Energy?
             </h1>
 

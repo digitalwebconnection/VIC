@@ -51,12 +51,12 @@ export default function BatteryProgram() {
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
           Cheaper Home Battery Program with{" "}
-          <span className="text-red-600">West Vic Energy</span>
+          <span className="text-blue-800">West Vic Energy</span>
         </h1>
 
         <p className="text-lg text-gray-700 text-center mb-10 max-w-3xl mx-auto">
           Take charge of your energy future with{" "}
-          <span className="font-semibold text-red-600">West Vic Energy</span>.
+          <span className="font-semibold text-blue-600">West Vic Energy</span>.
           Our affordable battery storage solutions help Victorian households and
           businesses reduce costs, improve sustainability, and gain independence
           from rising power prices.
@@ -82,7 +82,7 @@ export default function BatteryProgram() {
           </h2>
           <p className="text-gray-700 mb-6">
             Ready to unlock the full potential of solar? Contact{" "}
-            <span className="font-semibold text-red-600">West Vic Energy</span>{" "}
+            <span className="font-semibold text-blue-600">West Vic Energy</span>{" "}
             today and discover how much you can save with smarter, cleaner
             energy.
           </p>
@@ -97,7 +97,7 @@ export default function BatteryProgram() {
             </a>
             <a
               href="/contact"
-              className="bg-red-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-700 transition"
+              className="bg-blue-900 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-700 transition"
             >
               Get a Free Quote
             </a>

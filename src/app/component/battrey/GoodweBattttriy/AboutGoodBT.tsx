@@ -46,7 +46,7 @@ export default function AboutGoodBt() {
                 {/* Page Title */}
                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-blue-900">
                     GoodWE Battery Solutions with{" "}
-                    <span className="text-red-600">West Vic Energy</span>
+                    <span className="text-blue-800">West Vic Energy</span>
                 </h1>
 
                 {/* Subheading */}
