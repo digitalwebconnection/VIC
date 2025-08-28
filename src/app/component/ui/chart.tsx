@@ -7,7 +7,7 @@ import ChartTooltipContent from "./chart"
 import ChartLegendContent from "./chart"
 
 // Implement ChartContainer component
-export function ChartContainer({ children, className, config }: ChartContainerProps) {
+export function ChartContainer({ children, className}: ChartContainerProps) {
   return (
     <div className={className}>
       {children}

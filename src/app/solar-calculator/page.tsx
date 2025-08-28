@@ -5,7 +5,7 @@ export default function SolarCalculator() {
   const [usage, setUsage] = useState(20); // daily kWh
   const [tariff, setTariff] = useState(0.30); // $/kWh
   const [size, setSize] = useState(6.6); // kW
-  const [battery, setBattery] = useState(false);
+  const [battery] = useState(false);
 
   // Constants (approx AU values)
   const solarYield = 4.5; // kWh per kW per day

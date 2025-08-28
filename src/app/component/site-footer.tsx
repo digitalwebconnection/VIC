@@ -8,7 +8,7 @@ export default function SiteFooter() {
   return (
     <footer className="border-t bg-white ">
       <div className="mx-auto max-w-7xl px-4 py-12">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center content-center  ">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center">
           {/* Brand */}
           <div className="justify-center items-center">
             <div className="text-xl font-bold"><img src="/logo.png" alt="" className="w-50" /></div>
@@ -16,7 +16,7 @@ export default function SiteFooter() {
           </div>
 
           {/* Quick Links */}
-          <div classN>
+          <div>
             <div className="text-sm font-semibold uppercase tracking-wide text-gray-900  ">
               Quick Links
             </div>

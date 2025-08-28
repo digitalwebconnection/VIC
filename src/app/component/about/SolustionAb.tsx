@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Image from "next/image";
-import { Battery, Building2, DollarSign, Leaf, Factory, Sun, Play, Phone } from "lucide-react";
+import { Battery, Building2, DollarSign, Leaf, Factory, Sun,  Phone } from "lucide-react";
 
 const features = [
   {
