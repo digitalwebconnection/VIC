@@ -102,24 +102,30 @@ export default function Reviews() {
             </div>
 
             {/* Save Badge */}
-            <div className="flex gap-20">
-              <div className="relative inline-block shadow-lg">
-                <div className="absolute -left-6 -bottom-6 w-24 h-24 bg-yellow-400 rounded-full -z-10"></div>
-                <div className="border border-blue-400 rounded-xl shadow-lg bg-white px-6 py-4">
-                  <p className="text-amber-500 font-semibold text-center">
+            <div className="flex flex-col lg:flex-row gap-6 md:gap-20 items-center md:items-start">
+              {/* Savings Box */}
+              <div className="w-full md:w-1/2 relative inline-block shadow-lg">
+                {/* Decorative Circle */}
+                <div className="absolute -left-4 -bottom-4 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-yellow-400 rounded-full -z-10"></div>
+
+                <div className="border border-blue-400 rounded-xl shadow-lg bg-white px-4 sm:px-6 py-3 sm:py-4">
+                  <p className="text-amber-500 font-semibold text-center text-sm sm:text-base">
                     Save up to
                   </p>
-                  <p className="bg-[#0a2a57] text-white text-2xl font-bold rounded-lg px-4 py-2 text-center">
+                  <p className="bg-[#0a2a57] text-white text-lg sm:text-xl md:text-2xl font-bold rounded-lg px-3 sm:px-4 py-2 text-center">
                     $18,600*
                   </p>
                 </div>
               </div>
-
               {/* Call Now Section */}
-              <div>
-                <p className="text-gray-600 font-semibold">Call Now and Learn</p>
-                <p className="text-gray-500 text-sm mb-3">How Much You Can Save</p>
-                <button className="bg-blue-800 text-white font-semibold px-6 py-3 rounded-full shadow-xl hover:bg-blue-900">
+              <div className="w-full md:w-1/2 text-center md:text-left mt-6 md:mt-0">
+                <p className="text-gray-600 font-semibold text-base sm:text-lg">
+                  Call Now and Learn
+                </p>
+                <p className="text-gray-500 text-sm mb-3">
+                  How Much You Can Save
+                </p>
+                <button className="bg-blue-800 text-white font-semibold px-6 py-3 rounded-full shadow-xl hover:bg-blue-900 transition">
                   <a href="tel:+61 497 358 063">+61 497 358 063</a>
                 </button>
               </div>
@@ -130,18 +136,21 @@ export default function Reviews() {
           <div className="flex-1 mt-10 md:mt-0 flex justify-center relative">
             {/* Approved Seller Badge */}
             <div className="absolute top-0 left-6 md:left-10 -translate-y-6">
-              <div className="bg-blue-100 text-blue-900 rounded-full border-4 border-white shadow px-4 py-2 text-sm font-semibold">
+              <div className="bg-blue-100 text-blue-900 rounded-full border-4 border-white shadow px-4 py-2 mb-15 text-sm font-semibold">
                 ✅ West Vic Energy - Approved Seller
               </div>
             </div>
 
             {/* Battery Image */}
-            <Image
-              src="https://www.solarminer.com.au/wp-content/uploads/2023/07/sbs-img.png"
-              alt="Battery"
-              width={380}
-              height={150}
-            />
+            <div className=" mt-5">
+
+              <Image
+                src="https://www.solarminer.com.au/wp-content/uploads/2023/07/sbs-img.png"
+                alt="Battery"
+                width={380}
+                height={150}
+              />
+            </div>
           </div>
         </div>
       </section>

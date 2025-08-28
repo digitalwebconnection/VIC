@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 
 export default function HeroGro() {
   return (
-    <section className="relative w-full h-[500px] flex items-center justify-center text-white">
+    <section className="relative w-full h-full md:h-[500px] flex items-center justify-center text-white">
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <Image

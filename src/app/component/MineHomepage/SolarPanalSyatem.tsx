@@ -57,7 +57,7 @@ export default function Solar10kwIntro() {
             }`}
           >
             {plan.highlight && (
-              <div className="absolute left-8  -mt-15 w-[382px] text-center   transform -translate-x-1/12 bg-blue-700 text-white px-4 py-2 text-xs font-semibold rounded-t-md ">
+              <div className="absolute left-8 -ms-2 md:-ms-0 -mt-15 w-full md:w-[382px] text-center   transform -translate-x-1/12 bg-blue-700 text-white px-4 py-2 text-xs font-semibold rounded-t-md ">
                 AUSTRALIA’S MOST POPULAR.!!
               </div>
             )}

@@ -8,21 +8,19 @@ export default function SiteFooter() {
   return (
     <footer className="border-t bg-white ">
       <div className="mx-auto max-w-7xl px-4 py-12">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center content-center  ">
           {/* Brand */}
-          <div>
+          <div className="justify-center items-center">
             <div className="text-xl font-bold"><img src="/logo.png" alt="" className="w-50" /></div>
-            <p className="mt-3 text-sm text-gray-600">
-              West Vic Energy
-            </p>
+         
           </div>
 
           {/* Quick Links */}
-          <div>
-            <div className="text-sm font-semibold uppercase tracking-wide text-gray-900">
+          <div classN>
+            <div className="text-sm font-semibold uppercase tracking-wide text-gray-900  ">
               Quick Links
             </div>
-            <ul className="mt-3 space-y-2 text-sm">
+            <ul className="mt-3 space-y-2 text-sm justify-center ">
               <li><Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link> </li>
               {/* <li><Link href="/component/services" className="text-gray-600 hover:text-gray-900">Services</Link></li> */}
               {/* <li><Link href="/component/pricing" className="text-gray-600 hover:text-gray-900">Pricing</Link></li> */}
@@ -86,22 +84,19 @@ export default function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 border-y-2  py-6 text-center text-sm text-gray-600 flex items-center justify-around">
-          <div>
-            <img src="https://www.solarminer.com.au/wp-content/uploads/2023/10/sv-img-new.png" alt="" />
+        <div className="mt-10 border-y-2  py-3 text-center text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center"> 
+            <img src="https://b799436.smushcdn.com/799436/wp-content/uploads/2017/12/netcc-logo-approved-seller.png?lossy=1&strip=1&webp=1" alt="" className="w-50 md:w-40 ms-0 md:-ms-10" />
+            <img src="/f5.png" alt="" className="w-40 md:w-50 me:0 md:me-10  " />
+            <img src="/images/f2.png" alt="" className="w-40 md:w-40" />
           </div>
 
           <div className="text-xl">
             © {year} west vic energy. All rights reserved.</div>
         </div>
-        <div className="  py-6 text-center text-sm text-gray-600 gap-10 flex items-center justify-around">
-          <div>
-            <img src="/logo.png" alt="" className="w-100" />
-          </div>
-          <div>
-            <img src="https://b799436.smushcdn.com/799436/wp-content/uploads/2017/12/netcc-logo-approved-seller.png?lossy=1&strip=1&webp=1" alt="" className="w-120" />
-          </div>
-          <div className="text-lg text-start">
+        <div className="  py-6 text-center text-sm text-gray-600 gap-10  md:flex items-center justify-around ">
+     
+          <div className="text-md md:text-lg text-start">
             *Performance figures are estimated based on CEC Guidelines and will vary from site to site. Please speak to an west vic energy to make an informed decision about your solar needs and potential cost savings.</div>
         </div>
       </div>

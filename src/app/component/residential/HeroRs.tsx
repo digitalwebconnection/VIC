@@ -1,73 +1,65 @@
 import Image from "next/image";
 
 export default function HeroRs() {
-    // const images = [
-    //     "/ResidentalSolar1.jpg",
-    //     "/ResidentalSolar2.jpg",
-    //     "/ResidentalSolar3.jpg",
-    //     "/ResidentalSolar4.jpg",
-    // ];
-
     return (
         <div className="relative justify-center">
             {/* Background Image with opacity */}
             <div className="absolute inset-0 -z-10">
                 <Image
-                    src="/images/1.jpg" // your background image
+                    src="/images/1.jpg"
                     alt="Background"
                     fill
-                    className="object-cover opacity-80" // controls opacity
+                    className="object-cover opacity-80"
                     priority
                 />
             </div>
 
             {/* Main content wrapper */}
-            <div className="relative bg-blue/50 py-15 px-5 md:px-20">
-                <div className="flex max-w-7xl mx-auto h-80 justify-around gap-100">
-
+            <div className="relative bg-blue py-10 md:py-20 px-4 sm:px-8 md:px-20">
+                <div className="flex flex-col md:flex-row max-w-7xl mx-auto h-full min-h-[400px] md:min-h-[400px] gap-6 md:gap-100">
+                    
                     {/* Left Card */}
-                    <div className="flex-1/2 bg-white rounded-lg shadow p-6 max-w-md text-white">
-                        <h2 className="text-2xl md:text-3xl text-black font-bold">
-                            Residential Solar
+                    <div className="w-full md:w-1/2 lg:w-1/3 bg-white rounded-lg shadow h-full lg:h-80 p-6 md:p-8 text-white flex flex-col justify-center">
+                        <h2 className="text-xl sm:text-2xl md:text-3xl text-black font-bold">
+                            Commercial Solar
                         </h2>
 
                         <ul className="mt-4 space-y-3">
                             {[
-                                "ZERO deposit installation",
-                                "Easy payment options available",
-                                "5 years workmanship warranty",
-                                "100% Australian owned and operated",
+                                "Attractive ROI",
+                                "Flexible and scalable solutions",
+                                "Government incentives",
+                                "Reduce carbon emissions",
                             ].map((item, idx) => (
                                 <li key={idx} className="flex items-start gap-2">
                                     <span className="mt-1 h-5 w-5 flex items-center justify-center rounded-full bg-[#0a285f] text-white font-bold text-sm">
                                         ✓
                                     </span>
-                                    <span className="text-black">{item}</span>
+                                    <span className="text-black text-sm sm:text-base">{item}</span>
                                 </li>
                             ))}
                         </ul>
 
                         <div className="mt-6">
-                            <button className="w-full bg-amber-400 hover:bg-blue-700  text-black font-semibold py-3 px-5 rounded-full shadow transition">
+                            <button className="w-full bg-amber-400 hover:bg-blue-700 text-black font-semibold py-3 px-5 rounded-full shadow transition">
                                 Request a quote
                             </button>
                         </div>
                     </div>
 
                     {/* Right Image */}
-                    <div className="flex-1/2 mt-10 md:mt-0 w-full md:w-auto">
+                    <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
                         <Image
                             src="https://www.solarminer.com.au/wp-content/uploads/2025/07/batt-banner.png"
                             alt="Alpha ESS Battery"
-                            width={360}
+                            width={400}
                             height={320}
-                            className="object-contain drop-shadow-2xl"
+                            className="object-contain drop-shadow-2xl w-full max-w-xs sm:max-w-sm md:max-w-md"
                             priority
                         />
                     </div>
                 </div>
             </div>
         </div>
-
     );
 }

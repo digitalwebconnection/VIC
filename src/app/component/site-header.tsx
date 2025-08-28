@@ -243,6 +243,13 @@ export default function SiteHeader() {
                   </Link>
                 </li>
               ))}
+                <MobileSection
+                title="Residential"
+                open={openResidentialMobile}
+                setOpen={setOpenResidentialMobile}
+                items={RESIDENTIAL}
+                onNavigate={() => setOpenMobile(false)}
+              />
 
               <MobileSection
                 title="Commercial"
@@ -252,13 +259,7 @@ export default function SiteHeader() {
                 onNavigate={() => setOpenMobile(false)}
               />
 
-              <MobileSection
-                title="Residential"
-                open={openResidentialMobile}
-                setOpen={setOpenResidentialMobile}
-                items={RESIDENTIAL}
-                onNavigate={() => setOpenMobile(false)}
-              />
+            
 
               <MobileSection
                 title="Solar Battery Offer"

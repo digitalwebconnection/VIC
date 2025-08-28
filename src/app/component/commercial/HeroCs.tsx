@@ -9,7 +9,7 @@ export default function HeroCs() {
     // ];
 
     return (
-         <div className="relative justify-center">
+        <div className="relative justify-center">
             {/* Background Image with opacity */}
             <div className="absolute inset-0 -z-10">
                 <Image
@@ -23,11 +23,11 @@ export default function HeroCs() {
 
             {/* Main content wrapper */}
             <div className="relative bg-blue py-15 px-5 md:px-20">
-                <div className="flex max-w-7xl mx-auto h-80  gap-70  ">
+                <div className="flex flex-col md:flex-row max-w-7xl mx-auto  h-full lg:h-80 gap-100">
                     {/* Left Card */}
-                    <div className="flex-1/2 bg-white rounded-lg shadow p-6 max-w-md text-white">
+                    <div className="w-full md:w-1/2 lg:w-1/3 bg-white rounded-lg shadow p-6 text-white h-full">
                         <h2 className="text-2xl md:text-3xl text-black font-bold">
-                           Commercial Solar
+                            Commercial Solar
                         </h2>
 
                         <ul className="mt-4 space-y-3">
@@ -54,7 +54,7 @@ export default function HeroCs() {
                     </div>
 
                     {/* Right Image */}
-                    <div className="flex-1/2 mt-10 md:mt-0 w-full md:w-auto">
+                    <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
                         <Image
                             src="https://www.solarminer.com.au/wp-content/uploads/2025/07/batt-banner.png"
                             alt="Alpha ESS Battery"
@@ -66,6 +66,7 @@ export default function HeroCs() {
                     </div>
                 </div>
             </div>
+
         </div>
 
     );
